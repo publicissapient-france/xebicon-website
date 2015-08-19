@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Back Day - 3 Juin 2015 - Xebia</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Xebia IT Architects"/>
+    <meta name="reply-to" content="marketing@xebia.com"/>
+    <meta name="owner" content="Xebia IT Architects"/>
+    <meta name="description"
+          content="Nous vous proposons un éclairage sur un ensemble de pratiques et de technologies “Back-end” qui vous permettront de faire évoluer votre système d’information."/>
+    <meta name="keywords" content="Back Day, Journée Back"/>
+    <meta name="content-language" content="fr"/>
+    <meta name="robots" content="follow,index,all"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" href="favicon.ico"/>
+
+    <link href="styles/main.min.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [  'Roboto:400,700:latin' ] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+
+
+
+</head>
+<body>
+<header>
+    <section class="xebia">
+        <a href="http://www.xebia.fr" target="_blank" title="Site Xebia France">
+            <img src="images/xebia_logo-large-purple.png" class="logo-xebia" alt="logo xebia"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#journee">Journée</a></li>
+            <li><a href="#program">Programme</a></li>
+            <li><a href="#partner">Partenaires</a></li>
+            <li><a href="#infos">Informations Pratiques</a></li>
+          </ul>
+        </nav>
+    </section>
+
+    <section class="backday">
+        <div class="inner-wrapper">
+
+
+
+        </div>
+    </section>
+
+    <div class="more-button">
+        <div class="triangle">&nbsp;</div>
+        <a href="#journee"><img alt="button more" src="images/Img-devops-btn-red.png" /></a>
+    </div>
+</header>
+<main>
+    <section class="tagline" id="journee">
+        <div class="inner-wrapper">
+            <h1>Hello, i'm a backman</h1>
+
+            <h2>Back <span class="pixel_title">DAY</span> <span class="hashtag">#BACKDAYBYXEBIA</span></h2>
+
+            <!--<div class="techtrends-wrapper">
+                <a href="http://techtrends.xebia.fr"
+                   title="Télécharger le techtrends">
+                    <img class="techtrends" alt="Le techtrends" src="images/techtrends-back.png"/>
+
+                    <div>Télécharger le Techtrends #7 - Back</div>
+                </a>
+            </div>-->
+
+            <p class="first-paragraph">Afin de garder son entreprise compétitive, il est essentiel de faire évoluer les technologies de son SI et d’éviter d’entrer dans une spirale négative d’obsolescence de ses composants.
+              Les utilisateurs sont de plus en plus exigeants sur la rapidité de circulation de l’information, qu’ils doivent pouvoir consommer au travers de multiples canaux (web, téléphone, tablette, etc.).
+              Nous vivons une accélération continue des besoins qui défie les capacités de nos organisations. C’est dès maintenant qu’il faut préparer le SI de demain.</p>
+
+
+
+        </div>
+    </section>
+    <section class="program" id="program">
+        <div class="inner-wrapper">
+            <h1>Le <span class="pixel_title">programme</span></h1>
+
+            <div class="table-wrapper">
+                <table id="table-planning">
+                    <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>BACK</th>
+                        <th>END</th>
+                        <th>Inscriptions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>9h00 - 9h30</td>
+                        <td colspan="2">Petit Déjeuner</td>
+                        <td rowspan="6" class="inscription-cell open-inscription"><a
+                                href="https://www.eventbrite.fr/e/billets-construire-le-si-de-demain-journee-back-lessentiel-16726652869" target="_blank">S'incrire
+                            sur Eventbrite</a></td>
+                    </tr>
+                    <tr>
+                        <td>9h30 - 10h15</td>
+                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
+                            La programmation réactive pour répondre aux défis d'aujourd'hui
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10h15 - 11h15</td>
+                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#vsc-modal">REX VSCT pour SNCF : à la découverte des microservices
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11h30 - 12h30</td>
+                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#sgcib-modal">REX Société Générale : explorer les principes de l'Event Sourcing</td>
+                    </tr>
+
+                    <tr>
+                        <td>12h30 - 13h30</td>
+                        <td colspan="2" class="last-cell">Pause déjeuner</td>
+                    </tr>
+                    <tr class="inscription-line">
+                        <td colspan="4" class="inscription-cell open-inscription"><a
+                                href="https://www.eventbrite.fr/e/billets-construire-le-si-de-demain-journee-back-lessentiel-16726652869" target="_blank">S'incrire
+                            sur Eventbrite</a></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                          <td>13h30 - 14h00</td>
+                          <td colspan="2" class="last-cell">Présentation des ateliers</td>
+                      </tr>
+                    <tr>
+                        <td>14h05 - 14h55</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#resiliance-modal">Résilience : Chaos Monkey
+                        </td>
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#rxjava-modal">
+                            Découvrez RxJava, le reactive programming
+                        </td>
+                        <td rowspan="4" class="inscription-cell open-inscription"><a
+                                href="https://www.eventbrite.fr/e/billets-journee-back-en-pratique-16727087168" target="_blank">S'incrire
+                            sur Eventbrite</a></td>
+                    </tr>
+                    <tr>
+                        <td>15h00 - 15h50</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#techevent-modal">Microservices en démo
+                        </td>
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#akka-modal">
+                          Akka, the reactive toolkit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16h05 - 16h55</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#spring-modal">Découvrez Spring Boot sur un cas pratique
+                        </td>
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#gatling-modal">Chercher la performance efficacement
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17h00 - 18h00</td>
+                        <td class=" center-cell popupable" data-toggle="modal" data-target="#kafka-modal">Retour d’expérience sur l’ingestion d’événements dans HDFS</td>
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#atelier-modal">Going Reactive with Akka Streams (Présentation en Anglais)
+                        </td>
+
+                    </tr>
+                    <tr class="inscription-line open-inscription">
+                        <td colspan="4"><a
+                                href="https://www.eventbrite.fr/e/billets-journee-back-en-pratique-16727087168" target="_blank">S'inscrire
+                            sur Eventbrite</a></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <td>18h00 - 19h30</td>
+                        <td colspan="2" class="last-cell">Buffet campagnard</td>
+
+                        <td rowspan="2" class="inscription-cell last-line open-inscription"><a href="
+                          http://www.eventbrite.fr/e/billets-cloture-de-la-journee-backday-avec-kirk-pepperdine-17062673917?aff=es2" target="_blank">S'inscrire
+                            sur Eventbrite</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="last-line">19h30 - 22h30</td>
+                        <td colspan="2" class="last-line">Soirée de clôture avec <strong>Kirk Pepperdine</strong></td>
+                    </tr>
+                    <tr class="inscription-line open-inscription">
+                        <td colspan="4"><a href="
+                          http://www.eventbrite.fr/e/billets-cloture-de-la-journee-backday-avec-kirk-pepperdine-17062673917?aff=es2" target="_blank">S'inscrire
+                            sur Eventbrite</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="partner" id="partner">
+        <h1>Nos <span class="pixel_title">Partenaires</span></h1>
+
+        <div class="logo-partner">
+            <a href="https://www.societegenerale.fr/" target="_blank" class="img-wrapper first">
+                <img alt="Logo Société Générale" src="images/partner/Logo-Societe-Generale.png"/>
+            </a>
+
+            <a href="http://www.voyages-sncf.com/" target="_blank" class="img-wrapper second">
+                <img alt="Logo Voyage SNCF" src="images/partner/logo-vsc.png"/>
+            </a>
+
+            <a href="http://www.typesafe.com/" target="_blank" class="img-wrapper third">
+                <img alt="Logo Typesafe" src="images/partner/logo-typesafe.png"/>
+            </a>
+
+        </div>
+
+
+    </section>
+
+    <section class="tagline" id="infos">
+
+
+
+            <h2>Informations <span class="pixel_title">PRATIQUES</span></h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.090095413806!2d2.3110180000000002!3d48.875559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc7c0eb09d3%3A0x9e4ee4f2dab76471!2sXebia+It+Architects!5e0!3m2!1sfr!2sfr!4v1430225125298" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section class="social">
+        <a href="http://www.linkedin.com/company/xebia-france" class="linkedin" target="_blank">
+            <img src="images/social/Img-backday-linkedin-violet.png" alt="Linkedin" class="inactive"/>
+            <img src="images/social/Img-backday-linkedin-red.png" alt="Linkedin" class="active"/>
+
+        </a>
+        <a href="https://plus.google.com/100396468532572979348/posts" class="google" target="_blank">
+            <img src="images/social/Img-backday-google-violet.png" alt="Google+" class="inactive"/>
+            <img src="images/social/Img-backday-google-red.png" alt="Google+" class="active"/>
+        </a>
+        <a href="https://twitter.com/XebiaFr" class="twitter" target="_blank">
+            <img src="images/social/Img-backday-tweeter-violet.png" alt="Twitter" class="inactive"/>
+            <img src="images/social/Img-backday-tweeter-red.png" alt="Twitter" class="active"/>
+        </a>
+        <a href="http://fr.slideshare.net/XebiaFrance" class="slideshare" target="_blank">
+            <img src="images/social/Img-backday-slideshare-violet.png" alt="Slideshare" class="inactive"/>
+            <img src="images/social/Img-backday-slideshare-red.png" alt="Slideshare" class="active"/>
+        </a>
+        <a href="http://xebia.tv" class="xebiatv" target="_blank">
+            <img src="images/social/Img-backday-xebiatv-violet.png" alt="Xebia TV" class="inactive"/>
+            <img src="images/social/Img-backday-xebiatv-red.png" alt="Xebia TV" class="active"/>
+        </a>
+    </section>
+
+    <section class="alliancy">
+        <div class="tagline-xebia"></div>
+        <div class="tagline-alliance">
+            <div class="alliance-wrapper">
+                <a href="http://alliance.xebia.fr" class="logo-alliance"><img src="images/footer-logo-alliance.png"
+                                                                              alt="Alliance Xebia"></a>
+
+                <div><span class="unused">=</span>
+                    <a href="http://www.xebia.fr/" target="_blank">Xebia</a>
+                    <span class="unused">+</span>
+                    <a href="http://xebialabs.com/" target="_blank">XebiaLabs</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.thiga.fr/" target="_blank">Thiga</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.ux-republic.com/" target="_blank">UX-Republic</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.cellenza.fr/" target="_blank">Cellenza</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.wescale.fr/" target="_blank">Wescale</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.akamis.com/" target="_blank">Akamis</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</footer>
+
+<div class="modal fade" id="vsc-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retour d'expérience VSCT pour SNCF</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Secrets de conception d’une application innovante au service des voyageurs.
+                </strong></p>
+
+                <p class="slot">
+
+Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les solutions pour unifier des sources d’informations ? Comment donner à une équipe l’autonomie pour construire un produit, du besoin à sa mise en production ? Comment construire une architecture applicative qui répond à des exigences de scalabilité et de disponibilité ? <br/>
+<br/>Nous proposerons de découvrir un retour d'expérience de mise en oeuvre sur Amazon Web Services d'une architecture à base de microservices reposant sur la JVM, Node.js et bien d'autres technologies telles qu'InfluxDB, Redis, MongoDB, RabbitMQ ou bien encore Elasticsearch. Mais également comment nous avons résolu des problématiques telles que le rolling update, la gestion de version et de rétro-compatibilité des API ou bien encore la redescende d'informations à l'initiative des serveurs grâce aux WebSockets.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Alexandre Godet" src="images/speaker/alexandre_godet.jpeg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Alexandre Godet</span>
+
+                            <p class="desc">En 2005, Alexandre Godet intègre le groupe Voyages-Sncf.com où il est, depuis 2009, leader technique.
+
+Il y assure la conception d’une version du site Internet et l’animation d’une équipe dédiée. Il intervient sur plusieurs sites : le site loisirs (voyages-sncf.com), le site européen (tgveurope.com) ainsi que le site mobile (voyages-sncf.mobi) optimisé pour les smartphones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Alexis Kinsella" src="images/speaker/alexis_kinsella.JPG"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Alexis Kinsella</span>
+
+                            <p class="desc">Alexis Kinsella est un consultant Xebia passionné aussi bien par les problématiques Front-end (web et mobile) que Back-end. Après de longues années passées sur les technologies Java, Alexis a fait d'iOS et Node.js ses nouveaux terrains d'expérimentation lui permettant d'explorer les architectures mobiles et ses problématiques associées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="sgcib-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">REX Société Générale : explorer les principes de l'Event Sourcing</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>La simplicité comme moyen d'être performant, résilient et de réduire le Time To Market.
+                </strong></p>
+
+                <p class="slot">
+                  Il y a 1 an et demi, la Société Générale a décidé de construire un nouveau service de vente électronique de nos produits financiers. Les contraintes étaient claires : "le système sera performant, auditable, résilient et développé de manière à avoir un Time To Market court". Une seule solution s'imposait à nous : faire simple, très simple ! <br/>Ainsi à travers cette présentation, nous vous raconterons notre quête de simplicité. Vous verrez ainsi que notre stack technique ne contient quasiment aucun framework, juste quelques bibliothèques utiles ou indispensables. Notre code se structure autour de quelques principes : l'Event Sourcing, un peu de Domain Driven Design et une discipline de fer en matière de qualité et de tests automatisés (BDD for the win!).
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Thierry Abaléa" src="images/speaker/thierry_abalea.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Thierry Abaléa</span>
+
+                            <p class="desc">Thierry Abaléa est développeur depuis plus d'une douzaine d'années. Il relève depuis 7 ans les défis que lui offre la Société Générale. Bien que fortement intéressé par l'informatique théorique et l'ingénierie logicielle, il ne se complait vraiment dans son travail que si les méthodes et la technique sont dictées par le problème à résoudre. En amateur de défis, il rejoint volontier les environnements sujets à la haute scalabilité ou à la faible latence. Ainsi il n'est pas surprenant qu'il vous parle d'hardware dans une conversation liée au code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Marie-Laure Thuret" src="images/speaker/marie_laure_thuret.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Marie-Laure Thuret</span>
+
+                            <p class="desc">Marie-Laure est une développeuse de trois ans d'expériences autour des technologies Java/JEE. Intervenue dans les domaines des telecoms et de la finance, elle a un fort attrait concernant les pratiques améliorant la qualité du code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Clément Héliou" src="images/speaker/clement_heliou.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Clément Héliou</span>
+
+                            <p class="desc">Clément est un développeur passionné et très sensible à la qualité. Il travaille autour de l’écosystème JAVA, sur des missions alliant technicité et qualité au service des utilisateurs. Il s'oriente aujourd'hui vers les nouveaux paradigmes de programmation et révolutions technologiques, tout en maintenant une forte exigence autour des pratiques du Software Craftsmanship et de l'Agilité.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="atelier-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Going Réactif avec Streams Akka (présentation en anglais)</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Akka Streams est une implémentation de <a href="http://reactive-streams.org/" class="link">Reactive Streams</a>.
+                  Cette spécification est issue d'un effort commun pour rendre standard le streaming de données à travers des composants asynchrones, de manière totalement non bloquante, tout en gardant le contrôle sur le débit de transfert grâce au mécanisme de "backpressure".
+
+
+
+                </strong></p>
+
+                <p class="slot">
+                  Dans cette présentation, nous allons voir comment cette nouvelle abstraction peut être utilisée et les principes qui en découlent. Nous allons explorer le process pour traiter des données en définissant les flux puis étudier comment Reactive streams sont utilisés avec Akka HTTP.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Lutz Huehnken" src="images/speaker/lutz_huehnken.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Lutz Huehnken</span>
+
+                            <p class="desc">Lutz Huehnken est un Solutions Architect chez TypeSafe. Il travaille dans le développement de logiciels depuis 1997. Actuellement, il assure la création d'applications web dans diverses industries. Ses centres d'intérêts actuels sont la programmation réactive, le développement de systèmes hautement évolutifs, scalables, tolérants à la panne et distribués - avec Scala, Akka and Play.
+Il a fait de multiples présentations lors de conférences telles que code.talks, Devoxx, et JAX.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="resiliance-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Résilience : Chaos Monkey</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>
+                </strong></p>
+
+                <p class="slot">
+
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Pablo Lopez" src="images/speaker/pablo.JPG"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Pablo Lopez</span>
+
+                            <p class="desc">Directeur technique de Xebia, il à 11 ans d’expérience au cours desquels il s'est suis forgé une solide expérience d’architecte logiciel. Il dispose d’une très large compétence sur l’ensemble de l’écosystème JEE, et notamment les solutions du monde open-source. Opérationnel par goût, il intervient sur une large variété de missions, de l'analyse de performances en production au conseil en architecture logicielle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+
+
+                        <div class="img-wrapper right">
+                            <img alt="Vincent Spiewak" src="images/speaker/Vincent_Spiewak.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Vincent Spiewak</span>
+
+                            <p class="desc">Vincent est un consultant passionné travaillant chez Xebia. Il aime concevoir des projets innovants dans un cadre Agile. Son expérience tourne autour du monde Java / EE, Scala, WOA, et de la conduite du changement.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="gatling-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Chercher la performance efficacement</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Comment mesurer les performances ? Comment savoir ce qu'il faut optimiser en premier ? Y'a-t-il des antipatterns à éviter ?
+                </strong></p>
+
+                <p class="slot">
+                  Nous allons vous présenter une démarche efficace pour mener vos campagnes de performance dans l'univers Java. Ponctuée de retours d'expérience, de best practices et de suggestions d'architecture, découvrez comment rendre vos applications plus performantes.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Jean-Pascal Thiery" src="images/speaker/jeanpascal_thiery.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Jean-Pascal Thiery</span>
+
+                            <p class="desc">Java Craftsman et agiliste pratiquant. Jean-Pascal a arpenté les voies de l'intégration continue jusqu'à intégrer la mouvance DevOps. Il aime : Java, Docker, Mesos, et la qualité des livrables. Il n'aime pas : les phrases qui commence par "Normalement, ...".
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+
+
+                        <div class="img-wrapper right">
+                            <img alt="William Montaz" src="images/speaker/William_Montaz.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">William Montaz</span>
+
+                            <p class="desc">William a 7 ans d'expérience dans l'ingénierie logicielle. Depuis 2 ans, il s'est principalement focalisé sur les problématiques de performances liées à l'écosystème Java et aux architectures distribuées. Il fait partie de la cellule performance de Voyages-SNCF Technologie depuis 2 ans.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="akka-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Akka, the reactive toolkit</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Plusieurs frameworks permettent de mettre en place facilement des microservices. Vert.x ou Sprint Cloud sont souvent cités. Venez découvrir comment Akka permet, grâce au modèle acteur, de construire des systèmes distribués complexes, résilient et scalable.
+
+                </strong></p>
+
+                <p class="slot">Nous verrons aussi les grands principes d'architecture à respecter pour tirer pleinement parti de cette technologie prometteuse.</p>
+
+
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Fabian Gutierrez" src="images/speaker/fabian_gutierrez.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Fabian Gutierrez</span>
+
+                            <p class="desc">Fabian est un consultant logiciel senior disposant de 10 ans d'expérience dans la conception et le développement dans l'écosystème Java/JEE.
+
+Il possède une expérience importante sur le développement des applications à haute disponibilité. Il a aussi une expérience confirmée sur une grande variété des frameworks Web et sur l’intégration d’applications.
+
+Ses intérêts se tournent vers la programmation réactive et les langages fonctionnels.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Xavier Bucchiotty" src="images/speaker/xavier_bucchiotty.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Xavier Bucchiotty</span>
+
+                            <p class="desc">
+                              Xavier est un développeur passionné Java/Scala chez Xebia. Il développe depuis bientôt 10 ans. Il a découvert Akka et Scala en conférence il y a trois ans. Depuis, il ne cesse de creuser le sujet et de partager son enthousiasme sur cet écosystème, aussi bien en interne qu'en conférence. Cela lui permet notamment d'apporter de nouvelles solutions aux défis techniques qui lui sont posés aujourd'hui.
+
+Adepte des méthodes agiles, il est aussi un fervent défenseur des pratiques XP.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="kafka-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retour d’expérience sur l’ingestion d’événements dans HDFS</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Les architectures message-driven sont pensées afin d’offrir une possibilité de gérer un grand nombre d’événements. Si la volumétrie de ces éléments devient suffisante, il sera probablement judicieux de stocker le tout dans un cluster HDFS.
+                </strong></p>
+
+                <p class="slot">
+                  Nous présenterons un retour d’expérience d’ingestion d’événements depuis un broker Kafka vers un cluster HDFS.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Sylvain Lequeux" src="images/speaker/sylvain_lequeux.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Sylvain Lequeux</span>
+
+                            <p class="desc">Sylvain a 5 ans d’expérience en développement Java et en architecture. Il s’est spécialisé depuis 2 ans dans le Big Data et l’écosystème Hadoop. Il a récemment rejoint Xebia en tant que consultant Big Data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="spring-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Découvrez Spring Boot sur un cas pratique</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Spring Boot propose un large panel d'outils pour démarrer et développer rapidement des applications.
+                </strong></p>
+
+                <p class="slot">
+                  Après une rapide introduction à l'outil, nous présenterons le code d'une application développé en mode microservices. Ce sera aussi l'occasion d'évoquer les principes de circuit breaker et de monitoring ainsi que de savoir comment Spring Boot permet de les réaliser.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Nicolas Jozwiak" src="images/speaker/nicolas_jozwiak.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Nicolas Jozwiak</span>
+
+                            <p class="desc">Nicolas est un ingénieur d'études confirmé disposant de 8 ans d'expérience de conception et développement sur technologies Java/JEE. Son parcours chez un éditeur avant son entrée chez Xebia lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité).
+
+Nicolas est Scrum Master Certifié et bénéficie d’une expérience très solide de mise en place des méthodes agiles et d’accompagnement d’équipe sur le terrain. Il est reconnu pour son approche pragmatique, proactive et pédagogique.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Thomas Auffredou" src="images/speaker/thomas_auffredou.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Thomas Auffredou</span>
+
+                            <p class="desc">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="rxjava-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Découvrez RxJava, le reactive programming</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>RxJava est une des nombreuses implémentations du concept de reactive programming.</strong></p>
+
+                <p class="slot">
+Ce concept est une extension du pattern Observer et permet
+la composition de séquences basées sur des évènements asynchrones.
+
+Rx apporte également de nouveaux opérateurs et une approche fonctionnelle du traitement des séquences.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Jérôme Doucet" src="images/speaker/jerome_doucet.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Jérôme Doucet</span>
+
+                            <p class="desc"> Développeur passionné, Jérome s'attache avant tout à la qualité du code et à l'amelioration continue. Il est par ailleurs intérressé par les applications distribuées et les techniques de développement événementiel et asynchrone.</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.JPG"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Romain Niveau</span>
+
+                            <p class="desc">Romain est développeur depuis plus de 7 ans et développe autant sur du Back que sur du Front.
+Après plusieurs missions dans l'univers Java, il travaille actuellement sur une stack full Js avec principalement du Node (express) et du Angular le tout déployé dans le Cloud Amazon. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="keynote-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">La programmation réactive pour répondre aux défis d'aujourd'hui</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>La manière de développer des logiciels a changé.
+Pour suivre les changements de l'IT, dû à l'augmentation du volume de transactions, du nombre d'appareils connectés et des attentes utilisateurs, une nouvelle architecture a vu le jour pour répondre aux défis d'aujourd'hui : la programmation réactive.
+
+
+
+                </strong></p>
+
+                <p class="slot">
+                  Qu'est ce que c'est ? Quelles sont les caractéristiques et propriétés derrière ce terme ? Nous allons explorer pourquoi les entreprises se tournent vers ces systèmes réactifs aujourd'hui, à travers des exemples de grandes sociétés.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Ygor Lutz" src="images/speaker/ygor_lutz.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Ygor Lutz</span>
+
+                            <p class="desc">Ygor Lutz est le directeur commercial de Typesafe EMEA avec plus de 15 années d'expérience dans le développement logiciel, la sécurité ID, le web et le mobile. Ygor est titulaire d'un MBA de l'EPFL / HEC Lausanne et siège au sein du conseil de 2 startups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="techevent-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Microservices en démo</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Les architectures microservices sont en pleine explosion actuellement. Beaucoup d’articles sont parus sur le sujet et nombre de projets se lancent sur ce modèle.
+</strong></p>
+
+                <p class="slot">Plusieurs frameworks permettant de mettre en place facilement des microservices existent, dont, notamment, Vert.x. Venez les découvrir !</p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.JPG"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Romain Niveau</span>
+
+                            <p class="desc">
+                              Romain est développeur depuis plus de 7 ans et développe autant sur du Back que sur du Front.
+  Après plusieurs missions dans l'univers Java, il travaille actuellement sur une stack full js avec principalement du Node (express) et du Angular le tout déployé dans le Cloud Amazon.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+
+                        <div class="img-wrapper right">
+                            <img alt="Thomas Auffredou" src="images/speaker/thomas_auffredou.png"/>
+                        </div>
+                        <div class="info">
+                            <span class="name">Thomas Auffredou</span>
+
+                            <p class="desc"></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1657252-22', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
