@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+fonts/.DS_Store
+images/.DS_Store
+.idea
+*.iml
+dist

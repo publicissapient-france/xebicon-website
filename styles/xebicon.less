@@ -1,10 +1,17 @@
 //fonts
 
 @font-face{
-    font-family : "visitor";
-    src : url('../fonts/visitor2-webfont.woff') format('woff'),
-          url('../fonts/visitor2-webfont.svg') format('svg'),
-          url('../fonts/visitor2-webfont.ttf') format('truetype');
+    font-family : "proxima-bold";
+    src : url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+          url('../fonts/proximanova-bold-webfont.svg') format('svg'),
+          url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+}
+
+@font-face{
+  font-family : "proxima";
+  src : url('../fonts/proximanova-light-webfont.woff') format('woff'),
+        url('../fonts/proximanova-light-webfont.svg') format('svg'),
+        url('../fonts/proximanova-light-webfont.ttf') format('truetype');
 }
 
 
@@ -66,6 +73,11 @@ body {
   text-decoration:none;
 }
 
+.bold
+{
+  font-family: 'proxima-bold';
+}
+
 ol, ul {
   list-style: none;
 }
@@ -88,7 +100,7 @@ table {
 //Site
 
 p, h1, h2, h3, h4, span, div, th, td, a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'proxima', sans-serif;
 }
 
 body {
@@ -96,12 +108,16 @@ body {
   margin: 0 auto;
 }
 
+@textColor: #2e2e2e;
+@orangeColor: #f89641;
+@turquoiseColor: #06a99c;
+
 @xebiaColor: #6C1D5F;
 @greyBackground: #F2F2F2;
 @greyLine: #E4E4E4;
 
 @xebiaColorDeep: #45133F;
-@orangeColor: #F99B1D;
+@orangeColor: #f89641;
 @redColor: #aa2615;
 
 @greyBackgroundProgram: #F5F5F5;
@@ -137,14 +153,14 @@ header {
   position: relative;
 
   .xebia {
-    min-height: 60px;
-    background-color: @xebiaColor;
-    padding-bottom: 10px;
+    min-height: 59px;
+    color: #2e2e2e;
+    background-color: white !important;
     
     nav {
 
       float:right;
-      padding-top:30px;
+      padding-top:21px;
 
       @media (max-width:480px){
         display:none;
@@ -157,12 +173,20 @@ header {
         {
           display:inline-block;
 
-          a{
-            color:white;
+          a
+          {
+            color: @textColor;
             text-decoration:none;
-            margin-right:20px;
-
+            font-family: proxima;
+            text-transform: uppercase;
             padding: 20px 20px;
+            transition: 0.3s all;
+
+            .inscription
+            {
+              background-color: @orangeColor !important;
+              color: white !important;
+            }
 
             @media (max-width:480px)
             {
@@ -172,7 +196,8 @@ header {
 
             &:hover
             {
-              border-bottom: 2px solid white;
+              color: white;
+              background-color: @orangeColor;
             }
           }
         }
@@ -181,7 +206,7 @@ header {
 
     .logo-xebia {
       margin-left: 45px;
-      margin-top: 15px;
+      margin-top: 12px;
       float: left;
     }
 
@@ -200,13 +225,36 @@ header {
     .clearFloat();
   }
 
-  .backday {
+  .xebicon {
 
     background-color:#000;
-    background-image:url(../images/header/img_back_day_xebia.png);
+    height: 400px;
+    background-image:url(../images/header/bg_home_auditorium.png);
+
+    .inner-wrapper {
+      width: 100%;
+    }
+
+    h1 {
+      font-family: proxima-bold;
+      color: white;
+      font-size: 80px;
+      margin: auto;
+      padding-top: 80px;
+
+      .light {
+        font-family: proxima;
+      }
+
+      .couleur_turquoise {
+        letter-spacing: 4px;
+        color: @turquoiseColor;
+        font-family: proxima-bold;
+      }
+    }
 
     @media (max-width:540px){
-      background-image:url(../images/header/img_back_day_mobile.png);
+      background-image:url(../images/header/bg_home_auditorium.png);
       background-size:100%;
       min-width:320px;
       background-position:top;
@@ -220,7 +268,7 @@ header {
 
 
     .inner-wrapper {
-      min-height: 464px;
+      min-height: auto;
 
       @media (max-width:540px){
         min-height:364px;
@@ -277,6 +325,18 @@ header {
 
   }
 
+  .tagline_page {
+    background-color: @xebiaColor;
+    height: 60px;
+
+    h2 {
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 15px;
+    }
+  }
+
   .more-button {
     text-align: center;
     bottom: -37px;
@@ -312,6 +372,8 @@ main section {
   margin-right: auto;
 }
 
+
+
 .popupable {
   cursor: pointer;
 
@@ -336,455 +398,205 @@ main section {
 }
 
 main {
-  .tagline {
-    h1 {
-      text-align: center;
-      color: @redColor;
-      font-size: 22px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      text-transform: uppercase;
-    }
+  .presentation_luc {
 
-    h2 {
-      text-transform: uppercase;
-      font-size: 21px;
-      border-bottom: 1px solid black;
-
-      margin-top: 20px;
-
-      .centerBloc();
-
-      b {
-        font-weight: bold;
-      }
-
-
-    }
+    background-color: #efefef;
 
     .first-paragraph {
-      margin-top: 50px;
-      line-height: 24px;
-    }
-
-    p {
-      .centerBloc();
-
-      &.bold {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-weight: bold;
-      }
-    }
-
-    .techtrends-wrapper {
-      float: right;
-      margin: 20px 40px;
+      line-height: 30px;
+      color: #2e2e2e;
       text-align: center;
-
-      a {
-        color:@redColor;
-        text-decoration: none;
-
-        &:hover {
-          color:@redColor;
-          text-decoration: none;
-        }
-      }
-
-      div {
-        margin-top: 10px;
-      }
-
-      @media (max-width: 750px) {
-        float: none;
-      }
+      font-size: 22px;
+      padding: 20px;
     }
 
     .clearFloat();
 
   }
 
+  .chiffres {
+
+    text-align: center;
+    background-color: white;
+
+    ul {
+      display: inline-block;
+      margin: 0 50px;
+
+      li {
+
+        &:first-of-type {
+          color: @orangeColor;
+          font-size: 100px;
+        }
+
+        &:last-of-type {
+          color: @turquoiseColor;
+          font-size: 22px;
+          font-family: proxima;
+        }
+      }
+    }
+
+  }
+
+  .teaser {
+    background-color: #efefef;
+    text-align: center;
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      font-family: proxima-bold;
+      padding-bottom: 40px;
+    }
+
+    .video {
+
+      height: 600px;
+      width: 100%;
+      background-color: white;
+      margin: auto;
+      margin-bottom: 80px;
+    }
+
+    a {
+     text-align: center;
+     padding: 10px 50px;
+     background-color: @xebiaColor;
+      text-decoration: none;
+      color: white;
+      font-family: proxima-bold;
+      margin-bottom: 50px;
+      transition: 0.3s all;
+
+      &:hover {
+        background-color: @orangeColor;
+      }
+
+
+    }
+  }
+
+  .application {
+    background-color: @turquoiseColor;
+    text-align: center;
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      font-family: proxima-bold;
+      padding-bottom: 40px;
+      color: white;
+    }
+
+    a {
+      text-align: center;
+      padding: 10px 50px;
+      background-color: white;
+      text-decoration: none;
+      color: @orangeColor;
+      font-family: proxima-bold;
+      margin-bottom: 50px;
+      transition: 0.3s all;
+
+      &:last-of-type {
+        margin-left: 40px;
+      }
+
+      &:hover {
+        background-color: @orangeColor;
+        color: white;
+      }
+
+
+    }
+  }
+
   .program {
     background-color: @greyBackgroundProgram;
     padding-bottom: 60px;
 
-    h1 {
-
-      text-transform: uppercase;
-      font-size: 22px;
-      padding-top: 30px;
-
-      margin-bottom: 15px;
-
-
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-
-      border-bottom: 1px solid black;
-      b {
-        font-weight: bold;
-      }
-    }
-
-    .table-wrapper {
-
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-      table {
-        width: 87%;
-        margin-left: auto;
-        margin-right: auto;
-
-        thead th {
-          color: @redColor;
-          text-transform: uppercase;
-          font-weight: bold;
-        }
-
-        tbody {
-          td {
-            text-align: center;
-            border-bottom: 1px solid @greyLine;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            padding-right:20px;
-            font-size: 14px;
-
-            &.center-cell {
-              border-right: 1px solid @greyLine;
-            }
-
-            &.inscription-cell {
-              color: @xebiaColor;
-              vertical-align: middle;
-              padding-left: 5px;
-              padding-right: 20px;
-
-            }
-
-            &:first-of-type {
-              color: @xebiaColor;
-              font-weight: bold;
-              text-align: left;
-              min-width: 120px;
-            }
-
-            &.last-cell {
-              border-right: 1px solid @greyLine;
-            }
-
-            &.last-line {
-              border-bottom: none;
-            }
-          }
-
-          a {
-            text-decoration: none;
-            &:hover {
-              color: @redColor;
-            }
-          }
-
-          .open-inscription a {
-
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            padding-left: 5px;
-            padding-right: 20px;
-            color: @xebiaColor;
-
-            &:hover {
-              color: @redColor;
-            }
-
-            @media (min-width: 860px ) {
-              &:after {
-                content: ' > ';
-
-                position: absolute;
-                right: 5px;
-
-              }
-            }
-          }
-
-          .inscription-line {
-            display: none;
-          }
-        }
-      }
-
-      @media (max-width: 860px) {
-        /* Force table to not be like tables anymore */
-        table, thead, tbody, th, td, tr {
-          display: block;
-        }
-
-        #table-planning {
-          tbody {
-            @borderWidth: 4px;
-            border-right: @borderWidth solid @greyLine;
-            border-left: @borderWidth solid @greyLine;
-            border-bottom: @borderWidth solid @greyLine;
-
-            &:first-of-type {
-              border-top: @borderWidth solid @greyLine;
-            }
-
-            .inscription-line {
-              display: inherit;
-            }
-          }
-
-          thead tr {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-          }
-
-          tr {
-            border-bottom: 1px solid @greyLine;
-          }
-
-          td {
-            /* Behave  like a "row" */
-            border: none;
-            border-bottom: 1px solid @greyLine;
-            position: relative;
-
-            white-space: normal;
-            text-align: center;
-            padding-left: 46px;
-
-            &:before {
-              /* Now like a table header */
-              position: absolute;
-              /* Top/left values mimic padding */
-              top: 6px;
-              left: 6px;
-              width: 45%;
-              padding-right: 10px;
-              white-space: nowrap;
-              text-align: left;
-              font-weight: bold;
-
-            }
-
-            &.center-cell:before {
-              content: 'BACK';
-              color: @redColor;
-            }
-            &.second-room:before {
-              content: 'END';
-              color: @redColor;
-            }
-
-            &.inscription-cell {
-              display: none;
-            }
-          }
-
-        }
-      }
-    }
-  }
-}
-
-.partner {
-
-  h1 {
-    text-transform: uppercase;
-    font-size: 23px;
-    border-bottom: 1px solid black;
-
-    margin-top: 20px;
-
-    @media (max-width:480px){
-      margin-bottom:30px;
-    }
-
-    .centerBloc();
-
-    b {
-      font-weight: bold;
-    }
-  }
-
-  .logo-partner {
-    text-align: center;
-
-    .img-wrapper {
-
-      &.first {
-
-      }
-      &.second {
-        width: 200px;
-        position: relative;
-        top: 25px;
-
-        @media (max-width:480px){
-          top:0px;
-        }
-      }
-      &.third {
-        margin-left: 20px;
-
-      }
-
-      &.second-quarter, &.third-quarter, &.fourth-quarter {
-        margin-left: 30px;
-      }
-
-      &.fourth-quarter {
-        position: relative;
-        top: 9px;
-      }
-
+    .square {
+      padding: 10px;
+      width: 170px;
+      height: 120px;
       display: inline-block;
-      img {
+      position: relative;
+      transition: 0.3s all;
 
+      .step_2 {
+        position: absolute;
+        background-color: @xebiaColor;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        color: #fff;
+        padding: 10px;
+
+        a {
+          color: white;
+          font-family: proxima-bold;
+          text-decoration: none;
+          text-align: center;
+        }
       }
 
-      .xebia-labs {
-        width: 160px;
-      }
     }
   }
 }
+
 
 footer {
-  .social {
-    background-color: @xebiaColor;
-    text-align: center;
+  background-color: @orangeColor;
+
+  .twitter {
+    padding: 40px;
+    float: left;
+    p {
+      color: white;
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
 
     a {
+      text-align: center;
+      padding: 10px 50px;
+      background-color: #5bc0de;
       text-decoration: none;
-      color: black;
-      @height: 100px;
-      height: @height;
-      line-height: @height;
-      margin: 0 20px;
+      color: white;
+      font-family: proxima;
+      margin-bottom: 50px;
+      transition: 0.3s all;
 
-      @media (max-width: 450px) {
-        margin: 0;
-      }
-
-      &:visited {
-        text-decoration: none;
-        color: black;
-      }
-
-      img {
-        vertical-align: middle;
-
-        &.active {
-          display: none;
-        }
-
+      &:last-of-type {
+        margin-top: 40px;
       }
 
       &:hover {
-        img {
-          &.active {
-            display: inherit;
-          }
-
-          &.inactive {
-            display: none;
-          }
-        }
-
+        background-color: #51a9c4;
       }
     }
-
   }
 
-  .alliancy {
+  .adresse {
+    padding: 40px;
+    color: white;
+    float: right;
+    font-size: 20px;
 
-    background-color: #f1f0ee;
+    a {
+      text-decoration: none;
+      color: white;
 
-    .tagline {
-      width: 462px;
-      margin: auto;
-      height: 170px;
-      background: url('../images/footer-alliance.png') 0 20px no-repeat #f1f0ee;
-      @media (max-width: 470px) {
-        width: 100%;
-      }
-    }
-
-    .tagline-xebia {
-      width: 462px;
-      margin: auto;
-      height: 111px;
-      background: url('../images/footer-logo-xebia.png') 0 20px no-repeat #f1f0ee;
-
-      @media (max-width: 470px) {
-        background: url('../images/footer-logo-xebia.png') 0 20px no-repeat #f1f0ee;
-        height: 55px;
-        margin-bottom: 10px;
-        width: 100%;
-      }
-    }
-
-    .tagline-alliance {
-      width: 550px;
-      margin: auto;
-      @media (max-width: 470px) {
-        width: 100%;
+      &:hover {
+        text-decoration: underline;
       }
 
-      border-top: 1px solid #bebab8;
-      .clearFloat();
-
-      .alliance-wrapper {
-        .clearFloat();
-      }
-
-      div {
-        text-transform: uppercase;
-        line-height: 16px;
-        text-align: justify;
-        float: left;
-        margin-left: 7px;
-        margin-top: 16px;
-        font-size: 11px;
-        letter-spacing: 1px;
-
-        @media (max-width: 470px) {
-          float: none;
-          text-align: center;
-          .unused {
-            display: none;
-          }
-
-        }
-      }
-
-      a {
-        color: #6d626b;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        @media (max-width: 470px) {
-          display: block;
-        }
-      }
-    }
-
-    .logo-alliance {
-      margin-top: 10px;
-      float: left;
-      @media (max-width: 470px) {
-        float: none;
-      }
     }
   }
 }
@@ -1144,4 +956,19 @@ button.close {
       .clearFloat();
     }
   }
+}
+
+
+
+/***     PROGRAMME PAGE     ***/
+
+.fadelinks, .faderandom { position:relative; height:369px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+
+.fadelinks img
+{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
 }
