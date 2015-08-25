@@ -153,11 +153,7 @@
     // get tag element
     var countdown = document.getElementById("countdown");
 
-    // update the tag with id "countdown" every 1 second
-    setInterval(function () {
-
-
-        // find the amount of "seconds" between now and target
+    var processCount = function() {
         var current_date = new Date().getTime();
         var seconds_left = (target_date - current_date) / 1000;
 
@@ -172,11 +168,13 @@
         seconds = parseInt(seconds_left % 60);
 
         // format countdown string + set tag value
-        countdown.innerHTML = days + " j, " + hours + " h, "
-                + minutes + " m, " + seconds + " s";
+        countdown.innerHTML = days + "J   " + hours + "H   "
+                + minutes + "M   " + seconds + "S ";
+    };
 
-    }, 1000);
-
+    // update the tag with id "countdown" every 1 second
+    setInterval(processCount, 1000);
+    processCount();
 </script>
 
 
