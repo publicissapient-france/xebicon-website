@@ -54,45 +54,34 @@
             <img src="images/header/xebicon-logo.png" class="logo-xebia" alt="Logo XebiCon"/>
         </a>
         <nav>
-          <ul>
-            <a href="index.html"><li>La Conférence</li></a>
-            <a href="programme.html"><li>Programme</li></a>
-            <a href="expertcafe.html"><li>Expert Café</li></a>
-            <a href="infos.html"><li>Infos pratiques</li></a>
-            <a href="inscription.html" class="inscription"><li>Inscription</li></a>
-          </ul>
+            <ul>
+                <a href="index.html"><li>La Conférence</li></a>
+                <a href="programme.html"><li>Programme</li></a>
+                <a href="expertcafe.html"><li>Expert Café</li></a>
+                <a href="infos.html"><li>Infos pratiques</li></a>
+                <a href="inscription.html" class="inscription"><li>Inscription</li></a>
+            </ul>
         </nav>
     </section>
 
-    <section class="xebicon">
+    <section class="xebicon infos billets">
         <div class="inner-wrapper">
-            <h1>BUILD <span class="light">THE</span>
-                <br/>FUTURE<br/>
-                <span class="couleur_turquoise">04.11.15</span>
+            <h1 class="titre_autre" id="countdown"></h1>
+                <br/>
+            <h1 class="titre_autre">
+                <span class="couleur_turquoise">Avant la XebiCon France</span>
             </h1>
-
-
-
         </div>
     </section>
 
     <section class="tagline_page">
-
-        <h2>La conférence sur les <span class="bold">technologies de demain</span> à Paris</h2>
+        <h2><span class="bold">Ne tardez pas ...</span></h2>
     </section>
 
-    <!--<div class="more-button">
-        <div class="triangle">&nbsp;</div>
-        <a href="#journee"><img alt="button more" src="images/Img-devops-btn-red.png" /></a>
-    </div>-->
 </header>
 <main>
-    <section class="presentation_luc" id="journee">
-        <div class="inner-wrapper">
-            <p class="first-paragraph">Afin de garder son entreprise compétitive, il est essentiel de faire évoluer les technologies de son SI et d’éviter d’entrer dans une spirale négative d’obsolescence de ses composants.
-              Les utilisateurs sont de plus en plus exigeants sur la rapidité de circulation de l’information, qu’ils doivent pouvoir consommer au travers de multiples canaux (web, téléphone, tablette, etc.).
-              Nous vivons une accélération continue des besoins qui défie les capacités de nos organisations. C’est dès maintenant qu’il faut préparer le SI de demain.</p>
-        </div>
+    <section class="billeterie eventbrite" >
+
     </section>
 
     <section class="chiffres">
@@ -120,19 +109,6 @@
 
     </section>
 
-    <section class="teaser">
-        <div class="inner-wrapper">
-            <h2>Un avant goût pour cette première edition de la XebiCon France</h2>
-
-            <div class="video">
-
-            </div>
-
-
-            <a href="programme.html">DECOUVREZ LE PROGRAMME</a> <br/><br/><br/><br/>
-            <a href="inscription.html">S'INSCRIRE DÈS MAINTENANT</a>
-        </div>
-    </section>
 
     <section class="application">
         <div class="inner-wrapper">
@@ -168,6 +144,43 @@
 </footer>
 
 <script>
+    // set the date we're counting down to
+    var target_date = new Date("Nov 04, 2015").getTime();
+
+    // variables for time units
+    var days, hours, minutes, seconds;
+
+    // get tag element
+    var countdown = document.getElementById("countdown");
+
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+
+
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+
+        // format countdown string + set tag value
+        countdown.innerHTML = days + " j, " + hours + " h, "
+                + minutes + " m, " + seconds + " s";
+
+    }, 1000);
+
+</script>
+
+
+<script>
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -178,8 +191,6 @@
   ga('send', 'pageview');
 
 </script>
-
-
 
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js"></script>

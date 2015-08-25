@@ -122,23 +122,6 @@ body {
 
 @greyBackgroundProgram: #F5F5F5;
 
-.pixel_title
-{
-  font-family: "visitor";
-  font-size:40px;
-  color:@redColor;
-
-
-}
-
-.hashtag
-{
-  float:right;
-  color: @redColor;
-  padding-top:15px;
-  font-size:16px;
-  font-weight:bold;
-}
 
 .inner-wrapper {
   max-width: 1024px;
@@ -156,10 +139,13 @@ header {
     min-height: 59px;
     color: #2e2e2e;
     background-color: white !important;
+
+    @media (max-width: 1080px) {
+      text-align: center;
+    }
     
     nav {
-
-      float:right;
+      
       padding-top:21px;
 
       @media (max-width:480px){
@@ -167,11 +153,6 @@ header {
       }
 
       ul{
-
-
-        li
-        {
-          display:inline-block;
 
           a
           {
@@ -181,6 +162,21 @@ header {
             text-transform: uppercase;
             padding: 20px 20px;
             transition: 0.3s all;
+
+              @media (max-width: 1080px) {
+                margin: 20px;
+                padding: 0px;
+              }
+
+            li {
+              display: inline-block;
+
+              @media (max-width: 1080px)
+              {
+                display: block;
+              }
+            }
+
 
             .inscription
             {
@@ -198,6 +194,11 @@ header {
             {
               color: white;
               background-color: @orangeColor;
+
+              @media (max-width: 1080px) {
+                background-color: none;
+                color: black;
+              }
             }
           }
         }
@@ -208,6 +209,12 @@ header {
       margin-left: 45px;
       margin-top: 12px;
       float: left;
+      margin-right: 40px;
+
+      @media (max-width: 1080px)
+      {
+        float: none;
+      }
     }
 
     @media (max-width: 420px) {
@@ -224,6 +231,50 @@ header {
 
     .clearFloat();
   }
+
+  .infos {
+    background-image: url(../images/header/bg_infos_eurosites.png) !important;
+
+    .titre_autre {
+      font-size: 55px;
+    }
+
+  }
+
+  main {
+
+    .infos_map {
+      padding-top: 0px !important;
+
+      .map
+      {
+        position: relative;
+        filter: grayscale(50%);
+
+        .infos_lieu {
+          position: absolute;
+          top: 10%;
+          right: 0;
+          width: 50%;
+          background-color: #efefef;
+          color: @textColor;
+          padding: 30px;
+          font-size: 20px;
+
+          ul {
+            padding-bottom: 20px;
+
+            li {
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
 
   .xebicon {
 
@@ -290,7 +341,7 @@ header {
     .time-wrapper {
       margin-top: 60px;
       time {
-        color: @redColor;
+        color: @orangeColor;
         font-size: 50px;
         margin-left: 40px;
 
@@ -359,7 +410,6 @@ header {
     bottom: 22px;
     z-index: -1;
   }
-}
 
 main section {
   padding-top: 30px;
@@ -390,9 +440,9 @@ main section {
   }
 
   &:hover {
-    color: @redColor;
+    color: @orangeColor;
     &:after {
-      background-color: @redColor;
+      background-color: @orangeColor;
     }
   }
 }
@@ -424,6 +474,8 @@ main {
       margin: 0 50px;
 
       li {
+
+        width: 150px;
 
         &:first-of-type {
           color: @orangeColor;
@@ -516,16 +568,28 @@ main {
   }
 
   .program {
-    background-color: @greyBackgroundProgram;
     padding-bottom: 60px;
 
+    .line {
+      margin-bottom: 20px;
+    }
+
+    .alternative_square {
+      background-color: #efefef;
+    }
+
     .square {
-      padding: 10px;
-      width: 170px;
-      height: 120px;
+      margin: 10px;
+      width: 230px;
+      height: 230px;
       display: inline-block;
       position: relative;
       transition: 0.3s all;
+      float: left;
+
+      p {
+        margin: 10px;
+      }
 
       .step_2 {
         position: absolute;
@@ -536,13 +600,17 @@ main {
         height: 100%;
         visibility: hidden;
         color: #fff;
-        padding: 10px;
+
+        p {
+          width: 90%;
+        }
 
         a {
           color: white;
           font-family: proxima-bold;
           text-decoration: none;
           text-align: center;
+          margin: 10px;
         }
       }
 
@@ -786,11 +854,11 @@ button.close {
 }
 
 .modal-header {
-  background-color: @redColor;
+  background-color: @orangeColor;
   color: white;
 
   .close {
-    color: @redColor;
+    color: @orangeColor;
     opacity: 1;
     background-color: white;
     @sizeClose: 25px;
@@ -799,7 +867,7 @@ button.close {
     border-radius: @sizeClose;
 
     &:hover {
-      color: darken(@redColor, 10%);
+      color: darken(@orangeColor, 10%);
       background-color: darken(white, 10%);
       opacity: 1;
     }
@@ -942,7 +1010,7 @@ button.close {
 
         .name {
           text-transform: uppercase;
-          color: @redColor;
+          color: @orangeColor;
           margin-left: 20px;
           margin-bottom: 15px;
           display: inline-block;
@@ -962,13 +1030,29 @@ button.close {
 
 /***     PROGRAMME PAGE     ***/
 
-.fadelinks, .faderandom { position:relative; height:369px; }
+.fadelinks, .faderandom { position:relative; height:400px; }
 .fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
 
 .fadelinks img
 {
   display: block;
   height: auto;
-  max-width: 100%;
-  width: 100%;
+  min-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*** INSCRIPTION ***/
+
+#countdown {
+  padding-top: 80px;
+}
+
+.billets {
+
+  .titre_autre {
+    padding-top: 0px;
+  }
+
 }
