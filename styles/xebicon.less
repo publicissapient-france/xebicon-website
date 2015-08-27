@@ -354,12 +354,17 @@ header {
       }
     }
 
+    @media (max-width: 800px) {
+      padding-top: 200px;
+    }
+
     @media (max-width:540px){
       background-image:url(../images/header/bg_home_auditorium.png);
       background-size:100%;
       min-width:320px;
       background-position:top;
-      height: 300px;
+      height: 470px;
+      padding-top: 150px;
     }
 
     background-repeat: no-repeat;
@@ -438,8 +443,18 @@ header {
     background-color: @xebiaColor;
     height: 60px;
 
+    @media (max-width: 800px) {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
     @media (max-width: 700px) {
-      height: 120px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
     }
 
 
@@ -588,6 +603,7 @@ main {
 
       @media (max-width: 480px) {
         padding: 10px 20px;
+        font-size: 16px;
       }
 
       &:hover {
@@ -676,6 +692,10 @@ main {
         margin: 10px;
       }
 
+    }
+
+    @media (max-width: 480px) {
+      padding-top: 150px;
     }
   }
 }
@@ -1096,12 +1116,9 @@ button.close {
   position:relative; height:400px; overflow: hidden;
 
   @media (max-width: 810px) {
-    height: 160px !important;
+    height: 250px !important;
   }
 
-  @media (max-width: 700px) {
-    height: 80px !important;
-  }
 
   @media (max-width: 480px) {
     display: none;
@@ -1113,6 +1130,10 @@ button.close {
 
 .fadelinks > *, .faderandom > * {
   position:absolute; left:0; top:0; display:block;
+
+  @media (max-width: 1080px) {
+    top:100px;
+  }
 
 }
 
@@ -1149,16 +1170,10 @@ button.close {
 /*** INSCRIPTION ***/
 
 #countdown {
-  padding-top: 80px;
+  padding-top: 15px;
 }
 
-.billets {
 
-  .titre_autre {
-    padding-top: 0px;
-  }
-
-}
 
 
 
@@ -1268,3 +1283,14 @@ button.close {
 }
 
 
+
+
+  @media (max-width: 800px) {
+    .rex {
+      padding-top: 150px;
+    }
+
+    .program_tagline {
+      padding-top: 0px;
+    }
+  }
