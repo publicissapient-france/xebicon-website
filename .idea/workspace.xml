@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3ae7ddf-0f09-412d-b0cf-d812dcbba159" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expertcafe.html" afterPath="$PROJECT_DIR$/expertcafe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infos.html" afterPath="$PROJECT_DIR$/infos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inscription.html" afterPath="$PROJECT_DIR$/inscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programme.html" afterPath="$PROJECT_DIR$/programme.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.min.css" afterPath="$PROJECT_DIR$/styles/main.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/xebicon.less" afterPath="$PROJECT_DIR$/styles/xebicon.less" />
     </list>
     <ignored path="xebicon-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xebicon.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xebicon.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1794872">
-              <caret line="697" column="25" selection-start-line="697" selection-start-column="25" selection-end-line="697" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.41223404">
+              <caret line="1258" column="16" selection-start-line="1258" selection-start-column="16" selection-end-line="1258" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -101,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="programme.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="programme.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5186104">
+            <state vertical-scroll-proportion="-4.098039">
               <caret line="530" column="36" selection-start-line="530" selection-start-column="36" selection-end-line="530" selection-end-column="36" />
               <folding />
             </state>
@@ -140,12 +138,12 @@
         <option value="$PROJECT_DIR$/js/jquery-css-transform.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/Gruntfile.coffee" />
-        <option value="$PROJECT_DIR$/styles/xebicon.less" />
         <option value="$PROJECT_DIR$/infos.html" />
         <option value="$PROJECT_DIR$/inscription.html" />
         <option value="$PROJECT_DIR$/expertcafe.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/programme.html" />
+        <option value="$PROJECT_DIR$/styles/xebicon.less" />
       </list>
     </option>
   </component>
@@ -691,14 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1794872">
-          <caret line="697" column="25" selection-start-line="697" selection-start-column="25" selection-end-line="697" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inscription.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5294118">
@@ -739,8 +729,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/programme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5186104">
+        <state vertical-scroll-proportion="-4.098039">
           <caret line="530" column="36" selection-start-line="530" selection-start-column="36" selection-end-line="530" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41223404">
+          <caret line="1258" column="16" selection-start-line="1258" selection-start-column="16" selection-end-line="1258" selection-end-column="16" />
           <folding />
         </state>
       </provider>
