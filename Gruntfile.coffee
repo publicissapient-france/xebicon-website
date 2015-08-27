@@ -16,6 +16,7 @@ module.exports = (grunt) =>
 				files:
 					'scripts/main.min.js':'scripts/main.js'
 
+
 		watch:
 			less:
 				files: ['styles/*.less', 'styles/blocks/*.less', "*.html", "scripts/main.js"]

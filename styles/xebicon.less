@@ -1,3 +1,5 @@
+
+
 //fonts
 
 @font-face{
@@ -140,6 +142,10 @@ header {
     min-height: 59px;
     color: #2e2e2e;
     background-color: white !important;
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+    border-bottom: 1px solid silver;
 
     @media (max-width: 1080px) {
       text-align: center;
@@ -149,6 +155,10 @@ header {
       
       padding-top:21px;
 
+      @media (max-width: 1080px) {
+        padding-bottom: 20px;
+      }
+
       ul{
 
           a
@@ -157,8 +167,9 @@ header {
             text-decoration:none;
             font-family: proxima;
             text-transform: uppercase;
-            padding: 20px 20px;
+            padding: 15px 20px;
             transition: 0.3s all;
+            font-size: 14px;
 
             &:last-of-type {
               background-color: @orangeColor;
@@ -166,24 +177,40 @@ header {
 
               @media (max-width: 1080px)
               {
+                color: white !important;
+
+                &:hover {
+                  color:white !important;
+                }
+              }
+
+              @media (max-width: 800px)
+              {
+                background-color: transparent;
                 color: #2e2e2e !important;
+
+                &:hover {
+                  color: #2e2e2e !important;
+                  background-color: transparent !important;
+                }
               }
             }
 
               @media (max-width: 1080px) {
                 margin: 20px;
-                padding: 0px;
+                padding: 10px;
+
+                &:hover{
+                  color:white;
+                }
               }
 
             li {
               display: inline-block;
 
-              @media (max-width: 1080px)
-              {
+              @media (max-width: 800px) {
                 display: block;
               }
-
-
             }
 
 
@@ -198,9 +225,9 @@ header {
               color: white;
               background-color: @orangeColor;
 
-              @media (max-width: 1080px) {
-                background-color: none;
-                color: black;
+              @media (max-width: 800px) {
+                background-color: transparent !important;
+                color: #2e2e2e !important;
               }
             }
           }
@@ -210,9 +237,10 @@ header {
 
     .logo-xebia {
       margin-left: 45px;
-      margin-top: 12px;
+      margin-top: 17px;
       float: left;
       margin-right: 40px;
+      width: 160px;
 
       @media (max-width: 1080px)
       {
@@ -312,7 +340,8 @@ header {
       color: white;
       font-size: 80px;
       margin: auto;
-      padding-top: 80px;
+      padding-top: 150px;
+      line-height: 53px;
 
       .light {
         font-family: proxima;
@@ -330,6 +359,7 @@ header {
       background-size:100%;
       min-width:320px;
       background-position:top;
+      height: 300px;
     }
 
     background-repeat: no-repeat;
@@ -394,6 +424,14 @@ header {
       }
     }
 
+  }
+
+  .xebia_orga {
+    text-align: center;
+    padding-bottom: 45px;
+
+    img { position:relative;
+    top: 15px;}
   }
 
   .tagline_page {
@@ -531,9 +569,8 @@ main {
 
     .video {
 
-      height: 600px;
+      height: auto;
       width: 100%;
-      background-color: white;
       margin: auto;
       margin-bottom: 80px;
     }
@@ -547,6 +584,7 @@ main {
       font-family: proxima-bold;
       margin-bottom: 50px;
       transition: 0.3s all;
+      font-size: 24px;
 
       @media (max-width: 480px) {
         padding: 10px 20px;
@@ -612,13 +650,19 @@ main {
     }
 
     .square {
-      margin: 10px;
-      width: 230px;
-      height: 230px;
-      display: inline-block;
-      position: relative;
-      transition: 0.3s all;
-      float: left;
+      .titre_slot {
+        color: @orangeColor;
+        font-family: proxima-bold;
+      }
+
+      .mots_clefs {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        color: #06a99c;
+        font-style: italic;
+      }
+
 
       @media (max-width: 1000px )
       {
@@ -630,29 +674,6 @@ main {
 
       p {
         margin: 10px;
-      }
-
-      .step_2 {
-        position: absolute;
-        background-color: @xebiaColor;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        visibility: hidden;
-        color: #fff;
-
-        p {
-          width: 90%;
-        }
-
-        a {
-          color: white;
-          font-family: proxima-bold;
-          text-decoration: none;
-          text-align: center;
-          margin: 10px;
-        }
       }
 
     }
@@ -1074,14 +1095,26 @@ button.close {
 .fadelinks, .faderandom {
   position:relative; height:400px; overflow: hidden;
 
-  @media (max-width: 700px) {
-    height: 200px;
+  @media (max-width: 810px) {
+    height: 160px !important;
   }
+
+  @media (max-width: 700px) {
+    height: 80px !important;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
 }
 
 
 
-.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+.fadelinks > *, .faderandom > * {
+  position:absolute; left:0; top:0; display:block;
+
+}
 
 .fadelinks img
 {
@@ -1126,3 +1159,112 @@ button.close {
   }
 
 }
+
+
+
+
+/*** PROGRAMME ***/
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+  display: inline-block;
+  color: #2e2e2e;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 230px;
+  height: 230px;
+
+  @media (max-width: 465px) {
+    width: 100%;
+  }
+}
+
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background-color: #efefef;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background-color: orange;
+  color: white;
+
+  .voirplus_prog {
+    color: white;
+    font-family: proxima-bold;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+}
+
+.program .inner-wrapper{
+  max-width: 935px;
+
+  @media (max-width: 932px){
+    max-width: 725px;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 475px;
+  }
+
+
+}
+
+.inscription_btn {
+
+  text-align: center;
+  padding: 10px 50px;
+  background-color: @xebiaColor;
+  text-decoration: none;
+  color: white;
+  font-family: proxima-bold;
+  margin-bottom: 50px;
+  transition: 0.3s all;
+  font-size: 24px;
+
+  @media (max-width: 480px) {
+    padding: 10px 20px;
+  }
+
+  &:hover {
+    background-color: @orangeColor;
+  }
+
+}
+
+.btn{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+

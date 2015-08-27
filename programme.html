@@ -24,6 +24,7 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery-css-transform.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
@@ -100,30 +101,33 @@
     <section class="program">
         <div class="inner-wrapper">
 
-            <div class="line">
-                <div class="inner-wrapper">
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Témoignage Ingenico : Création d’une architecture réactive</p>
-                            <br/>
-                            <p>#Back #IoT</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#ingenico">
-                            <p>A définir</p>
-                            <br/>
-                            <p>X. Bucchiotty</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
 
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Amener une équipe vers le Continuous Delivery</p>
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Ingenico : Création d’une architecture réactive</p>
+                        <br/>
+                        <p class="mots_clefs">#Back #IoT</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#ingenico">
+                        <p>A définir</p>
+                        <br/>
+                        <p>P. Lopez</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                    <div class="flipper square alternative_square step_1">
+                        <div class="front">
+                            <p class="titre_slot">Amener une équipe vers le Continuous Delivery</p>
                             <br/>
-                            <p>#Agile #Craft #DevOps</p>
+                            <p class="mots_clefs">#Agile #Craft #DevOps</p>
                         </div>
-                        <div class="step_2" data-toggle="modal" data-target="#continuous-delivery">
+                        <div class="back step_2" data-toggle="modal" data-target="#continuous-delivery">
                             <p>L’IT cherche depuis plusieurs dizaine d’années le graal : l’industrialisation de ces process. Intéresserons-nous à l’approche «Continous Delivery».</p>
                             <br/>
                             <p>C. Rochas</p>
@@ -131,427 +135,466 @@
                             <a href="#" class="voirplus_prog">Voir plus</a>
                         </div>
                     </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Be Data Driven : Monter son Data Lab</p>
-                            <br/>
-                            <p>#Data</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#data-driven">
-                            <p>Comment réellement tirer parti de toutes vos données et en tirer un véritable avantage concurrentiel ? En montant un Data Lab.</p>
-                            <br/>
-                            <p>J. Buret</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Apache Mesos, ou comment exploiter les ressources de votre Data Center</p>
-                            <br/>
-                            <p>#Back</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#apache-mesos">
-                            <p>Venez découvrir comment Mesos, Marathon et Docker vous permettes d’exploiter au mieux les ressources de votre Datacenter.</p>
-                            <br/>
-                            <p>J-P. Thiery</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
-            <div class="line">
-                <div class="inner-wrapper">
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Témoignage Louis Vuitton : Construire son réseau social d’entreprise en un mois</p>
-                            <br/>
-                            <p>#Mobilité</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#louis-vuitton">
-                            <p>A définir ...</p>
-                            <br/>
-                            <p>T. Cavin</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Be Data Driven : Monter son Data Lab</p>
+                        <br/>
+                        <p class="mots_clefs">#Data</p>
                     </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Swift dans la vraie vie</p>
-                            <br/>
-                            <p>#Mobilité</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#swift">
-                            <p>Assisterez à un retour d’expérience concernant le dernier langage d’Apple  dans deux projets mobiles utilisés en production.</p>
-                            <br/>
-                            <p>S. Civetta et F. Mirault</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Les algorithmes du Machine Learning</p>
-                            <br/>
-                            <p>#Data</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#machine-learning">
-                            <p>Découvrez ce qui se cache derrière ces mots, quels algorithmes existent, comment ils fonctionnent et comment les utiliser.</p>
-                            <br/>
-                            <p>Y. Benoit, A. Phelip et T. Ounnas</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Dessin moi un nuage</p>
-                            <br/>
-                            <p>#Cloud</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#nuage">
-                            <p>Quels avantages tirer du Cloud ? Que vous en soyez un client, un bâtisseur u un aspirant, partagez votre vision de ce mouvement qui débute à peine.</p>
-                            <br/>
-                            <p>A. Maury et S. Le Mesle</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="line">
-                <div class="inner-wrapper">
-
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Témoignage Docapost : IoT, une réalité</p>
-                            <br/>
-                            <p>#Data #IoT</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#docapost">
-                            <p>Comment a été construit la plateforme objets connectés du groupe La Poste.</p>
-                            <br/>
-                            <p>M. Nantern</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Kafka par la face Nord</p>
-                            <br/>
-                            <p>#Back</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#kafka">
-                            <p>Kafka est devenu en quelques temps un outil central dans les architectures d’analyses de données. Venez comprendre par la pratique !</p>
-                            <br/>
-                            <p>X. Bucchiotty et M. Blanc</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Témoignage Cellenza : Développez et déployez vos applications multiplateformes dans le Cloud</p>
-                            <br/>
-                            <p>#Mobilité</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#cellenza">
-                            <p> Quels obstacles sont à prévoir ?</p>
-                            <br/>
-                            <p></p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Témoignage Voyages-sncf.com : Le Big Data et sa connaissance client</p>
-                            <br/>
-                            <p>#Data</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#vsct">
-                            <p>A définir</p>
-                            <br/>
-                            <p></p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="line">
-                <div class="inner-wrapper">
-
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Évaluer votre maturité produit</p>
-                            <br/>
-                            <p>#Agile</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#maturite-produit">
-                            <p>Découvrez les clés pour évaluer votre maturité produit et savoir si votre entreprise a réellement les armes pour faire les bons produit ?</p>
-                            <br/>
-                            <p>A. Irrmann-Tézé</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square  step_1">
-                        <div class="">
-                            <p>Le Nouvel Ops</p>
-                            <br/>
-                            <p>#DevOps</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#nouvel-ops">
-                            <p>L’Ops d’hier maître absolu des clés dès la production n’est plus ! Plus encore qu’un agiliste ou qu’un craftman, le nouvel Ops est le soutien dont vous avez besoin.</p>
-                            <br/>
-                            <p>S. Le Mesle</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Du JavaScript au métal, le web «natif»</p>
-                            <br/>
-                            <p>#Front</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#javascript-metal">
-                            <p>Asmjs, SIMD, GPGPU, autant de technologies/techniques qui nous font miroiter la promesse de performances natives pour les applications web.</p>
-                            <br/>
-                            <p>P. Tandia</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>À la découverte des mécanismes internes de Cassandra</p>
-                            <br/>
-                            <p>#Data</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#cassandra">
-                            <p>Construire une base de données distribuée, scalable et hautement disponible est une opération complexe. Focus sur Cassandra. </p>
-                            <br/>
-                            <p>M. Nantern</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#data-driven">
+                        <p>Comment réellement tirer parti de toutes vos données et en tirer un véritable avantage concurrentiel ? En montant un Data Lab.</p>
+                        <br/>
+                        <p>J. Buret</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
                     </div>
                 </div>
             </div>
 
 
-            <div class="line">
-                <div class="inner-wrapper">
-
-
-                    <div class="square  step_1">
-                        <div class="">
-                            <p>CQRS + Eventsourcing : en direct !</p>
-                            <br/>
-                            <p>#Craft</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#cqrs">
-                            <p>A définir</p>
-                            <br/>
-                            <p>P-J. Vardanega et S. Le Merdys</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Apache Mesos, ou comment exploiter les ressources de votre Data Center</p>
+                        <br/>
+                        <p class="mots_clefs">#Back</p>
                     </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Entreprise liberée / lean</p>
-                            <br/>
-                            <p>#Management #Entreprise</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#entreprise-libere">
-                            <p></p>
-                            <br/>
-                            <p>L. Legardeur</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Témoignage XebiaLabs : XL Release</p>
-                            <br/>
-                            <p>#DevOps</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#xebialabs">
-                            <p>Partez à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service.</p>
-                            <br/>
-                            <p>B. Moussaud</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Témoignage UX Républic : L’entreprise centrée utilisateur</p>
-                            <br/>
-                            <p>#UX</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#ux">
-                            <p>A définir.</p>
-                            <br/>
-                            <p></p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#apache-mesos">
+                        <p>Venez découvrir comment Mesos, Marathon et Docker vous permettes d’exploiter au mieux les ressources de votre Datacenter.</p>
+                        <br/>
+                        <p>J-P. Thiery</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
                     </div>
                 </div>
             </div>
 
-            <div class="line">
-                <div class="inner-wrapper">
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Scaling Culture</p>
-                            <br/>
-                            <p>#Agile</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#scaling-culture">
-                            <p>L’agilité c’est l’auto-organisation, pas les process ! Et si plutôt que Scaling Agile, le mantra était : Scaling Culture ?</p>
-                            <br/>
-                            <p>N. Lochet</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
 
-                    <div class="square  step_1">
-                        <div class="">
-                            <p>Double Loop TDD</p>
-                            <br/>
-                            <p>#Craft</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#double-loop">
-                            <p>À partir d’une application existante, développez de nouvelles fonctionnalités en mode test-first. On y parlera BDD et TDD.</p>
-                            <br/>
-                            <p>D. Lemos et P-J. Vardanega</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
-                    </div>
 
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>Brace yourselves, Angular 2 is coming!</p>
-                            <br/>
-                            <p>#Agile</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#angular">
-                            <p>Petit tour d’horizon de cette jeune -et non moins prometteuse- mouture du framework JS Angular 2 !</p>
-                            <br/>
-                            <p>A. Hebert, D. Podyachiy et D. Lukic</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Louis Vuitton : Construire son réseau social d’entreprise en un mois</p>
+                        <br/>
+                        <p class="mots_clefs">#Mobilité</p>
                     </div>
-
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Témoignage Akamis</p>
-                            <br/>
-                            <p>#Marketing</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#akamis">
-                            <p>A définir.</p>
-                            <br/>
-                            <p>.</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#louis-vuitton">
+                        <p>A définir ...</p>
+                        <br/>
+                        <p>T. Cavin</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
                     </div>
-
                 </div>
             </div>
 
 
-            <div class="line">
-                <div class="inner-wrapper">
-                    <div class="square step_1">
-                        <div class="">
-                            <p>Les challenges des Microservices</p>
-                            <br/>
-                            <p>#Back</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#microservices">
-                            <p>L’approche microservice devient de plus en plus présente dans nos conceptions d’architectures.</p>
-                            <br/>
-                            <p>N. Jozwiak</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Swift dans la vraie vie</p>
+                        <br/>
+                        <p class="mots_clefs">#Mobilité</p>
                     </div>
-
-                    <div class="square alternative_square step_1">
-                        <div class="">
-                            <p>La stack réseau Android : Moderne, pratique et réutilisable sur des projets Java</p>
-                            <br/>
-                            <p>#Mobilité</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#stack-android">
-                            <p>En Android, inévitablement, nous avons dû devenir des experts dans la consommation d'API REST.</p>
-                            <br/>
-                            <p>J. Martinez</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#swift">
+                        <p>Assisterez à un retour d’expérience concernant le dernier langage d’Apple  dans deux projets mobiles utilisés en production.</p>
+                        <br/>
+                        <p>S. Civetta et F. Mirault</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
                     </div>
+                </div>
+            </div>
 
-                    <div class="square step_1">
-                        <div class="">
-                            <p>The Go Runtime Scheduler</p>
-                            <br/>
-                            <p>#Back</p>
-                        </div>
-                        <div class="step_2" data-toggle="modal" data-target="#runtime">
-                            <p></p>
-                            <br/>
-                            <p>W. Montaz</p>
-                            <br/>
-                            <a href="#" class="voirplus_prog">Voir plus</a>
-                        </div>
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Les algorithmes du Machine Learning</p>
+                        <br/>
+                        <p class="mots_clefs">#Data</p>
                     </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#machine-learning">
+                        <p >Découvrez ce qui se cache derrière ces mots, quels algorithmes existent, comment ils fonctionnent et comment les utiliser.</p>
+                        <br/>
+                        <p>Y. Benoit, A. Phelip et T. Ounnas</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
 
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Dessin moi un nuage</p>
+                        <br/>
+                        <p class="mots_clefs">#Cloud</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#nuage">
+                        <p>Quels avantages tirer du Cloud ? Que vous en soyez un client, un bâtisseur u un aspirant, partagez votre vision de ce mouvement qui débute à peine.</p>
+                        <br/>
+                        <p>A. Maury et S. Le Mesle</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
                 </div>
             </div>
 
 
 
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Docapost : IoT, une réalité</p>
+                        <br/>
+                        <p class="mots_clefs">#Data #IoT</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#docapost">
+                        <p>Comment a été construit la plateforme objets connectés du groupe La Poste.</p>
+                        <br/>
+                        <p>M. Nantern</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Kafka par la face Nord</p>
+                        <br/>
+                        <p class="mots_clefs">#Back</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#kafka">
+                        <p>Kafka est devenu en quelques temps un outil central dans les architectures d’analyses de données. Venez comprendre par la pratique !</p>
+                        <br/>
+                        <p>X. Bucchiotty et M. Blanc</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Cellenza : Développez et déployez vos applications multiplateformes dans le Cloud</p>
+                        <br/>
+                        <p class="mots_clefs">#Mobilité</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#cellenza">
+                        <p> Quels obstacles sont à prévoir ?</p>
+                        <br/>
+                        <p>M. Perfetti</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Voyages-sncf.com : Le Big Data et sa connaissance client</p>
+                        <br/>
+                        <p class="mots_clefs">#Data</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#vsct">
+                        <p>A définir</p>
+                        <br/>
+                        <p></p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Évaluer votre maturité produit</p>
+                        <br/>
+                        <p class="mots_clefs">#Agile</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#maturite-produit">
+                        <p>Découvrez les clés pour évaluer votre maturité produit et savoir si votre entreprise a réellement les armes pour faire les bons produit ?</p>
+                        <br/>
+                        <p>A. Irrmann-Tézé</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square  step_1">
+                    <div class="front">
+                        <p class="titre_slot">Le Nouvel Ops</p>
+                        <br/>
+                        <p class="mots_clefs">#DevOps</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#nouvel-ops">
+                        <p>L’Ops d’hier maître absolu des clés dès la production n’est plus ! Plus encore qu’un agiliste ou qu’un craftman, le nouvel Ops est le soutien dont vous avez besoin.</p>
+                        <br/>
+                        <p>S. Le Mesle</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Du JavaScript au métal, le web «natif»</p>
+                        <br/>
+                        <p class="mots_clefs">#Front</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#javascript-metal">
+                        <p>Asmjs, SIMD, GPGPU, autant de technologies/techniques qui nous font miroiter la promesse de performances natives pour les applications web.</p>
+                        <br/>
+                        <p>P. Tandia</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">À la découverte des mécanismes internes de Cassandra</p>
+                        <br/>
+                        <p class="mots_clefs">#Data</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#cassandra">
+                        <p>Construire une base de données distribuée, scalable et hautement disponible est une opération complexe. Focus sur Cassandra. </p>
+                        <br/>
+                        <p>M. Nantern</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square  step_1">
+                    <div class="front">
+                        <p class="titre_slot">CQRS + Eventsourcing : en direct !</p>
+                        <br/>
+                        <p class="mots_clefs">#Craft</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#cqrs">
+                        <p>A définir</p>
+                        <br/>
+                        <p>P-J. Vardanega et S. Le Merdys</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Entreprise liberée / lean</p>
+                        <br/>
+                        <p class="mots_clefs">#Management #Entreprise</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#entreprise-libere">
+                        <p></p>
+                        <br/>
+                        <p>L. Legardeur</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage XebiaLabs : XL Release</p>
+                        <br/>
+                        <p class="mots_clefs">#DevOps</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#xebialabs">
+                        <p>Partez à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service.</p>
+                        <br/>
+                        <p>B. Moussaud</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage UX Républic : L’entreprise centrée utilisateur</p>
+                        <br/>
+                        <p class="mots_clefs">#UX</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#ux">
+                        <p>A définir.</p>
+                        <br/>
+                        <p></p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Scaling Culture</p>
+                        <br/>
+                        <p class="mots_clefs">#Agile</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#scaling-culture">
+                        <p>L’agilité c’est l’auto-organisation, pas les process ! Et si plutôt que Scaling Agile, le mantra était : Scaling Culture ?</p>
+                        <br/>
+                        <p>N. Lochet</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square  step_1">
+                    <div class="front">
+                        <p class="titre_slot">Double Loop TDD</p>
+                        <br/>
+                        <p class="mots_clefs">#Craft</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#double-loop">
+                        <p>À partir d’une application existante, développez de nouvelles fonctionnalités en mode test-first. On y parlera BDD et TDD.</p>
+                        <br/>
+                        <p>D. Lemos et P-J. Vardanega</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Brace yourselves, Angular 2 is coming!</p>
+                        <br/>
+                        <p class="mots_clefs">#Agile</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#angular">
+                        <p>Petit tour d’horizon de cette jeune -et non moins prometteuse- mouture du framework JS Angular 2 !</p>
+                        <br/>
+                        <p>A. Hebert, D. Podyachiy et D. Lukic</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Témoignage Akamis : Le nouveau visage du marketing dans une société remodelée par le digital</p>
+                        <br/>
+                        <p class="mots_clefs">#GrowthMarketing #Digital</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#akamis">
+                        <p>Le monde du Digital change et le marketing avec. Les utilisateurs, leurs attentes et leurs usages évoluent et on ne peut plus les intéresser avec les mêmes méthodes.</p>
+                        <br/>
+                        <p>Stephane Coussement</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square step_1">
+                    <div class="front">
+                        <p class="titre_slot">Les challenges des Microservices</p>
+                        <br/>
+                        <p class="mots_clefs">#Back</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#microservices">
+                        <p>L’approche microservice devient de plus en plus présente dans nos conceptions d’architectures.</p>
+                        <br/>
+                        <p>N. Jozwiak</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-container">
+                <div class="flipper square alternative_square step_1">
+                    <div class="front">
+                        <p class="titre_slot">La stack réseau Android : Moderne, pratique et réutilisable sur des projets Java</p>
+                        <br/>
+                        <p class="mots_clefs">#Mobilité</p>
+                    </div>
+                    <div class="back step_2" data-toggle="modal" data-target="#stack-android">
+                        <p>En Android, inévitablement, nous avons dû devenir des experts dans la consommation d'API REST.</p>
+                        <br/>
+                        <p>J. Martinez</p>
+                        <br/>
+                        <a href="#" class="voirplus_prog">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="flip-container">
+                 <div class="flipper square step_1">
+                     <div class="front">
+                         <p class="titre_slot">The Go Runtime Scheduler</p>
+                         <br/>
+                         <p class="mots_clefs">#Back</p>
+                     </div>
+                     <div class="back step_2" data-toggle="modal" data-target="#runtime">
+                         <p></p>
+                         <br/>
+                         <p>W. Montaz</p>
+                         <br/>
+                         <a href="#" class="voirplus_prog">Voir plus</a>
+                     </div>
+                 </div>
+             </div>
 
 
 
 
 
+        </div>
+    </section>
 
+    <section class="">
+        <div class="inner-wrapper btn">
+
+            <a class="inscription_btn" href="inscription.html">S'INSCRIRE DÈS MAINTENANT</a>
         </div>
     </section>
 
@@ -563,6 +606,13 @@
 
             <a href="#">iOS</a>
             <a href="#">Android</a>
+        </div>
+    </section>
+
+
+    <section class="xebia_orga">
+        <div class="inner-wrapper">
+            <p>Cet événemment est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
         </div>
     </section>
 </main>
@@ -597,13 +647,10 @@
                 <h4 class="modal-title">Témoignage Ingenico : Création d’une architecture réactive</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Secrets de conception d’une application innovante au service des voyageurs.
+                <p class="slot"><strong>
                 </strong></p>
 
                 <p class="slot">
-
-Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les solutions pour unifier des sources d’informations ? Comment donner à une équipe l’autonomie pour construire un produit, du besoin à sa mise en production ? Comment construire une architecture applicative qui répond à des exigences de scalabilité et de disponibilité ? <br/>
-<br/>Nous proposerons de découvrir un retour d'expérience de mise en oeuvre sur Amazon Web Services d'une architecture à base de microservices reposant sur la JVM, Node.js et bien d'autres technologies telles qu'InfluxDB, Redis, MongoDB, RabbitMQ ou bien encore Elasticsearch. Mais également comment nous avons résolu des problématiques telles que le rolling update, la gestion de version et de rétro-compatibilité des API ou bien encore la redescende d'informations à l'initiative des serveurs grâce aux WebSockets.
                 </p>
 
                 <div class="speakers">
@@ -611,26 +658,14 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Alexandre Godet" src="images/speaker/alexandre_godet.jpeg"/>
+                            <img alt="" src="images/speaker/pablo.JPG"/>
                         </div>
 
                         <div class="info">
-                            <span class="name"></span>
+                            <span class="name">Pablo Lopez</span>
 
                             <p class="desc">
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="speaker">
-                        <div class="img-wrapper right">
-                            <img alt="Alexis Kinsella" src="images/speaker/alexis_kinsella.JPG"/>
-                        </div>
-
-                        <div class="info">
-                            <span class="name"></span>
-
-                            <p class="desc">
+                                Directeur technique de Xebia, il à 11 ans d’expérience au cours desquels il s'est suis forgé une solide expérience d’architecte logiciel. Il dispose d’une très large compétence sur l’ensemble de l’écosystème JEE, et notamment les solutions du monde open-source. Opérationnel par goût, il intervient sur une large variété de missions, de l'analyse de performances en production au conseil en architecture logicielle.
                             </p>
                         </div>
                     </div>
@@ -679,6 +714,7 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
                             <span class="name">Alexandre Hebert</span>
 
                             <p class="desc">
+                                Développeur Full Stack depuis 3 ans, Alexandre a une connaissance approfondie de nombreux langages et frameworks. Curieux de comprendre le "comment ça fonctionne" plutôt que de simplement "utiliser", c'est avec cet état d'esprit qu'il évolue depuis près d'un an au sein de Xebia.
                             </p>
                         </div>
                     </div>
@@ -692,6 +728,7 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
                             <span class="name">Dmytro Podyachiy</span>
 
                             <p class="desc">
+                                Développeur full stack passionné par le monde open source, Dmytro travaille depuis plusieurs années dans l’ecosystème Java sur des missions innovantes. Évangéliste du framework Angular, il l’utilise depuis presque 3 ans. Interessé par les langages differents, il utilise notamment Scala et Javascript coté serveur.
                             </p>
                         </div>
                     </div>
@@ -821,6 +858,9 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
                             <span class="name">Nicolas Lochet</span>
 
                             <p class="desc">
+                                Nicolas Lochet est expert en coaching d'équipes et organisation vers l'Agilité depuis des niveaux de direction de projet jusqu'aux niveaux exécutifs.
+                                Speaker en conférence, écrivain, blogueur, formateur et facilitateur graphique pour partager/enseigner l'être Agile.
+
                             </p>
                         </div>
                     </div>
@@ -920,6 +960,7 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
                             <span class="name">Benoit Moussaud</span>
 
                             <p class="desc">
+                                Avec 15 ans d’expérience dans les technologies Java EE, du développement à l’architecture d’applications d’entreprise complexes, un de mes sujets de prédilection a toujours été l’automatisation : tout d’abord côté développement dans le cadre de ma participation au projet Ant et sur le sujet de l’intégration continue, puis plus récemment dans le monde Devops avec l’automatisation des déploiements applicatifs en tant que Directeur Technique chez XebiaLabs. Pour moi, les outils ne sont pas une fin en soi : culture de l’agilité et Scrum, partage et collaboration, automatisation et mesure permanente sont les clés d’une transition réussie vers DevOps et le Continuous Delivery chez nos clients.
                             </p>
                         </div>
                     </div>
@@ -1342,14 +1383,14 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Alexandre Irrmann-Tézé" src="images/speaker/alexandre_irrmann_teze.jpg"/>
+                            <img alt="Michel Perfetti" src="images/speaker/michel_perfetti.jpg"/>
                         </div>
 
                         <div class="info">
-                            <span class="name">Alexandre Irrmann-Tézé</span>
+                            <span class="name">Michel Perfetti</span>
 
                             <p class="desc">
-                                Alexandre est diplômé de Télécom Paristech et est titulaire du mastère Digital Business d’HEC. Avant de créer Thiga, Alexandre a travaillé dans les équipes Télécom & Media de deux cabinets de conseil. Spécialisé en marketing stratégique et organisation, il a notamment réalisé des études d’opportunité de lancement d’offres (Cloud Computing, 4G…) et a cadré un programme visant à diffuser le design thinking au sein d’un opérateur télécom. Alexandre a également travaillé dans une start-up où il a lancé un service numérique à destination des e-commerçants. Au sein de Thiga, Alexandre intervient en tant que coach Produit et expert marketing stratégique.
+                                Michel Perfetti travaille depuis 2006 sur les problématiques d'industrialisation sur la plateforme Microsoft. Il est MVP depuis 2006, MVP Visual Studio ALM depuis 2010 et ALM Rangers. Michel est également Manager du pôle ALM chez Cellenza. Il intervient en tant que consultant sur des problématiques d'architecture ou développement ainsi que des problématiques liées aux méthodologies de travail et à l'Agilité.
                             </p>
                         </div>
                     </div>
@@ -1518,7 +1559,7 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
                             <span class="name">Jérémie Martinez</span>
 
                             <p class="desc">
-
+                                Spécialisé dans l'élaboration d'applications mobiles Android et leur intégration dans les systèmes d'information.
                             </p>
                         </div>
                     </div>
@@ -2074,14 +2115,14 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Témoignage Akamis</h4>
+                <h4 class="modal-title">Témoignage Akamis : Le nouveau visage du marketing dans une société remodelée par le digital.</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>
+                <p class="slot"><strong>Les techniques d’acquisition traditionnelles sont en pertes de performance. Malgré ce bilan, le plus grand nombre reste accroché aux techniques monocanales tels que SEO, achats de mots clefs, achat d’audience non qualifiée ou qui pensent encore qu’une refonte ergonomique va tout résoudre.
                 </strong></p>
 
                 <p class="slot">
-
+                    Le monde du Digital change et le marketing avec. Les utilisateurs, leurs attentes et leurs usages évoluent et on ne peut plus les intéresser avec les mêmes méthodes… le sel sur la queue des pigeons… c’était avant !
                 </p>
 
                 <div class="speakers">
@@ -2125,7 +2166,7 @@ Découvrez les dessous de la nouvelle application mobile SNCF. Quelles sont les 
 </script>
 
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="js/script.js"></script>
 
