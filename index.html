@@ -22,6 +22,7 @@
 
     <link href="styles/main.min.css" rel="stylesheet"/>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.slide-text-left.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -43,6 +44,15 @@
         })();
     </script>
 
+    <script type="text/javascript">
+        $(function() {
+            $(".slideText").slideTextLeft(
+                    { words: ["Big Data", "Objets et services connectés", "Agilité", "Mobilité", "User expérience", "Digital", "Web", "DevOps", "Cloud", "Management 3.0", "Architectures", ], delay: 2000 }
+
+            );
+        });
+    </script>
+
 
 
 
@@ -56,8 +66,8 @@
         <nav>
           <ul>
             <a href="index.html"><li>La Conférence</li></a>
-            <a href="programme.html"><li>Programme</li></a>
-            <a href="expertcafe.html"><li>Expert Café</li></a>
+            <a href="programme.html"><li>Le Programme</li></a>
+            <a href="expertcafe.html"><li>L'Experts Café</li></a>
             <a href="infos.html"><li>Infos pratiques</li></a>
             <a href="inscription.html" class="inscription"><li>Inscription</li></a>
           </ul>
@@ -81,12 +91,22 @@
         <h2>La conférence sur les <span class="bold">technologies de demain</span> à Paris</h2>
     </section>
 
+    <section class="tagline_page buzzword">
+
+        <h2 class="title">
+            <p>Des thématiques pour tous les goûts : <span class="slideText bold"></span></p>
+
+
+        </h2>
+    </section>
+
     <!--<div class="more-button">
         <div class="triangle">&nbsp;</div>
         <a href="#journee"><img alt="button more" src="images/Img-devops-btn-red.png" /></a>
     </div>-->
 </header>
 <main>
+
     <section class="presentation_luc" id="journee">
         <div class="inner-wrapper">
             <p class="first-paragraph">Afin de garder son entreprise compétitive, il est essentiel de faire évoluer les technologies de son SI et d’éviter d’entrer dans une spirale négative d’obsolescence de ses composants.
@@ -108,7 +128,7 @@
         </ul>
 
         <ul>
-            <li class="counter-bis">9</li>
+            <li class="counter-bis">10</li>
             <li>témoignages</li>
         </ul>
 
@@ -122,7 +142,7 @@
 
     <section class="teaser">
         <div class="inner-wrapper">
-            <h2>Un avant goût pour cette première edition de la XebiCon France</h2>
+            <h2>Un avant goût de la XebiCon'15 France</h2>
 
             <div class="video">
                 <video width="100%" height="auto" controls>
@@ -133,7 +153,7 @@
             </div>
 
 
-            <a href="programme.html">DECOUVREZ LE PROGRAMME</a> <br/><br/><br/><br/>
+            <a href="programme.html">DÉCOUVREZ LE PROGRAMME</a> <br/><br/><br/><br/>
             <a href="inscription.html">S'INSCRIRE DÈS MAINTENANT</a>
         </div>
     </section>
@@ -150,7 +170,7 @@
 
     <section class="xebia_orga">
         <div class="inner-wrapper">
-            <p>Cet événemment est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
+            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
         </div>
     </section>
 </main>
@@ -169,7 +189,8 @@
                 <li>156 Boulevard Haussmann</li>
                 <li>75008 Paris</li>
                 <br/><br/>
-                <li>Contact : <a href="mailto=marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Mail : <a href="mailto=marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Tél : <a href="tel:+33153899999">01.53.89.99.99</a></li>
             </ul>
         </div>
     </section>
@@ -178,14 +199,13 @@
 </footer>
 
 <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1657252-22', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-1657252-26', 'auto');
+    ga('send', 'pageview');
 
 </script>
 
