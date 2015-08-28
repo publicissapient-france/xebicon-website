@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3ae7ddf-0f09-412d-b0cf-d812dcbba159" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_eurosites.png" afterPath="$PROJECT_DIR$/images/header/bg_eurosites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_expert_cafe.png" afterPath="$PROJECT_DIR$/images/header/bg_expert_cafe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_home_auditorium.png" afterPath="$PROJECT_DIR$/images/header/bg_home_auditorium.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_infos_eurosites.png" afterPath="$PROJECT_DIR$/images/header/bg_infos_eurosites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_axa.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_axa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_docapost.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_docapost.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_finexcap.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_finexcap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_ingenico.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_ingenico.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_lv.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_lv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_orange.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_sg.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_sg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_vsct.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_vsct.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/home_header.png" afterPath="$PROJECT_DIR$/images/header/home_header.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expertcafe.html" afterPath="$PROJECT_DIR$/expertcafe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infos.html" afterPath="$PROJECT_DIR$/infos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inscription.html" afterPath="$PROJECT_DIR$/inscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.min.css" afterPath="$PROJECT_DIR$/styles/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programme.html" afterPath="$PROJECT_DIR$/programme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/xebicon.less" afterPath="$PROJECT_DIR$/styles/xebicon.less" />
     </list>
     <ignored path="xebicon-website.iws" />
@@ -63,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xebicon.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xebicon.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-217.32051">
-              <caret line="1318" column="44" selection-start-line="1318" selection-start-column="44" selection-end-line="1318" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.49202126">
+              <caret line="305" column="23" selection-start-line="305" selection-start-column="23" selection-end-line="305" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3488372">
+            <state vertical-scroll-proportion="-2.4117646">
               <caret line="96" column="80" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
               <folding />
             </state>
@@ -172,8 +152,8 @@
         <option value="$PROJECT_DIR$/programme.html" />
         <option value="$PROJECT_DIR$/inscription.html" />
         <option value="$PROJECT_DIR$/expertcafe.html" />
-        <option value="$PROJECT_DIR$/styles/xebicon.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/xebicon.less" />
       </list>
     </option>
   </component>
@@ -760,18 +740,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-217.32051">
-          <caret line="1318" column="44" selection-start-line="1318" selection-start-column="44" selection-end-line="1318" selection-end-column="44" />
+        <state vertical-scroll-proportion="-2.4117646">
+          <caret line="96" column="80" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/styles/xebicon.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3488372">
-          <caret line="96" column="80" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.49202126">
+          <caret line="305" column="23" selection-start-line="305" selection-start-column="23" selection-end-line="305" selection-end-column="23" />
           <folding />
         </state>
       </provider>
