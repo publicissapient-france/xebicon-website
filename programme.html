@@ -25,6 +25,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery-css-transform.js"></script>
+    <script src="js/jquery.slide-text-left.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
@@ -54,6 +55,15 @@
         });
     </script>
 
+    <script type="text/javascript">
+        $(function() {
+            $(".slideText").slideTextLeft(
+                    { words: ["Big Data", "Objets et services connectés", "Agilité", "Mobilité", "User expérience", "Digital", "Web", "DevOps", "Cloud", "Management 3.0", "Architectures" ], delay: 1000 }
+
+            );
+        });
+    </script>
+
 
 
 
@@ -67,7 +77,7 @@
         <nav>
             <ul>
                 <a href="index.html"><li>La Conférence</li></a>
-                <a href="programme.html"><li>Le Programme</li></a>
+                <a href="programme.html" class="active"><li>Le Programme</li></a>
                 <a href="expertcafe.html"><li>L'Experts Café</li></a>
                 <a href="infos.html"><li>Infos pratiques</li></a>
                 <a href="inscription.html" class="inscription"><li>Inscription</li></a>
@@ -89,14 +99,22 @@
                 <img src="images/header/bg_rex_vsct.png" align="top">
                 <img src="images/header/bg_rex_docapost.png" align="top">
                 <img src="images/header/bg_rex_sg.png" align="top">
-                <img src="images/header/bg_rex_finexcap.png" align="top">
                 <img src="images/header/bg_rex_orange.png" align="top">
             </div>
 
     </section>
 
     <section class="tagline_page program_tagline">
-        <h2>Assistez à des conférences <span class="bold">pertinentes</span> = 27 conférences, 10 témoignages clients, 1 journée de partage</h2>
+        <h2>Assistez à 27 conférences, 10 témoignages clients lors de cette journée de partage</h2>
+    </section>
+
+    <section class="tagline_page buzzword">
+
+        <h2 class="title">
+            <p><span class="slideText"></span></p>
+
+
+        </h2>
     </section>
 
 </header>
@@ -132,7 +150,7 @@
                         <p class="mots_clefs">#SI #Paiement</p>
                     </div>
                     <div class="back step_2" data-toggle="modal" data-target="#ingenico">
-                        <p>A définir</p>
+                        <p></p>
                         <br/>
                         <p>Jean-François Caenen</p>
                         <br/>
@@ -205,7 +223,7 @@
                         <p class="mots_clefs">#Mobilité</p>
                     </div>
                     <div class="back step_2" data-toggle="modal" data-target="#louis-vuitton">
-                        <p>A définir ...</p>
+                        <p></p>
                         <br/>
                         <p>C. Plouseau</p>
                         <br/>
@@ -431,14 +449,14 @@
             <div class="flip-container">
                 <div class="flipper square alternative_square step_1">
                     <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Finexcap : Marketing digital,les nouvelles méthodes d’acquisition</p>
+                        <p class="titre_slot">Témoignage Akamis : </p>
                         <br/>
                         <p class="mots_clefs">#GrowthMarketing #Digital </p>
                     </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#finexcap">
+                    <div class="back step_2" data-toggle="modal" data-target="#akamis">
                         <p>Le monde du Digital change et le marketing avec. Les utilisateurs, leurs attentes et leurs usages évoluent et on ne peut plus les intéresser avec les mêmes méthodes.</p>
                         <br/>
-                        <p>A. De Catheu et S. Coussement</p>
+                        <p>S. Coussement</p>
                         <br/>
                         <a href="#" class="voirplus_prog">Voir plus</a>
                     </div>
@@ -658,7 +676,7 @@
                 <li>156 Boulevard Haussmann</li>
                 <li>75008 Paris</li>
                 <br/><br/>
-                <li>Mail : <a href="mailto=marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Mail : <a href="mailto:marketing@xebia.fr">marketing@xebia.fr</a></li>
                 <li>Tél : <a href="tel:+33153899999">01.53.89.99.99</a></li>
             </ul>
         </div>
@@ -981,6 +999,7 @@
                             <span class="name">Diego Lemos</span>
 
                             <p class="desc">
+                                Diego Lemos est consultant en informatique chez Xebia. Il a travaillé avec diverses technologies, comme C#, Java, JavaScript, entre autres. Actuellement, il accompagne des équipes agiles dans le but de les aider à produire des logiciels de qualité et les délivrer plus fréquemment.
                             </p>
                         </div>
                     </div>
@@ -2268,12 +2287,12 @@
 
 
 
-<div class="modal fade" id="finexcap" tabindex="-1">
+<div class="modal fade" id="akamis" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Témoignage Finexcap : Marketing digital : les nouvelles méthodes d’acquisition.</h4>
+                <h4 class="modal-title">Témoignage Akamis : </h4>
             </div>
             <div class="modal-body">
                 <p class="slot"><strong>Les techniques d’acquisition traditionnelles sont en pertes de performance. Malgré ce bilan, le plus grand nombre reste accroché aux techniques monocanales tels que SEO, achats de mots clefs, achat d’audience non qualifiée ou qui pensent encore qu’une refonte ergonomique va tout résoudre.
@@ -2288,21 +2307,7 @@
 
 
                     <div class="speaker">
-                        <div class="img-wrapper">
-                            <img alt="Arthur de Catheu" src="images/speaker/arthur_decatheu.jpg"/>
-                        </div>
-
-                        <div class="info">
-                            <span class="name">Arthur de Catheu</span>
-
-                            <p class="desc">
-                                Arthur de Catheu est co-fondateur et directeur général de Finexkap, la première plateforme de financement de la trésorerie des entreprises en France et président de Finexkap AM. Auparavant, Arthur était le co-fondateur, et VP Business Development de Palico, une marketplace mondiale en ligne des fonds de private equity et d’investisseurs avec des bureaux en France, Royaume-Uni et USA. Dans une vie pércédente, il était Senior Investment Manager chez Ardian (soit Axa Private Equity), a monté une entreprise familiale et a commencé sa carrière en créant une société de private equity. Arthur est un addict de la fintech et un défenseur de l’innovation et de la finance.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="speaker">
-                        <div class="img-wrapper right">
+                        <div class="img-wrapper ">
                             <img alt="Stephane Coussement" src="images/speaker/stephane_coussement.jpg"/>
                         </div>
 
