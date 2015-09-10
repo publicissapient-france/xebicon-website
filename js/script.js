@@ -1,11 +1,9 @@
-
+var time  = 1500;
 $('.counter').counterUp({
-    delay: 2,
-    time: 2500
+    time: time
 });
 
 
 $('.counter-bis').counterUp({
-    delay: 3,
-    time: 1500
+    time: time
 });
