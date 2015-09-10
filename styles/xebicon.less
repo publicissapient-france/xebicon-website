@@ -1189,12 +1189,14 @@ button.close {
 
 /* entire container, keeps perspective */
 .flip-container {
+  -webkit-perspective: 1000;
   perspective: 1000;
   display: inline-block;
   color: #2e2e2e;
 }
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -1210,7 +1212,9 @@ button.close {
 
 /* flip speed goes here */
 .flipper {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
   position: relative;
@@ -1218,6 +1222,7 @@ button.close {
 
 /* hide back of pane during swap */
 .front, .back {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
   position: absolute;
@@ -1229,6 +1234,7 @@ button.close {
 .front {
   z-index: 2;
   /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   background-color: #efefef;
 
@@ -1240,6 +1246,7 @@ button.close {
 
 /* back, initially hidden pane */
 .back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background-color: orange;
   color: white;
@@ -1275,6 +1282,7 @@ button.close {
   color: white;
   font-family: proxima-bold;
   margin-bottom: 50px;
+  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   font-size: 24px;
 
