@@ -5,3 +5,4 @@ images/.DS_Store
 .idea
 *.iml
 dist
+.idea
