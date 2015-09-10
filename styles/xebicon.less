@@ -675,14 +675,14 @@ main {
     .square {
       .titre_slot {
         color: @orangeColor;
-        font-family: proxima-bold;
+        font-family: proxima-bold, serif;
       }
 
       .mots_clefs {
         font-size: 14px;
         position: absolute;
         bottom: 0;
-        color: #06a99c;
+        color: gray;
         font-style: italic;
       }
 
@@ -1231,6 +1231,11 @@ button.close {
   /* for firefox 31 */
   transform: rotateY(0deg);
   background-color: #efefef;
+
+  .speaker-square{
+    font-family: proxima-bold, serif;
+    color: gray;
+  }
 }
 
 /* back, initially hidden pane */
@@ -1241,7 +1246,7 @@ button.close {
 
   .voirplus_prog {
     color: white;
-    font-family: proxima-bold;
+    font-family: proxima-bold, serif;
     text-decoration: none;
     margin-left: 10px;
   }
@@ -1305,7 +1310,7 @@ button.close {
 
 
 .slot_rex {
-  box-shadow: inset 0px 5px 0px 0px grey;
+  box-shadow: inset 0px 5px 0px 0px @turquoiseColor;
 }
 
 .scrolloff {
