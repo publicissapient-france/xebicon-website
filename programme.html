@@ -56,8 +56,11 @@
         $(function() {
             $(".slideText").slideTextLeft(
                     { words: ["Big Data", "Objets et services connectés", "Agilité", "Mobilité", "User expérience", "Digital", "Web", "DevOps", "Cloud", "Management 3.0", "Architectures" ], delay: 1000 }
-
             );
+
+            $('a.voirplus_prog').click(function(event) {
+                event.preventDefault();
+            })
         });
     </script>
 
