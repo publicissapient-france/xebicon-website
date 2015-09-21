@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3ae7ddf-0f09-412d-b0cf-d812dcbba159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Img-devops-btn-orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Img-devops-btn-red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/buzzword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/header/Img-devops-btn-red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/header/Img-header-devops.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-Kibana.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-Xebialabs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-appdynamics.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-europcar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-puppetlab.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Img-devops-sfr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Logo-Societe-Generale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Logo-elasticsearch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Logo-graphite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Logo-logstash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/Logo-smartfocus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/logo-typesafe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/partner/logo-vsc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/speaker/86-a.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/speaker/Vincent_Spiewak.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/speaker/clement_rochas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/techtrends-devops.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/xebia_logo-large-purple.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_infos_eurosites.png" afterPath="$PROJECT_DIR$/images/header/bg_infos_eurosites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_sg.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_sg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header/bg_rex_vsct.png" afterPath="$PROJECT_DIR$/images/header/bg_rex_vsct.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/denis_weiss.jpg" afterPath="$PROJECT_DIR$/images/speaker/denis_weiss.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/diego_lemos.jpg" afterPath="$PROJECT_DIR$/images/speaker/diego_lemos.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/djordje_lukic.jpg" afterPath="$PROJECT_DIR$/images/speaker/djordje_lukic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/eric_demorgoli.jpg" afterPath="$PROJECT_DIR$/images/speaker/eric_demorgoli.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/fabian_gutierrez.jpg" afterPath="$PROJECT_DIR$/images/speaker/fabian_gutierrez.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/fabien_mirault.jpg" afterPath="$PROJECT_DIR$/images/speaker/fabien_mirault.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/frederic_masson.jpg" afterPath="$PROJECT_DIR$/images/speaker/frederic_masson.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/jean_francois_caenen.jpg" afterPath="$PROJECT_DIR$/images/speaker/jean_francois_caenen.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/jean_pascal_thiery.jpg" afterPath="$PROJECT_DIR$/images/speaker/jean_pascal_thiery.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/jeremie_martinez.jpg" afterPath="$PROJECT_DIR$/images/speaker/jeremie_martinez.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/jerome-guillement.jpg" afterPath="$PROJECT_DIR$/images/speaker/jerome-guillement.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/jerome_doucet.jpg" afterPath="$PROJECT_DIR$/images/speaker/jerome_doucet.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/julien_buret.png" afterPath="$PROJECT_DIR$/images/speaker/julien_buret.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/lutz_huehnken.png" afterPath="$PROJECT_DIR$/images/speaker/lutz_huehnken.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/marie_laure_casse.jpg" afterPath="$PROJECT_DIR$/images/speaker/marie_laure_casse.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/marie_laure_thuret.png" afterPath="$PROJECT_DIR$/images/speaker/marie_laure_thuret.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/matthieu_blanc.jpg" afterPath="$PROJECT_DIR$/images/speaker/matthieu_blanc.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/michel_perfetti.jpg" afterPath="$PROJECT_DIR$/images/speaker/michel_perfetti.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/nicolas_bourgeois.png" afterPath="$PROJECT_DIR$/images/speaker/nicolas_bourgeois.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/nicolas_lochet.jpg" afterPath="$PROJECT_DIR$/images/speaker/nicolas_lochet.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/pierre_jean_vardanega.png" afterPath="$PROJECT_DIR$/images/speaker/pierre_jean_vardanega.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/simone_civetta.png" afterPath="$PROJECT_DIR$/images/speaker/simone_civetta.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/stephane_coussement.jpg" afterPath="$PROJECT_DIR$/images/speaker/stephane_coussement.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/sylvain_lequeux.jpg" afterPath="$PROJECT_DIR$/images/speaker/sylvain_lequeux.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thematiques.png" afterPath="$PROJECT_DIR$/images/thematiques.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/thibaud_cavin.jpg" afterPath="$PROJECT_DIR$/images/speaker/thibaud_cavin.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/thierry_abalea.jpg" afterPath="$PROJECT_DIR$/images/speaker/thierry_abalea.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/thomas_ounnas.png" afterPath="$PROJECT_DIR$/images/speaker/thomas_ounnas.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/ygor_lutz.png" afterPath="$PROJECT_DIR$/images/speaker/ygor_lutz.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/yoann_benoit.jpg" afterPath="$PROJECT_DIR$/images/speaker/yoann_benoit.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/yoann_benoit.png" afterPath="$PROJECT_DIR$/images/speaker/yoann_benoit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speaker/yves_caseau.jpg" afterPath="$PROJECT_DIR$/images/speaker/yves_caseau.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programme.html" afterPath="$PROJECT_DIR$/programme.html" />
-    </list>
+    <list default="true" id="b3ae7ddf-0f09-412d-b0cf-d812dcbba159" name="Default" comment="" />
     <ignored path="xebicon-website.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
