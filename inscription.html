@@ -53,11 +53,14 @@
         <a href="index.html" title="Site XebiCon France">
             <img src="images/header/xebicon-logo.png" class="logo-xebia" alt="Logo XebiCon"/>
         </a>
+
+        <label for="chk-menu">☰</label>
+        <input type="checkbox" id="chk-menu">
         <nav>
             <ul>
                 <a href="index.html"><li>La Conférence</li></a>
                 <a href="programme.html"><li>Le Programme</li></a>
-                <a href="expertcafe.html"><li>L'Experts Café</li></a>
+                <a href="expertcafe.html"><li>L'Expert Café</li></a>
                 <a href="infos.html"><li>Infos pratiques</li></a>
                 <a href="inscription.html" class="inscription"><li>Inscription</li></a>
             </ul>
@@ -66,22 +69,18 @@
 
     <section class="xebicon infos billets">
         <div class="inner-wrapper">
-            <h1 class="titre_autre" >Rendez-vous
+            <h1 class="titre_autre" >Rendez-vous à la XebiCon France :
                 <br/>
 
-                <span class="">à la XebiCon France</span>
+                <span class="">le futur du digital, le 4 novembre prochain </span>
             </h1>
         </div>
-    </section>
-
-    <section class="tagline_page">
-        <h2 id="countdown"></h2>
     </section>
 
 </header>
 <main>
     <section class="billeterie eventbrite" >
-        <div style="width:100%; text-align:left;" ><iframe  src="http://eventbrite.fr/tickets-external?eid=18001594253&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Développé par Eventbrite</a></div></div>
+<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.fr/tickets-external?eid=18132442624&ref=etckt" frameborder="0" height="247" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Développé par Eventbrite</a></div></div>
     </section>
 
     <section class="chiffres">
@@ -112,11 +111,9 @@
 
     <section class="application">
         <div class="inner-wrapper">
-            <h2>Retrouvez prochainement notre application XebiCon France</h2>
-
-
-            <a href="#">iOS</a>
-            <a href="#">Android</a>
+            <h2></h2>
+               <h2>Retrouvez prochainement notre application XebiCon France</h2> 
+            <h2>pour Iphone et Android.</h2>
         </div>
     </section>
 
@@ -139,7 +136,7 @@
         <div class="adresse">
             <ul>
                 <li>Xebia France</li>
-                <li>156 Boulevard Haussmann</li>
+                <li>156, Boulevard Haussmann</li>
                 <li>75008 Paris</li>
                 <br/><br/>
                 <li>Mail : <a href="mailto:marketing@xebia.fr">marketing@xebia.fr</a></li>
@@ -150,41 +147,6 @@
 
 
 </footer>
-
-<script>
-    // set the date we're counting down to
-    var target_date = new Date("Nov 04, 2015").getTime();
-
-    // variables for time units
-    var days, hours, minutes, seconds;
-
-    // get tag element
-    var countdown = document.getElementById("countdown");
-
-    var processCount = function() {
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
-
-        // do some time calculations
-        days = parseInt(seconds_left / 86400);
-        seconds_left = seconds_left % 86400;
-
-        hours = parseInt(seconds_left / 3600);
-        seconds_left = seconds_left % 3600;
-
-        minutes = parseInt(seconds_left / 60);
-        seconds = parseInt(seconds_left % 60);
-
-        // format countdown string + set tag value
-        countdown.innerHTML = days + "J   " + hours + "H   "
-                + minutes + "M   " + seconds + "S ";
-    };
-
-    // update the tag with id "countdown" every 1 second
-    setInterval(processCount, 1000);
-    processCount();
-</script>
-
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

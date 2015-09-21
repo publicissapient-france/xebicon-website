@@ -1,6 +1,6 @@
 module.exports = (grunt) =>
 
-	watchTasks = ['less','uglify']
+	watchTasks = ['less','uglify','imagemin']
 
 	grunt.initConfig
 		less:
