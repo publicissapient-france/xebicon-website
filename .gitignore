@@ -2,6 +2,6 @@
 node_modules/
 fonts/.DS_Store
 images/.DS_Store
-.idea
+.idea/
 *.iml
 dist
