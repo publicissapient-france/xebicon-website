@@ -1,0 +1,132 @@
+[
+  // Exemple de Break -> plusieurs "type" possibles mais la valeur n'a pas de réel impact sur l'affichage, ce qui compte c'est le titre associé
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 08:00",
+    "toTime": "2015-11-04 09:00",
+    "id": "welcome_8h0_9h0",
+    "speakers": [
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "",
+    "room": "",
+    "track": "",
+    "kind": "registration",
+    "type": "registration",
+    "code": "welcome_8h0_9h0",
+    "title": "Accueil"
+  },
+
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 12:30",
+    "toTime": "2015-11-04 13:45",
+    "id": "lunch_12h30_13h45",
+    "speakers": [
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "",
+    "room": "",
+    "track": "",
+    "kind": "lunch",
+    "type": "lunch",
+    "code": "lunch_12h30_13h45",
+    "title": "Déjeuner"
+  },
+
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 18:30",
+    "toTime": "2015-11-04 22:00",
+    "id": "cocktail_18h30_22h00",
+    "speakers": [
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "",
+    "room": "",
+    "track": "",
+    "kind": "break",
+    "type": "cocktail",
+    "code": "cocktail_18h30_22h00",
+    "title": "Cocktail dinatoire"
+  }
+
+  //  Exemple de Talks -> plusieurs "type" possibles (les principales valeurs sont : Keynote, Conference, Hand's on Labs, Quickie)
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 09:00",
+    "toTime": "2015-11-04 10:00",
+    "id": "DNL-9930",
+    "speakers": [
+      {
+        "id": "3",
+        "uri": "",
+        "name": "Yves Caseau"
+      }
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "<h2>Transformation digitale, les enjeux d'un grand groupe</h2><p>N/C</p>",
+    "room": "Auditorium",
+    "track": "Java SE",
+    "kind": "keynote",
+    "type": "Témoignage",
+    "code": "DNL-9930",
+    "title": "Keynote d'ouverture AXA : Transformation digitale, les enjeux d'un grand groupe"
+  },
+
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 10:00",
+    "toTime": "2015-11-04 11:00",
+    "id": "DNL-9931",
+    "speakers": [
+      {
+        "id": "4",
+        "uri": "",
+        "name": "Jean-François Caean"
+      },
+
+      {
+        "id": "5",
+        "uri": "",
+        "name": "Nicolas Jozwiak"
+      }
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "<h2>Témoignage Ingenico : Microservices et architecture réactive pour une nouvelle plateforme de services autour du paiement en magasin</h2><p>Ingenico a conçu une nouvelle génération de plateforme de services pour les marchands. <br/>Dans le cadre de sa stratégie de développement des services autour de l’acceptation de paiement, Ingenico a conçu une nouvelle génération de plateforme de services pour les marchands. À partir des enjeux du projet (extensibilité, adaptation par pays, volumes et continuité de service), nous présenterons les choix technologiques effectués et l’architecture réactive à base de microservices qui a été mise en œuvre. Un premier retour d’expérience sera effectué.</p>",
+    "room": "Salle 1",
+    "track": "Java SE",
+    "kind": "talk",
+    "type": "Témoignage",
+    "code": "DNL-9931",
+    "title": "Témoignage Ingenico : Microservices et architecture réactive pour une nouvelle plateforme de services autour du paiement en magasin"
+  },
+
+  {
+    "conferenceId": 19,
+    "fromTime": "2015-11-04 10:00",
+    "toTime": "2015-11-04 11:00",
+    "id": "DNL-9932",
+    "speakers": [
+      {
+        "id": "1",
+        "uri": "",
+        "name": "Julien Buret"
+      }
+    ],
+    "partnerSlot": false,
+    "note": "",
+    "summary": "<h2>Be Data Driven : Monter son Data Lab</h2><p>Big Data, Data Science, cluster Hadoop, Machine Learning, etc. Aujourd'hui, impossible de passer à côté de ce phénomène vers lequel de plus en plus d'entreprises se tournent. Au-delà des mots et de la tendance, comment réellement tirer parti de toutes vos données et en tirer un véritable avantage concurrentiel ? La réponse se résume en quelques mots : monter un Data Lab. Au cours de cette présentation, nous vous proposons de définir ce qu'est réellement un Data Lab, de comprendre les grandes étapes essentielles pour le monter de manière intelligente, d'identifier les profils nécessaires à son bon fonctionnement et de savoir comment optimiser son utilisation pour en tirer une vraie valeur ajoutée pour votre entreprise.</p>",
+    "room": "Salle 2",
+    "track": "Data",
+    "kind": "talk",
+    "type": "Data",
+    "code": "DNL-9932",
+    "title": "Be Data Driven : Monter son Data Lab"
+  }
+]

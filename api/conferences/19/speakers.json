@@ -1,0 +1,91 @@
+[
+  {
+    "id": "1",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://blog.xebia.fr/author/jburet/",
+    "tweetHandle": "@julienBuret",
+    "imageURL": "http://www.xebicon.fr/images/speaker/julien_buret.png",
+    "company": "Xebia",
+    "bio": "<p>Julien Buret CTO de Xebia France. Il dispose d'une vaste expérience dans l'écosystème Java EE et Big Data. Julien intervient principalement dans la mise en place de solutions Big Data auprès des grands comptes dans les télécoms, la finance, les jeux en ligne etc.</p>",
+    "lastName": "Buret",
+    "firstName": "Julien" },
+
+  {
+    "id": "2",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://blog.xebia.fr/author/jpthiery/",
+    "tweetHandle": "@jpthiery",
+    "imageURL": "http://www.xebicon.fr/images/speaker/jean_pascal_thiery.jpg",
+    "company": "Xebia",
+    "bio": "<p>Java Craftsman et agiliste pratiquant. Jean-Pascal a arpenté les voies de l'intégration continue jusqu'à intégrer la mouvance DevOps. Il aime : Java, Docker, Mesos, et la qualité des livrables. Il n'aime pas : les phrases qui commence par 'Normalement, ...'</p>",
+    "lastName": "Thiery",
+    "firstName": "Jean-Pascal"
+  },
+
+  {
+    "id": "3",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://organisationarchitecture.blogspot.fr/",
+    "tweetHandle": "@ycaseau",
+    "imageURL": "http://www.xebicon.fr/images/speaker/yves_caseau.jpg",
+    "company": "Axa",
+    "bio": "<p>Ayant rejoint le groupe Axa en 2014, Yves Caseau dirige la Digital Agency d'Axa et est en charge de l'accélération du développement des produits et des services digitaux pour les entités du groupe, en particulier sur les terminaux mobiles. Il se charge également du renforcement de l'innovation au service des clients et de l'amélioration des synergies technologiques et digitales, aux côtés des équipes IT.</p>",
+    "lastName": "Caseau",
+    "firstName": "Yves"
+  },
+
+  {
+    "id": "4",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": null,
+    "tweetHandle": "@jfcaenen",
+    "imageURL": "http://www.xebicon.fr/images/speaker/jean_francois_caenen.jpg",
+    "company": "Ingenico",
+    "bio": "<p>Avec plus de 25 ans d’expérience en ingénierie de produits logiciels, en projets d’intégration et en conseil en architecture de Système d’Information, Jean-François CAENEN dirige actuellement la R&D Terminal Solutions du Groupe Ingenico. Pionnier des architectures d’intégration et fervent adepte des pratiques agiles, il est passionné par l’articulation entre la technologie et la différenciation métier ou marché. Diplômé de l’Ecole Polytechnique et de Sup Telecom Paris Tech, il a travaillé successivement pour Sesa, Digital Equipement, Atos et Capgemini avant de rejoindre Ingenico.</p>",
+    "lastName": "Caenen",
+    "firstName": "Jean-François"
+  },
+
+  {
+    "id": "5",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://blog.xebia.fr/author/njozwiak/",
+    "tweetHandle": "@njozwiak",
+    "imageURL": "http://www.xebicon.fr/images/speaker/nicolas_jozwiak.png",
+    "company": "Xebia",
+    "bio": "<p>Nicolas est un ingénieur d'études confirmé disposant de 10 ans d'expérience de conception et développement sur technologies Java/JEE. Son parcours chez un éditeur avant son entrée chez Xebia lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité). Nicolas est Directeur de projet chez Xebia Studio et bénéficie d’une expérience très solide de mise en place des méthodes agiles et d’accompagnement d’équipe sur le terrain. Il est reconnu pour son approche pragmatique, proactive et pédagogique.</p>",
+    "lastName": "Jozwiak",
+    "firstName": "Nicolas"
+  },
+
+  {
+    "id": "6",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://viteinfinite.com/",
+    "tweetHandle": "@viteinfinite",
+    "imageURL": "http://www.xebicon.fr/images/speaker/simone_civetta.png",
+    "company": "Xebia",
+    "bio": "<p>Simone est responsable technique des équipes mobilités chez Xebia. Depuis 2010, il a élaboré et développé de nombreuses applications Business-to-Business et Business-to-Consumer pour iPhone, iPad et Apple Watch. Pionnier de Swift, à partir de fin 2014, il utilise uniquement le nouveau langage Apple dans l'intégralité de ses développements mobiles. Passionné par les innovations technologiques et, en particulier, par les plateformes mobiles ainsi que l’expérience utilisateur, Simone est un contributeur reconnu dans la communauté mobile francophone.</p>",
+    "lastName": "Civetta",
+    "firstName": "Simone"
+  },
+
+  {
+    "id": "7",
+    "conferenceId": 19,
+    "lang": "fr",
+    "blog": "http://fabienmirault.fr/",
+    "tweetHandle": null,
+    "imageURL": "http://www.xebicon.fr/images/speaker/fabien_mirault.png",
+    "company": "Xebia",
+    "bio": "<p>Développeur iOS depuis plus de 4 ans, Fabien a eu l'occasion de réaliser de nombreuses missions innovantes disposant d'une forte audience. Initialiement développeur AS3 (Flash / AIR), il reste curieux de tout ce qui se fait dans le milieu du mobile pour toujours chercher à en tirer des enseignements pour les projets futurs.</p>",
+    "lastName": "Mirault",
+    "firstName": "Fabien"
+  }
+]
