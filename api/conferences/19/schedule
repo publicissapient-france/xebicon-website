@@ -1,5 +1,4 @@
 [
-  // Exemple de Break -> plusieurs "type" possibles mais la valeur n'a pas de réel impact sur l'affichage, ce qui compte c'est le titre associé
   {
     "conferenceId": 19,
     "fromTime": "2015-11-04 08:00",
@@ -53,8 +52,7 @@
     "code": "cocktail_18h30_22h00",
     "title": "Cocktail dinatoire"
   }
-
-  //  Exemple de Talks -> plusieurs "type" possibles (les principales valeurs sont : Keynote, Conference, Hand's on Labs, Quickie)
+  
   {
     "conferenceId": 19,
     "fromTime": "2015-11-04 09:00",
