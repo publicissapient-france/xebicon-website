@@ -601,10 +601,19 @@ main {
 
     .video {
 
-      height: auto;
+      height: auto ;
       width: 100%;
       margin: auto;
       margin-bottom: 80px;
+
+
+      .teaser_youtube {
+        width: 100%;
+
+        @media (max-width: 800px) {
+          height: 300px;
+        }
+      }
     }
 
     a {
