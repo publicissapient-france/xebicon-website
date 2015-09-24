@@ -1208,6 +1208,8 @@ button.close {
 .flip-container {
   
   perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
   display: inline-block;
   color: #2e2e2e;
 }
@@ -1216,6 +1218,10 @@ button.close {
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .flip-container, .front, .back {
@@ -1231,9 +1237,11 @@ button.close {
 .flipper {
 
   transition: 0.5s;
-
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transform-style: preserve-3d;
-
+  -webkit-transform-style: preserve-3d;
   position: relative;
 }
 
@@ -1241,7 +1249,7 @@ button.close {
 .front, .back {
 
   backface-visibility: hidden;
-
+  -webkit-backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -1251,7 +1259,10 @@ button.close {
 .front {
   z-index: 2;
   /* for firefox 31 */
-
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
   background-color: #efefef;
 
@@ -1263,7 +1274,10 @@ button.close {
 
 /* back, initially hidden pane */
 .back {
-
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background-color: orange;
   color: white;
