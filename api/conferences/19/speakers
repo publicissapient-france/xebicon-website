@@ -137,7 +137,7 @@
       "tweetHandle": "@aurelienmaury",
       "imageURL": "http://www.xebicon.fr/images/speaker/aurelien_maury.png",
       "company": "WeScale",
-      "bio": "<p>Au cours de sa carrière en ESN, Aurélien a acquis une forte expérience dans le développement d'applications web, l'architecture de SI et l'utilisation de plate-formes Cloud. Les missions qu'il a eu à remplir, notamment pour Xebia, l'ont amenées à analyser et optimiser de nombreux et variés environnements clients. Ses domaines de prédilections : performance, monitoring, intégration au SI, automatisation, DevOps et plate-formes Cloud. Son credo : "Make it work, Make it right, Make it fast".</p>",
+      "bio": "<p>Au cours de sa carrière en ESN, Aurélien a acquis une forte expérience dans le développement d'applications web, l'architecture de SI et l'utilisation de plate-formes Cloud. Les missions qu'il a eu à remplir, notamment pour Xebia, l'ont amenées à analyser et optimiser de nombreux et variés environnements clients. Ses domaines de prédilections : performance, monitoring, intégration au SI, automatisation, DevOps et plate-formes Cloud. Son credo : 'Make it work, Make it right, Make it fast'.</p>",
       "lastName": "Maury",
       "firstName": "Aurélien"
    },
@@ -150,7 +150,7 @@
         "tweetHandle": null,
         "imageURL": "http://www.xebicon.fr/images/speaker/seven_le_mesle.png",
         "company": "WeScale",
-        "bio": "<p>Bénéficiant d'une double formation réseau numérique et développement applicatif, Séven se passionne pour les pratiques DevOps et les solutions cloud. Fort de son expérience d'architecte applicatif et d'expert performance pour Xebia, il imagine et réalise des projets autant innovants qu'ambitieux pour des grands comptes (Publicis, SFR, Voyages-sncf.com, etc.). Son credo : "Aucun plan ne survit à son implémentation !" Séven favorise le travail par incrément, en mettant à l'épreuve les solutions en continu.</p>",
+        "bio": "<p>Bénéficiant d'une double formation réseau numérique et développement applicatif, Séven se passionne pour les pratiques DevOps et les solutions cloud. Fort de son expérience d'architecte applicatif et d'expert performance pour Xebia, il imagine et réalise des projets autant innovants qu'ambitieux pour des grands comptes (Publicis, SFR, Voyages-sncf.com, etc.). Son credo : 'Aucun plan ne survit à son implémentation !' Séven favorise le travail par incrément, en mettant à l'épreuve les solutions en continu.</p>",
         "lastName": "Le Mesle",
         "firstName": "Séven"
    },
@@ -308,7 +308,7 @@
                       "tweetHandle": "@BenjaminMoitie",
                       "imageURL": "http://www.xebicon.fr/images/speaker/benjamin_moitie.png",
                       "company": "Xebia",
-                      "bio": "<p>Benjamin est un coach et formateur Agile expert disposant de plus de 14 ans d'expérience. Il a contribué à la transformation agile à grande échelle auprès de nombreuses sociétés françaises de renom (banques d'investissement, assurances, audiovisuel, aéronautique,industrie etc). Il est spécialiste du modèle SAFe et est un des premiers formateurs francophones agréé par la Scaled Agile Academy. Benjamin est un contributeur chevronné dans l'écosystème francophone agile et à récemment co-présenté "SAFe vs Spotify" lors du ScrumDay 2015.</p>",
+                      "bio": "<p>Benjamin est un coach et formateur Agile expert disposant de plus de 14 ans d'expérience. Il a contribué à la transformation agile à grande échelle auprès de nombreuses sociétés françaises de renom (banques d'investissement, assurances, audiovisuel, aéronautique,industrie etc). Il est spécialiste du modèle SAFe et est un des premiers formateurs francophones agréé par la Scaled Agile Academy. Benjamin est un contributeur chevronné dans l'écosystème francophone agile et à récemment co-présenté 'SAFe vs Spotify' lors du ScrumDay 2015.</p>",
                       "lastName": "Moitié",
                       "firstName": "Benjamin"
     },
@@ -439,7 +439,7 @@
                                                  "tweetHandle": "@dijxdream",
                                                  "imageURL": "http://www.xebicon.fr/images/speaker/alexandre_hebert.jpg",
                                                  "company": "Xebia",
-                                                 "bio": "<p>Développeur Full Stack depuis 3 ans, Alexandre a une connaissance approfondie de nombreux langages et frameworks. Curieux de comprendre le "comment ça fonctionne" plutôt que de simplement "utiliser", c'est avec cet état d'esprit qu'il évolue depuis près d'un an au sein d'une équipe agile de Xebia.</p>",
+                                                 "bio": "<p>Développeur Full Stack depuis 3 ans, Alexandre a une connaissance approfondie de nombreux langages et frameworks. Curieux de comprendre le 'comment ça fonctionne' plutôt que de simplement 'utiliser', c'est avec cet état d'esprit qu'il évolue depuis près d'un an au sein d'une équipe agile de Xebia.</p>",
                                                  "lastName": "Hebert",
                                                  "firstName": "Alexandre"
   },
