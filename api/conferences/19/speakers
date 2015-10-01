@@ -468,7 +468,20 @@
                                                        "bio": "<p>N/C</p>",
                                                        "lastName": "Guillement",
                                                        "firstName": "Jérôme"
-    }
+    },
+
+    {
+                                                           "id": "37",
+                                                           "conferenceId": 19,
+                                                           "lang": "fr",
+                                                           "blog": "http://blog.xebia.fr",
+                                                           "tweetHandle": "@llegardeur",
+                                                           "imageURL": "http://www.xebicon.fr/images/speaker/luc_legardeur.png",
+                                                           "company": "Xebia",
+                                                           "bio": "<p>Président fondateur de Xebia et sponsor de la première heure de Devoxx, je suis également auteur du contrat agile, fondateur du French SUG et Investisseur dans l'IT et j'ai le plaisir de participer aux aventures suivantes : XebiaLabs, Cellenza, Thiga, UX REPUBLIC, WeScale et Akamis.</p>",
+                                                           "lastName": "Legardeur",
+                                                           "firstName": "Luc"
+        }
 
 ]
 
