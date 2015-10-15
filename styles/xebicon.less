@@ -106,6 +106,7 @@ body {
 @textColor: #2e2e2e;
 @orangeColor: #f89641;
 @turquoiseColor: #06a99c;
+@greyColor: #333333;
 
 @xebiaColor: #6C1D5F;
 @greyBackground: #F2F2F2;
@@ -359,6 +360,21 @@ main {
     font-size: 80px;
     margin: auto;
     padding-top: 150px;
+    
+    @media (max-width: 1024px) {
+      text-align: left;
+      font-size: 60px;
+      padding-left: 50px;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 50px;
+      padding-top: 50px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 50px;
+    }
 
     .light {
       font-family: proxima, serif;
@@ -459,19 +475,12 @@ main {
   background-color: @xebiaColor;
   height: 60px;
 
-  @media (max-width: 800px) {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-
-  @media (max-width: 700px) {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
 
   @media (max-width: 480px) {
     display: none;
   }
+
+
 
   h2 {
     color: white;
@@ -522,17 +531,6 @@ main section {
 .popupable {
   cursor: pointer;
 
-  &:after {
-    content: '→';
-    background-color: @xebiaColor;
-    border-radius: 100%;
-    color: white;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    line-height: 25px;
-    margin-left: 10px;
-  }
 
   &:hover {
     color: @orangeColor;
@@ -1402,4 +1400,276 @@ button.close {
 
 }
 
+.tagline_concours
+{
+  position: absolute;
+  bottom: 190px;
+  right: 150px;
+  width: 320px;
+  display: none;
 
+  @media (max-width: 800px) {
+    right: 0px;
+    bottom: 230px;
+  }
+
+  @media (max-width: 600px) {
+    bottom: 50px;
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 0px;
+    width: 100%;
+  }
+
+}
+
+.jeu-concours {
+  padding: 20px;
+  background-color: #06a99c;
+  color: white;
+
+}
+
+
+.lightbox
+{
+  display: none;
+  color: grey;
+  font-size: 16px;
+  background-color: white;
+  font-family: proxima;
+}
+
+.featherlight .featherlight-content {
+  background: white;
+  border: 2px solid @turquoiseColor;
+  border-bottom: 2px solid @turquoiseColor !important;
+  padding: 25px !important;
+
+}
+
+
+input[type="submit"] {
+  background-color: @orangeColor;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.little {
+  font-size: 12px;
+  font-style: italic;
+}
+
+a#btn_partipe {
+  background-color: white;
+  color: @orangeColor;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: proxima-bold;
+}
+
+label {
+  width: 100px;
+  float: left;
+}
+
+input {
+  width: 100%;
+}
+
+.hashtag {
+  color: @orangeColor;
+}
+
+/** NEW PROGRAMME **/
+#program {
+  display: none;
+}
+
+.program {
+ 
+  padding-bottom: 60px;
+
+  h1 {
+
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-top: 30px;
+
+    margin-bottom: 15px;
+
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-bottom: 1px solid black;
+    b {
+      font-weight: bold;
+    }
+  }
+
+  .table-wrapper {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    table {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      thead th {
+        color: @greyColor;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      tbody {
+        td {
+          text-align: left;
+          border-bottom: 1px solid @greyLine;
+          padding: 12px;
+          font-size: 16px;
+
+          &.center-cell {
+            border-right: 0px;
+          }
+
+          &.inscription-cell {
+            color: @xebiaColor;
+            vertical-align: middle;
+            padding-left: 5px;
+            padding-right: 20px;
+
+          }
+
+          &:first-of-type {
+            color: @xebiaColor;
+            font-weight: bold;
+            text-align: left;
+            min-width: 120px;
+          }
+
+
+
+          &.last-line {
+            border-bottom: none;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          &:hover {
+            color: @redColor;
+          }
+        }
+
+        .open-inscription a {
+
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          padding-left: 5px;
+          padding-right: 20px;
+          color: @xebiaColor;
+
+          &:hover {
+            color: @redColor;
+          }
+
+          @media (min-width: 860px ) {
+            &:after {
+              content: ' > ';
+
+              position: absolute;
+              right: 5px;
+
+            }
+          }
+        }
+
+        .inscription-line {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 860px) {
+      /* Force table to not be like tables anymore */
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      #table-planning {
+        tbody {
+          @borderWidth: 4px;
+          border-right: @borderWidth solid @greyLine;
+          border-left: @borderWidth solid @greyLine;
+          border-bottom: @borderWidth solid @greyLine;
+
+          &:first-of-type {
+            border-top: @borderWidth solid @greyLine;
+          }
+
+          .inscription-line {
+            display: inherit;
+          }
+        }
+
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+
+        tr {
+          border-bottom: 1px solid @greyLine;
+        }
+
+        td {
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid @greyLine;
+          position: relative;
+
+          white-space: normal;
+          text-align: center;
+          padding-left: 46px;
+
+          &:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+
+          }
+
+          &.center-cell:before {
+            content: 'BACK';
+            color: @redColor;
+          }
+          &.second-room:before {
+            content: 'END';
+            color: @redColor;
+          }
+
+          &.inscription-cell {
+            display: none;
+          }
+        }
+
+      }
+    }
+  }
+}

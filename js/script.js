@@ -7,3 +7,9 @@ $('.counter').counterUp({
 $('.counter-bis').counterUp({
     time: time
 });
+
+$('#valider').click(function() {
+    $('#congrats').toggle('slow', function() {
+        // Animation complete.
+    });
+});
