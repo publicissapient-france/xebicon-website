@@ -25,6 +25,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 
 
@@ -94,8 +96,23 @@
         </div>
     </section>
 
-    <section class="tagline_page">
+    <section class="tagline_concours">
+        <div class="inner-wrapper">
+            <div class="jeu-concours">
+                <p><span class="bold">GAGNEZ VOTRE PLACE* POUR LA XEBICON'15</span><br/><br/>
 
+                    50 places sont à gagner.<br/>
+                    Tirage au sort prévu le jeudi 29 octobre.<br/><br/>
+
+                    <span class="little">*d'une valeur de 190€</span></p><br/><br/>
+                <a href="#" data-featherlight="#popup-concours" id="btn_partipe">Je participe</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="tagline_page">
         <h2>La conférence dédiée au<span class="bold"> futur du digital</span> à Paris</h2>
     </section>
 
@@ -108,10 +125,6 @@
         </h2>
     </section>
 
-    <!--<div class="more-button">
-        <div class="triangle">&nbsp;</div>
-        <a href="#journee"><img alt="button more" src="images/Img-devops-btn-red.png" /></a>
-    </div>-->
 </header>
 <main>
 
@@ -182,7 +195,7 @@
         <div class="inner-wrapper">
             <h2></h2>
                <h2>Retrouvez prochainement notre application XebiCon France</h2> 
-            <h2>pour Iphone et Android.</h2>
+            <h2>pour iPhone et Android.</h2>
         </div>
     </section>
 
@@ -216,6 +229,33 @@
 
 </footer>
 
+<div class="lightbox" id="popup-concours">
+    <form id="popupform" onsubmit="window.concours(event)">
+        <p class="bold">POUR PARTICIPER, MERCI DE RENSEIGNER CES INFORMATIONS :</p> <br/>
+
+        <label for="nom">Nom :</label>
+        <input id="nom" name="nom" type="text" required autofocus/><br/><br/>
+        <label for="prenom">Prénom :</label>
+        <input id="prenom" name="prenom" type="text" required="true"/>
+        <br/><br/>
+        <label for="email">Adresse mail :</label>
+        <input id="email" name="email" type="email" required autofocus/><br/><br/>
+        <label for="job">Poste :</label>
+        <input id="job" name="job" type="text" required="true"/><br/><br/>
+        <label for="societe">Société :</label>
+        <input id="societe" name="societe" type="text" required="true"/><br/><br/>
+
+        <br/><br/>
+        <input type="submit" class="button" id="valider" value="Valider"/>
+    </form>
+
+
+</div>
+
+<div class="lightbox" id="#congrats">
+    <p>Merci pour votre participation. Vous receverez un mail de confirmation si vous faites parti(e) des heureux gagnants.</p>
+</div>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -233,6 +273,65 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js"></script>
 
 <script src="js/script.js"></script>
+
+<script>
+
+    window.concours = function(e) {
+        e.preventDefault();
+
+        var nomEl = document.querySelectorAll('#nom')[1];
+        var nom = nomEl.value;
+        var prenomEl = document.querySelectorAll('#prenom')[1];
+        var prenom = prenomEl.value;
+        var emailEl = document.querySelectorAll('#email')[1];
+        var email = emailEl.value;
+        var jobEl = document.querySelectorAll('#job')[1];
+        var job = jobEl.value;
+        var companyEl = document.querySelectorAll('#societe')[1];
+        var company = companyEl.value;
+        var error = 'solid 2px red';
+        var normal = 'solid 2px purple';
+
+        if (email.length > 0 && company.length > 0) {
+            if (!validateEmail(email)) {
+                emailEl.style.border = normal;
+                emailEl.style.border = error;
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "http://form.xebia.fr/xc15-form.php",
+                data: {
+                    nom: document.querySelectorAll('#nom')[1].value,
+                    prenom: document.querySelectorAll('#prenom')[1].value,
+                    email: document.querySelectorAll('#email')[1].value,
+                    job: document.querySelectorAll('#job')[1].value,
+                    societe: document.querySelectorAll('#societe')[1].value,
+                }
+            });
+
+
+        } else {
+            nom.length > 0 ? nomEl.style.border = normal : nomEl.style.border = error;
+            prenom.length > 0 ? prenomEl.style.border = normal : prenomEl.style.border = error;
+            email.length > 0 ? emailEl.style.border = normal : emailEl.style.border = error;
+            job.length > 0 ? jobEl.style.border = normal : jobEl.style.border = error;
+            company.length > 0 ? companyEl.style.border = normal : companyEl.style.border = error;
+        }
+
+
+
+    };
+
+
+
+
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    };
+</script>
 
 </body>
 </html>
