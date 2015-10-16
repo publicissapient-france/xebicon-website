@@ -531,12 +531,8 @@ main section {
 .popupable {
   cursor: pointer;
 
-
   &:hover {
     color: @orangeColor;
-    &:after {
-      background-color: @orangeColor;
-    }
   }
 }
 
@@ -1289,7 +1285,7 @@ button.close {
 }
 
 .program .inner-wrapper {
-  max-width: 935px;
+  max-width: 1024px;
 
   @media (max-width: 932px) {
     max-width: 725px;
@@ -1485,10 +1481,46 @@ input {
   color: @orangeColor;
 }
 
+
+
 /** NEW PROGRAMME **/
+
 #program {
-  display: none;
+
 }
+
+
+.atelier{
+  vertical-align: middle !important;
+  min-width: 150px !important;
+  width: 20% !important;
+
+  @media (max-width: 860px) {
+    width: auto !important;
+  }
+}
+
+
+.keynote {
+  background-color: orange;
+  color:white !important;
+  text-transform: uppercase;
+  border: none !important;
+}
+
+.center{
+  text-align: center !important;
+}
+
+.pause {
+  color: @turquoiseColor;
+  text-transform: uppercase;
+}
+
+.border-none {
+  border: none !important;
+}
+
 
 .program {
  
@@ -1527,14 +1559,26 @@ input {
         color: @greyColor;
         text-transform: uppercase;
         font-weight: bold;
+        font-family: proxima-bold;
+      }
+
+      tfoot th {
+        color: @greyColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 20px;
+        font-family: proxima-bold;
       }
 
       tbody {
         td {
           text-align: left;
-          border-bottom: 1px solid @greyLine;
+          border-bottom: 1px solid @turquoiseColor;
           padding: 12px;
           font-size: 16px;
+          width: 20%;
+
+
 
           &.center-cell {
             border-right: 0px;
@@ -1549,11 +1593,14 @@ input {
           }
 
           &:first-of-type {
-            color: @xebiaColor;
             font-weight: bold;
             text-align: left;
-            min-width: 120px;
+            text-transform: uppercase;
+            min-width: 110px;
+            width: 10%;
           }
+
+
 
 
 
@@ -1569,29 +1616,6 @@ input {
           }
         }
 
-        .open-inscription a {
-
-          position: relative;
-          display: inline-block;
-          width: 100%;
-          padding-left: 5px;
-          padding-right: 20px;
-          color: @xebiaColor;
-
-          &:hover {
-            color: @redColor;
-          }
-
-          @media (min-width: 860px ) {
-            &:after {
-              content: ' > ';
-
-              position: absolute;
-              right: 5px;
-
-            }
-          }
-        }
 
         .inscription-line {
           display: none;
@@ -1636,7 +1660,7 @@ input {
           border: none;
           border-bottom: 1px solid @greyLine;
           position: relative;
-
+          width: auto;
           white-space: normal;
           text-align: center;
           padding-left: 46px;
