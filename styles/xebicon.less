@@ -476,6 +476,7 @@ main {
   height: 60px;
 
 
+
   @media (max-width: 480px) {
     display: none;
   }
@@ -1402,6 +1403,7 @@ button.close {
   bottom: 190px;
   right: 150px;
   width: 320px;
+  display: none;
 
   @media (max-width: 800px) {
     right: 0px;
@@ -1500,7 +1502,7 @@ input {
 /** NEW PROGRAMME **/
 
 #program {
-
+ display: block;
 }
 
 
@@ -1520,6 +1522,7 @@ input {
   color:white !important;
   text-transform: uppercase;
   border: none !important;
+  cursor: pointer;
 }
 
 .center{
@@ -1533,8 +1536,25 @@ input {
 
 .border-none {
   border: none !important;
+  border-top: 1px solid #06a99c !important;
+
+  @media (max-width: 800px) {
+    border-top: 1px solid @greyLine !important;
+  }
 }
 
+.legende-conf {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  li{
+    display: inline-block;
+    padding-left: 20px;
+
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+}
 
 .program {
  
@@ -1574,6 +1594,7 @@ input {
         text-transform: uppercase;
         font-weight: bold;
         font-family: proxima-bold;
+        padding-bottom: 10px;
       }
 
       tfoot th {
@@ -1612,6 +1633,7 @@ input {
             text-transform: uppercase;
             min-width: 110px;
             width: 10%;
+            color: @greyColor;
           }
 
 
@@ -1665,6 +1687,10 @@ input {
           left: -9999px;
         }
 
+        tfoot th {
+          display: none;
+        }
+
         tr {
           border-bottom: 1px solid @greyLine;
         }
@@ -1677,7 +1703,8 @@ input {
           width: auto;
           white-space: normal;
           text-align: center;
-          padding-left: 46px;
+          padding-left: 0px;
+          padding-top: 20px;
 
           &:before {
             /* Now like a table header */
@@ -1694,12 +1721,24 @@ input {
           }
 
           &.center-cell:before {
-            content: 'BACK';
-            color: @redColor;
+            content: 'AUDITORIUM';
+            color: @orangeColor;
+          }
+          &.first-room:before {
+            content: 'SALLE 1';
+            color: @orangeColor;
           }
           &.second-room:before {
-            content: 'END';
-            color: @redColor;
+            content: 'SALLE 2';
+            color: @orangeColor;
+          }
+          &.third-room:before {
+            content: 'SALLE 3';
+            color: @orangeColor;
+          }
+          &.four-room:before {
+            content: 'SALLE 4';
+            color: @orangeColor;
           }
 
           &.inscription-cell {
