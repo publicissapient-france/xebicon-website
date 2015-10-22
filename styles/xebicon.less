@@ -1403,7 +1403,6 @@ button.close {
   bottom: 190px;
   right: 150px;
   width: 320px;
-  display: none;
 
   @media (max-width: 800px) {
     right: 0px;
@@ -1530,7 +1529,7 @@ input {
 }
 
 .pause {
-  color: @turquoiseColor;
+  color: @turquoiseColor !important;
   text-transform: uppercase;
 }
 
@@ -1549,6 +1548,14 @@ input {
   li{
     display: inline-block;
     padding-left: 20px;
+
+    &:first-of-type {
+      padding-left: 10px;
+
+      @media (max-width: 800px) {
+        padding-left: 20px;
+      }
+    }
 
     @media (max-width: 800px) {
       display: block;
@@ -1725,19 +1732,19 @@ input {
             color: @orangeColor;
           }
           &.first-room:before {
-            content: 'SALLE 1';
+            content: 'BERLIN';
             color: @orangeColor;
           }
           &.second-room:before {
-            content: 'SALLE 2';
+            content: 'NAMUR';
             color: @orangeColor;
           }
           &.third-room:before {
-            content: 'SALLE 3';
+            content: 'BRUXELLES';
             color: @orangeColor;
           }
           &.four-room:before {
-            content: 'SALLE 4';
+            content: 'AMSTERDAM';
             color: @orangeColor;
           }
 
