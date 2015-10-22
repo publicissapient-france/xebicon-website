@@ -2,16 +2,20 @@
 <html>
 <head>
 
-    <title>XebiCon'15 France - 4/11 -  La conférence dédiée au futur du digital à Paris</title>
+    <title>XebiCon'15 France - Le 4 novembre 2015 -  La conférence dédiée au futur du digital à Paris</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Xebia IT Architects"/>
     <meta name="reply-to" content="marketing@xebia.com"/>
     <meta name="owner" content="Xebia IT Architects"/>
     <meta name="description" content="Le 4 novembre, la conférence dédiée au futur du digital à Paris "/>
-    <meta name="keywords" content="XebiCon, france, événement, conférence, Xebia, Xebicon, paris, digital, web, agile, developpeur"/>
+    <meta name="keywords" content="XebiCon, 2015, france, événement, conférence, Xebia, paris, digital, numerique, web, agile, developpeur"/>
     <meta name="content-language" content="fr"/>
     <meta name="robots" content="follow,index,all"/>
+    <meta property="og:title" content="La conférence dédiée au futur du digital à Paris" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://xebicon.fr" />
+    <meta property="og:image" content="http://www.xebicon.fr/images/header/xebicon-logo.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -101,8 +105,8 @@
             <div class="jeu-concours">
                 <p><span class="bold">GAGNEZ VOTRE PLACE* POUR LA XEBICON'15</span><br/><br/>
 
-                    50 places sont à gagner.<br/>
-                    Tirage au sort prévu le jeudi 29 octobre.<br/><br/>
+                    10 places sont à gagner.<br/>
+                    Tirage au sort prévu le mardi 27 octobre.<br/><br/>
 
                     <span class="little">*d'une valeur de 190€</span></p><br/><br/>
                 <a href="#" data-featherlight="#popup-concours" id="btn_partipe">Je participe</a>
@@ -252,7 +256,7 @@
 
 </div>
 
-<div class="lightbox" id="#congrats">
+<div class="lightbox" id="congrats">
     <p>Merci pour votre participation. Vous receverez un mail de confirmation si vous faites parti(e) des heureux gagnants.</p>
 </div>
 
@@ -274,64 +278,7 @@
 
 <script src="js/script.js"></script>
 
-<script>
 
-    window.concours = function(e) {
-        e.preventDefault();
-
-        var nomEl = document.querySelectorAll('#nom')[1];
-        var nom = nomEl.value;
-        var prenomEl = document.querySelectorAll('#prenom')[1];
-        var prenom = prenomEl.value;
-        var emailEl = document.querySelectorAll('#email')[1];
-        var email = emailEl.value;
-        var jobEl = document.querySelectorAll('#job')[1];
-        var job = jobEl.value;
-        var companyEl = document.querySelectorAll('#societe')[1];
-        var company = companyEl.value;
-        var error = 'solid 2px red';
-        var normal = 'solid 2px purple';
-
-        if (email.length > 0 && company.length > 0) {
-            if (!validateEmail(email)) {
-                emailEl.style.border = normal;
-                emailEl.style.border = error;
-                return;
-            }
-            $.ajax({
-                type: "POST",
-                url: "http://form.xebia.fr/xc15-form.php",
-                data: {
-                    nom: document.querySelectorAll('#nom')[1].value,
-                    prenom: document.querySelectorAll('#prenom')[1].value,
-                    email: document.querySelectorAll('#email')[1].value,
-                    job: document.querySelectorAll('#job')[1].value,
-                    societe: document.querySelectorAll('#societe')[1].value,
-                }
-            });
-
-
-        } else {
-            nom.length > 0 ? nomEl.style.border = normal : nomEl.style.border = error;
-            prenom.length > 0 ? prenomEl.style.border = normal : prenomEl.style.border = error;
-            email.length > 0 ? emailEl.style.border = normal : emailEl.style.border = error;
-            job.length > 0 ? jobEl.style.border = normal : jobEl.style.border = error;
-            company.length > 0 ? companyEl.style.border = normal : companyEl.style.border = error;
-        }
-
-
-
-    };
-
-
-
-
-
-    function validateEmail(email) {
-        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-    };
-</script>
 
 </body>
 </html>

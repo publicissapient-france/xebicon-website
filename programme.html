@@ -2,17 +2,20 @@
 <html>
 <head>
 
-    <title>XebiCon'15 France - Le 4 novembre -  La conférence sur les technologies de demain.</title>
+    <title>Programme - XebiCon'15 France</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Xebia IT Architects"/>
     <meta name="reply-to" content="marketing@xebia.com"/>
     <meta name="owner" content="Xebia IT Architects"/>
-    <meta name="description"
-          content="Le 4 novembre, nous vous proposons une journée dédiée aux technologies de demain. "/>
-    <meta name="keywords" content="XebiCon'15 France"/>
+    <meta name="description" content="Le 4 novembre, la conférence dédiée au futur du digital à Paris "/>
+    <meta name="keywords" content="XebiCon, 2015, france, événement, conférence, Xebia, paris, digital, numerique, web, agile, developpeur"/>
     <meta name="content-language" content="fr"/>
     <meta name="robots" content="follow,index,all"/>
+    <meta property="og:title" content="La conférence dédiée au futur du digital à Paris" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://xebicon.fr" />
+    <meta property="og:image" content="http://www.xebicon.fr/images/header/xebicon-logo.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -45,12 +48,7 @@
         })();
     </script>
 
-    <script>
-        $(function(){
-            $('.fadelinks > :gt(0)').hide();
-            setInterval(function(){$('.fadelinks > :first-child').fadeOut().next().fadeIn().end().appendTo('.fadelinks');}, 5000);
-        });
-    </script>
+
 
     <!-- Hotjar Tracking Code for xebicon.fr -->
     <script>
@@ -128,7 +126,11 @@
 <main>
     <section class="program" id="program">
         <div class="inner-wrapper">
-            <h1>Le <span class="pixel_title">programme</span></h1>
+            <ul class="legende-conf">
+                <li><img src="images/temoignages_clients.png" width="20px" alt="icon_client" title="clients"/>Témoignage client</li>
+                <li><img src="images/conferences.png" width="20px" alt="icon_conference" title="conference"/>Conférence</li>
+                <li><img src="images/atelier.png" width="20px" alt="icon_atelier" title="atelier"/>Atelier</li>
+            </ul>
 
             <div class="table-wrapper">
                 <table id="table-planning">
@@ -136,566 +138,166 @@
                     <tr>
                         <th>&nbsp;</th>
                         <th>AUDITORIUM</th>
-                        <th>Salle 1</th>
-                        <th>Salle 2</th>
-                        <th>Salle 3</th>
-                        <th>Salle 4</th>
+                        <th>Berlin</th>
+                        <th>Namur</th>
+                        <th>Bruxelles</th>
+                        <th>Amsterdam</th>
                     </tr>
                     </thead>
 
                     <tbody>
                     <tr>
-                        <td>8h30 - 9h00</td>
-                        <td colspan="6">Petit Déjeuner</td>
+                        <td class="pause border-none">8h30 - 9h00</td>
+                        <td colspan="6" class="center pause border-none"><span><img src="images/cafe.png" width="20px" alt="icon_cafe" title="cafe"/>CAFÉ D'ACCUEIL</span></td>
                     </tr>
                     <tr>
-                        <td>9h00 - 10h00</td>
-                        <td colspan="6">Keynote d'ouverture AXA : Transformation digitale, les enjeux d’un grand groupe</td>
+                        <td class="keynote ">9h00 - 10h00</td>
+                        <td colspan="6" class="keynote center" data-toggle="modal" data-target="#keynote">Keynote d'ouverture AXA : Transformation digitale, les enjeux d’un grand groupe <br/>(Y. Caseau)</td>
                     </tr>
                     <tr>
                         <td>10h15 - 11h15</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Évaluez votre maturité produit (A. Irmann Thézé) <br/><span class="hashtag">#Agile</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#vsct">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Voyages-sncf.com : les apports de la Data Science à la connaissance client <br/>(M.L. Cassé)<br/><span class="hashtag">#Data</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Témoignage Ingenico : Microservices et application réactives (J.F. Caenen & N. Joziwak) <br/><span class="hashtag">#Backend</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#ingenico">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Ingenico : Microservices et architecture réactive pour une nouvelle plateforme de services autour du paiement en magasin <br/>(J.F. Caenen & N. Joziwak) <br/><span class="hashtag">#Backend #DevOps #Cloud</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Cassandra Internals (M. Nantern)  <br/><span class="hashtag">#Data</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#cassandra">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>À la découverte des mécanismes internes de Cassandra <br/>(M. Nantern)  <br/><span class="hashtag">#Data</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Swift dans la vraie vie (S. Civetta & F. Mirrault )  <br/><span class="hashtag">#Mobile</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#swift">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Swift dans la vraie vie <br/>(S. Civetta & F. Mirrault) <br/><span class="hashtag">#Mobile</span>
                         </td>
-                        <td colspan="1" rowspan="2" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Brace yourselves, Angular 2 is coming! (A. Hebert, D. Podyachiy)  <br/><span class="hashtag">#Frontend</span>
+                        <td colspan="1" rowspan="2" align="middle" class="last-cell popupable atelier four-room" data-toggle="modal" data-target="#angular">
+                            <img src="images/atelier.png" width="20px" alt="icon_atelier" title="atelier"/>Brace yourselves, Angular 2 is coming! <br/>(A. Hebert, D. Podyachiy)  <br/><span class="hashtag">#Frontend</span>
                         </td>
 
                     </tr>
                     <tr>
                         <td>11h30 - 12h30</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Témoignage SGCIB : DevOps à grande échelle : bénéfices et difficultés (F. Masson & C. Rochas.)  <br/><span class="hashtag">#DevOps</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#maturite-produit">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Thiga : Évaluez votre maturité produit <br/>(A. Irmann Thézé)<br/><span class="hashtag">#Agile</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            XebiaLabs : XL Release : à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service (B. Moussaud)  <br/><span class="hashtag">#DevOps</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#xebialabs">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>XebiaLabs XL Release : à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service <br/>(B. Moussaud)  <br/><span class="hashtag">#DevOps</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            CQRS + EventSourcing : beaucoup en parlent, nous on le code en live (S. Le Merdy & P.J. Verdanega)  <br/><span class="hashtag">#Craft</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#cqrs">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>CQRS + Eventsourcing : en direct ! <br/>(S. Le Merdy & P.J. Verdanega)  <br/><span class="hashtag">#Craft #Backend</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Témoignage Louis Vuitton : stratégie digitale dans le retail (J. Guillement)  <br/><span class="hashtag">#Mobile</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#louis-vuitton">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Louis Vuitton : Digitalisation, de l’utilisation du mobile dans le retail <br/>(J. Guillement)  <br/><span class="hashtag">#Mobile #Cloud #Backend</span>
                         </td>
                     </tr>
                     <tr>
-                        <td>12h30 - 13h45</td>
-                        <td colspan="6">DÉJEUNER</td>
+                        <td class="pause">12h30 - 13h45</td>
+                        <td colspan="6" class="center pause"><img src="images/dej.png" width="20px" alt="icon_dejeuner" title="dejeuner"/>DÉJEUNER</td>
                     </tr>
 
                     <tr>
                         <td>13h45 - 14h45</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Apache Mesos, ou comment exploiter les ressources de votre datacenter ? (J.P. Thiery & J. Doucet)  <br/><span class="hashtag">#Backend</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#data-driven">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Be Data Driven : Monter son Data Lab <br/>(J. Buret & A. Benhenni) <br/><span class="hashtag">#Data</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Témoignage Orange Technocentre : Méthodes agiles : se transformer pour innover (F. Deville B. Rojat & B. Moitié)  <br/><span class="hashtag">#Agile</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#cellenza">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Cellenza : Développez et déployez vos applications multiplateformes dans le Cloud <br/>(M. Perfetti) <br/><span class="hashtag">#Cloud</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Témoignage Docapost : IoT, faciliter la vie connectée grâce à un hub numérique (D. Weiss & M. Nantern)  <br/><span class="hashtag">#IoT</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#docapost">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Docapost : IoT, faciliter la vie connectée grâce à un Hub numérique <br/>(D. Weiss & M. Nantern)  <br/><span class="hashtag">#IoT #Backend</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Akamis : les nouvelles méthodes d’acquisition (S. Coussement)  <br/><span class="hashtag">#Digital</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#nouvel-ops">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Le Nouvel Ops <br/>(S. Le Mesle)  <br/><span class="hashtag">#DevOps</span>
                         </td>
-                        <td colspan="1" rowspan="2" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Kafka par la face Nord (X. Bucchiotty et M. Blanc)  <br/><span class="hashtag">#Backend</span>
+                        <td colspan="1" rowspan="2" class="last-cell popupable atelier four-room" data-toggle="modal" data-target="#kafka">
+                            <img src="images/atelier.png" width="20px" alt="icon_atelier" title="atelier"/>Kafka par la face Nord <br/>(X. Bucchiotty et M. Blanc)  <br/><span class="hashtag">#Backend #Data</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>15h00 - 16h00</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Témoignage Voyages-sncf.com : Le Big Data et sa connaissance client (M.L. Cassé)  <br/><span class="hashtag">#Data</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#sg">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>SGCIB : DevOps à grande échelle : bénéfices et difficultés <br/>(F. Masson & C. Rochas.)<br/><span class="hashtag">#DevOps</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Dessine moi un nuage (A. Maury)  <br/><span class="hashtag">#Cloud</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#machine-learning">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Les aglorithmes du Machine Learning <br/>(Y. Benoit & A. Phélip)  <br/><span class="hashtag">#Data</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Scaling Culture (N. Lochet)  <br/><span class="hashtag">#Agile</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#managergeek">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Comment Manager des geeks ?<br/>(L. Legardeur) <br/><span class="hashtag">#Management</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Les challenges des microservices (N. Jozwiak)  <br/><span class="hashtag">#Backend</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#microservices">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Les challenges des microservices <br/>(N. Jozwiak)  <br/><span class="hashtag">#Backend</span>
                         </td>
 
                     </tr>
 
                     <tr>
-                        <td>16h00 - 16h20</td>
-                        <td colspan="6">PAUSE</td>
+                        <td class="pause">16h00 - 16h25</td>
+                        <td colspan="6"  class="center pause"><img src="images/cafe.png" width="20px" alt="icon_cafe" title="cafe"/>PAUSE</td>
                     </tr>
 
                     <tr>
                         <td>16h25 - 17h25</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Témoignage AXA Tech : Cloud Ops : Guide de survie d'une équipe Innovation chez un leader mondial de l’Assurance  <br/><span class="hashtag">#Cloud</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#apache-mesos">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Apache Mesos, ou comment exploiter les ressources de votre datacenter ? <br/>(J.P. Thiery & J. Doucet)<br/><span class="hashtag">#DevOps #Backend</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Les aglorithmes du Machine Learning (Yoann B. & Alban P.)  <br/><span class="hashtag">#Data</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#orange">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Orange Technocentre : Méthodes agiles : se transformer pour innover <br/>(F. Derville B. Rojat & B. Moitié)<br/><span class="hashtag">#Agile</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Du Javascript au metal, le web « natif" (P. Tandia)  <br/><span class="hashtag">#Frontend</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#javascript-metal">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Du Javascript au metal, le web "natif" <br/>(P. Tandia)  <br/><span class="hashtag">#Frontend</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Le nouvel Ops (S. Le Mesle)  <br/><span class="hashtag">#DevOps</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#nuage">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Dessine moi un nuage <br/>(A. Maury)<br/><span class="hashtag">#Cloud</span>
                         </td>
-                        <td colspan="1" rowspan="2" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Double Loop TDD (D. Lemos et P.J. Verdanega) <br/><span class="hashtag">#Craft</span>
+                        <td colspan="1" rowspan="2" class="last-cell popupable atelier four-room" data-toggle="modal" data-target="#double-loop">
+                            <img src="images/atelier.png" width="20px" alt="icon_atelier" title="atelier"/>Double Loop TDD <br/>(D. Lemos et P.J. Verdanega) <br/><span class="hashtag">#Craft</span>
                         </td>
 
                     </tr>
 
                     <tr>
                         <td>17h40 - 18h40</td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Be Data Driven: Monter son Data Lab (Julien B) <br/><span class="hashtag">#Data</span>
+                        <td colspan="1" class="last-cell popupable center-cell" data-toggle="modal" data-target="#axatech">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>AXA Tech : Cloud Ops : Guide de survie d'une équipe Innovation chez un leader mondial de l’Assurance <br/>(E. De Morgoli)<br/><span class="hashtag">#Agile #Frontend #Cloud</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Témoignage SGCIB / UX : La User eXperience au centre de l’entreprise (N. Bourgeois & Antoine V.) <br/><span class="hashtag">#UX</span>
+                        <td colspan="1" class="last-cell popupable first-room" data-toggle="modal" data-target="#ux">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>SGCIB / UX : La User eXperience au centre de l’entreprise <br/>(N. Bourgeois & Antoine V.) <br/><span class="hashtag">#UX</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#keynote-modal">
-                            Comment Manager des geeks (L. Legardeur) <br/><span class="hashtag">#Management</span>
+                        <td colspan="1" class="last-cell popupable second-room" data-toggle="modal" data-target="#scaling-culture">
+                            <img src="images/conferences.png" width="20px" alt="icon_conferences" title="conference"/>Scaling Culture <br/>(N. Lochet)<br/><span class="hashtag">#Agile</span>
                         </td>
-                        <td colspan="1" class="last-cell popupable" data-toggle="modal" data-target="#">
-                            Cellenza : Développez et déployez vos applications multiplateformes dans le cloud et devancer vos concurrents <br/><span class="hashtag">#Cloud</span>
+                        <td colspan="1" class="last-cell popupable third-room" data-toggle="modal" data-target="#akamis">
+                            <img src="images/temoignages_clients.png" width="20px" alt="icon_temoignages" title="temoignage"/>Akamis : les nouvelles méthodes d’acquisition client <br/>(S. Coussement)<br/><span class="hashtag">#Marketing</span>
                         </td>
 
 
                     </tr>
 
                     <tr>
-                        <td>18h40 - 21h30</td>
-                        <td colspan="6">Cocktail de clôture</td>
+                        <td class="pause">18h40 - 21h00</td>
+                        <td colspan="6"  class="center pause"><img src="images/cocktail.png" width="20px" alt="icon_cocktail" title="conference"/>Cocktail de clôture</span></td>
                     </tr>
 
 
                     </tbody>
 
+                    <tfoot>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>AUDITORIUM</th>
+                        <th>Berlin</th>
+                        <th>Namur</th>
+                        <th>Bruxelles</th>
+                        <th>Amsterdam</th>
+                    </tr>
+                    </tfoot>
                 </table>
             </div>
-        </div>
-    </section>
-
-    <section class="program">
-        <div class="inner-wrapper">
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Keynote d'ouverture AXA : Transformation digitale, les enjeux d’un grand groupe</p>
-                        <p class="speaker-square">Y. Caseau, Digital Agency Director d'AXA</p>
-                        <p class="mots_clefs">#Keynote #Transformation #Digitalisation</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#keynote">
-                        <p>A découvrir prochainement</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Ingenico : Microservices et architecture réactive pour une nouvelle plateforme de services autour du paiement en magasin</p>
-                        <p class="speaker-square">J.F. Caenen, CTO d'Ingenico et N. Jozwiak, Consultant Xebia</p>
-                        <p class="mots_clefs">#SI #Microservices #Architectures</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#ingenico">
-                        <p>Ingenico a conçu une nouvelle génération de plateforme de services pour les marchands.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Be Data Driven : Monter son Data Lab</p>
-                        <p class="speaker-square">J. Buret, CTO Xebia</p>
-                        <p class="mots_clefs">#Data #DataLab</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#data-driven">
-                        <p>Comment réellement tirer parti de toutes vos données et en tirer un véritable avantage concurrentiel ? En montant un Data Lab.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Apache Mesos, ou comment exploiter les ressources de votre Data Center</p>
-                        <p class="speaker-square">J-P. Thiery, Consultant Xebia</p>
-                        <p class="mots_clefs">#Cloud #Data</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#apache-mesos">
-                        <p>Venez découvrir comment Mesos, Marathon et Docker vous permettent d’exploiter au mieux les ressources de votre Datacenter.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Louis Vuitton : Digitalisation, de l’utilisation du mobile dans le retail</p>
-                        <p class="speaker-square">J. Guillement, Mobility & Innovation Manager de Louis Vuitton</p>
-                        <p class="mots_clefs">#Mobilité</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#louis-vuitton">
-                        <p>A découvrir prochainement</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Swift dans la vraie vie</p>
-                        <p class="speaker-square">S. Civetta et F. Mirault, Consultants Xebia</p>
-                        <p class="mots_clefs">#Mobilité #iOS #Swift</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#swift">
-                        <p>Assistez à un retour d’expérience concernant le dernier langage d’Apple dans deux projets mobiles utilisés en production.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-                        <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage AXA Tech - Cloud Ops : Guide de survie d'une équipe Innovation chez un leader mondial de l’Assurance</p>
-                        <p class="speaker-square">E. De Morgoli, Product Manager d'AXA Tech</p>
-                        <p class="mots_clefs">#Cloud</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#axatech">
-                        <p>Les nouvelles technologies ont un impact majeur sur le métier de l’Assurance. Pour une grande entreprise il est plus que jamais important d'innover et pourtant les freins sont nombreux. Fort heureusement il existe des moyens pour lever les blocages.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Les algorithmes du Machine Learning</p>
-                        <p class="speaker-square">Y. Benoit et A. Phelip, Consultants Xebia</p>
-                        <p class="mots_clefs">#Data</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#machine-learning">
-                        <p >Découvrez ce qui se cache derrière ces mots, quels algorithmes existent, comment ils fonctionnent et comment les utiliser.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Dessine moi un nuage</p>
-                        <p class="speaker-square">A. Maury et S. Le Mesle, CTOs WeScale</p>
-                        <p class="mots_clefs">#Cloud</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#nuage">
-                        <p>Quels avantages tirer du Cloud ? Que vous en soyez un client, un bâtisseur u un aspirant, partagez votre vision de ce mouvement qui débute à peine.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Société Générale : DevOps à grande échelle, bénéfices et difficultés</p>
-                        <p class="speaker-square">Frédéric Masson, Global Head of Lean IT, Agile and Continuous Delivery program de la Société Générale et C. Rochas, Consultant Xebia</p>
-                        <p class="mots_clefs">#DevOps </p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#sg">
-                        <p>À découvrir prochainement</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Docapost : IoT, faciliter la vie connectée grâce à un Hub numérique</p>
-                        <p class="speaker-square">D. Weiss, Connected objects and services Program Director de Docapost et M. Nantern, Consultant Xebia</p>
-                        <p class="mots_clefs">#Data #IoT</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#docapost">
-                        <p>Découvrez comment a été construit la plateforme objets connectés du groupe La Poste.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Kafka par la face Nord</p>
-                        <p class="speaker-square">X. Bucchiotty et M. Blanc, Consultants Xebia</p>
-                        <p class="mots_clefs">#Back #HandsOn</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#kafka">
-                        <p>Kafka est devenu en quelques temps un outil central dans les architectures d’analyses de données. Venez comprendre par la pratique !</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Cellenza : Développez et déployez vos applications multiplateformes dans le Cloud</p>
-                        <p class="speaker-square">M. Perfetti, Consultant Cellenza</p>
-                        <p class="mots_clefs">#Cloud</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#cellenza">
-                        <p> Quels obstacles sont à prévoir ?</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Voyages-SNCF.com : les apports de la Data Science à la connaissance client</p>
-                        <p class="speaker-square">M-L. Cassé, Directrice Marketing Client et Data de Voyages-SNCF.com</p>
-                        <p class="mots_clefs">#Data</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#vsct">
-                        <p>Leader européen de la distribution du train, Voyages-Sncf.com a depuis plus d’1 an pris le virage du Big data, notamment pour développer la connaissance client et permettre ainsi une amélioration de son expérience utilisateur.
-                        </p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Thiga : Évaluer votre maturité produit</p>
-                        <p class="speaker-square">A. Irrmann-Tézé, Co-fondateur de Thiga</p>
-                        <p class="mots_clefs">#Agile</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#maturite-produit">
-                        <p>Découvrez les clés pour évaluer votre maturité produit et savoir si votre entreprise a réellement les armes pour faire les bons produit ?</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Orange Technocentre : Méthodes agiles, se transformer pour innover</p>
-                        <p class="speaker-square">B. Rojat, Directeur adjoint du Technocentre, F. Derville, Head of Performance & Transformation et B. Moitié, Consultant Xebia  </p>
-                        <p class="mots_clefs">#Agile #Transformation </p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#orange">
-                        <p>Comment implémenter l'agilité dans un grand groupe international ? Découvrez le projet ONE ROOF.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-container">
-                <div class="flipper square  step_1">
-                    <div class="front">
-                        <p class="titre_slot">Le Nouvel Ops</p>
-                        <p class="speaker-square">S. Le Mesle, CTO Wescale</p>
-                        <p class="mots_clefs">#DevOps</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#nouvel-ops">
-
-                        <p>L’Ops d’hier maître absolu des clés de la production n’est plus ! Plus encore qu’un agiliste ou qu’un craftman, le nouvel Ops est le soutien dont vous avez besoin.</p>
-
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Du JavaScript au métal, le web «natif»</p>
-                        <p class="speaker-square">P. Tandia, Consultant Xebia</p>
-                        <p class="mots_clefs">#Front</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#javascript-metal">
-                        <p>Web Assembly, asmjs, SIMD autant de technologies/techniques qui nous font miroiter la promesse de performances (presque) natives pour les applications web.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Akamis : Marketing digital, les nouvelles méthodes d'acquisition client</p>
-                        <p class="speaker-square">S. Coussement, Fondateur d'Akamis</p>
-                        <p class="mots_clefs">#GrowthHacking #Digital </p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#akamis">
-                        <p>Le monde du Digital change et le marketing avec. Les utilisateurs, leurs attentes et leurs usages évoluent et on ne peut plus les intéresser avec les mêmes méthodes.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front">
-                        <p class="titre_slot">À la découverte des mécanismes internes de Cassandra</p>
-                        <p class="speaker-square">M. Nantern, Consultant Xebia</p>
-                        <p class="mots_clefs">#Data</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#cassandra">
-                        <p>Construire une base de données distribuée, scalable et hautement disponible est une opération complexe. Focus sur Cassandra. </p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square  step_1">
-                    <div class="front">
-                        <p class="titre_slot">CQRS + Eventsourcing : en direct !</p>
-                        <p class="speaker-square">P.J. Vardanega et S. Le Merdy, Consultants Xebia</p>
-                        <p class="mots_clefs">#Craft</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#cqrs">
-                        <p>Nous présenterons le code d'une application développé en mode microservices.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage XebiaLabs - XL Release : à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service</p>
-                        <p class="speaker-square">B. Moussaud, Directeur technique XebiaLabs France</p>
-                        <p class="mots_clefs">#DevOps</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#xebialabs">
-                        <p>Partez à la recherche du temps (perdu) entre le Use Case Metier et sa Mise en Service.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front slot_rex">
-                        <p class="titre_slot">Témoignage Société Générale et UX Républic : la User eXperience au centre de l'entreprise</p>
-                        <p class="speaker-square">N. Bourgeois, IT Manager Finance et A. Visonneau, Directeur associé d'UX Republic</p>
-                        <p class="mots_clefs">#UX</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#ux">
-                        <p>A découvrir prochainement</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Scaling Culture</p>
-                        <p class="speaker-square">N. Lochet, Consultant Xebia</p>
-                        <p class="mots_clefs">#Agile</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#scaling-culture">
-                        <p>L’agilité c’est l’auto-organisation, pas les process ! Et si plutôt que Scaling Agile, le mantra était : Scaling Culture ?</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square  step_1">
-                    <div class="front">
-                        <p class="titre_slot">Double Loop TDD</p>
-                        <p class="speaker-square">D. Lemos et P-J. Vardanega, Consultants Xebia</p>
-                        <p class="mots_clefs">#Craft #BDD #TDD</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#double-loop">
-                        <p>À partir d’une application existante, développez de nouvelles fonctionnalités en mode test-first. On y parlera BDD et TDD.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-container">
-                <div class="flipper square alternative_square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Brace yourselves, Angular 2 is coming!</p>
-                        <p class="speaker-square">A. Hebert et D. Podyachiy, Consultants Xebia</p>
-                        <p class="mots_clefs">#Front #Angular</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#angular">
-                        <p>Après de longs et interminables et TERRIBLES mois d'attente, ce qui devait arriver arriva : l'annonce d'Angular 2 !</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-container">
-                <div class="flipper square step_1">
-                    <div class="front">
-                        <p class="titre_slot">Les challenges des Microservices</p>
-                        <p class="speaker-square">N. Jozwiak, Consultant Xebia</p>
-                        <p class="mots_clefs">#Back #Architectures</p>
-                    </div>
-                    <div class="back step_2" data-toggle="modal" data-target="#microservices">
-                        <p>L’approche microservices devient de plus en plus présente dans nos conceptions d’architectures.</p>
-                        <a href="#" class="voirplus_prog">Voir plus</a>
-                    </div>
-                </div>
-            </div>
 
         </div>
+
     </section>
+
+
 
     <section class="">
         <div class="inner-wrapper btn">
@@ -765,7 +367,7 @@
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
                     <div class="speaker">
                         <div class="img-wrapper">
@@ -785,6 +387,59 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+<div class="modal fade" id="managergeek" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Comment manager des geeks ?</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>
+                    Manager une boite de Geeks est très particulier.
+                </strong></p>
+
+                <p class="slot">
+                    Ces salariés d'un genre à part veulent des nouvelles technos, du temps pour expérimenter, partager la connaissance, faire du Pair Programming, participer à la stratégie d'entreprise et une vraie liberté de parole.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speaker</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="" src="images/speaker/luc_legardeur.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Luc Legardeur</span>
+
+                            <p class="desc">
+                                Président fondateur de Xebia et sponsor de la première heure de Devoxx, je suis également auteur du contrat agile, fondateur du French SUG et Investisseur dans l'IT et j'ai le plaisir de participer aux aventures suivantes : XebiaLabs, Cellenza, Thiga, UX REPUBLIC, WeScale et Akamis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -898,7 +553,8 @@ Venez découvrir ce retour d'expérience, où vous visiterez la villa, un open S
                             <span class="name">Franck Derville</span>
 
                             <p class="desc">
-
+                                Frank Derville évolue depuis plus de 7 ans chez Orange.
+                                Il est aujourd'hui Directeur de la performance et de la transformation au TechnoCentre de Orange.
                             </p>
                         </div>
                     </div>
@@ -1080,7 +736,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                 <p class="slot">Nous partirons des critères d'acceptance pour créer des scénarios BDD et introduire les fonctionnalités dans le code. Afin de valider ces scénarios, nous implémenterons chaque couche en partant du front jusqu'à la base de données en mode TDD. Ce type d'approche est communément connu comme outside–in développement. L'application existante utilise les langages et outils suivant : Java8, AngularJS, Cucumber, Rest-assured, JUnit, Selenium.</p>
 
 
-                <p class="slot">Matériel nécessaire : son ordinateur avec Java 8, maven et son IDE préféré d'installés et de fonctionnels.</p>
+                <p class="slot">Matériel nécessaire : ordinateur avec Java 8, maven et son IDE préféré d'installés et de fonctionnels.</p>
             
 
                 <div class="speakers">
@@ -1148,7 +804,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1191,7 +847,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                 <p class="slot"></p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
                     <div class="speaker">
                         <div class="img-wrapper">
@@ -1201,7 +857,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                         <div class="info">
                             <span class="name">Eric De Morgoli</span>
 
-                            <p class="desc">Product Manager chez AXA Tech</p>
+                            <p class="desc">Eric de Morgoli a plus de 20 ans d'expérience. Il  évolue à présent chez AXA sur le développement de solutions informatiques innovantes pour soutenir la transformation du Groupe AXA numérique.</p>
                         </div>
                     </div>
                 </div>
@@ -1299,7 +955,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
 
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
                     <div class="speaker">
                         <div class="img-wrapper">
@@ -1409,7 +1065,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1455,7 +1111,7 @@ Il faudra toutefois vous munir d'un ordinateur sur lequel vous aurez préalablem
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
                     <div class="speaker">
                         <div class="img-wrapper">
@@ -1501,7 +1157,7 @@ A ses heures perdues, il a contribué quelques patchs pour le moteur javascript 
                     Plus encore qu'un agiliste ou qu'un craftman, le nouvel Ops est le soutien dont vous avez besoin.</p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1563,7 +1219,7 @@ A ses heures perdues, il a contribué quelques patchs pour le moteur javascript 
                     Au travers de retours d'expérience, nous nous poserons toutes ces questions (et pleins d'autres) ensemble !</p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1608,7 +1264,7 @@ A ses heures perdues, il a contribué quelques patchs pour le moteur javascript 
                 <p class="slot">Découvrez par quelques illustrations comment cela révolutionne le marketing digital de Voyages-Sncf.com et comment cette nouvelle démarche a été implémentée au sein de l’entreprise.</p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1653,7 +1309,7 @@ A ses heures perdues, il a contribué quelques patchs pour le moteur javascript 
                 <p class="slot">Nous développons et livrons du logiciel plus vite que jamais, ou du moins nous le souhaitons. De nombreux obstacles empêchent généralement cet objectif : ségrégations technologiques, méthodes de travail, dispersion des équipes, manque de traçabilité, etc. Cette présentation est 100% « No Silver Bullet », toutefois vous y trouverez des réponses concrètes à vos problèmes.</p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1699,7 +1355,7 @@ A ses heures perdues, il a contribué quelques patchs pour le moteur javascript 
 
                 <p class="slot">Ce journal distribué repose sur quelques principes simples qui en font un outil performant et robuste et lui offre une scalabilité presque linéaire. 
 
-Nous vous proposons de comprendre par la pratique quelques concepts techniques en codant un système de production/consommation de messages.</p>
+Nous vous proposons de comprendre par la pratique quelques concepts techniques en codant un système de production/consommation de messages.<br/> Matériel nécessaire : ordinateur avec Node.js, Git (optionnel) et son IDE préféré.</p>
 
                 <div class="speakers">
                     <h4><strong>Speakers</strong></h4>
@@ -1772,7 +1428,7 @@ Nous vous proposons de comprendre par la pratique quelques concepts techniques e
  <p class="slot">Basé sur un retour d’expérience, je vous propose de parcourir ensemble les challenges à remplir pour mettre en place avec succès des architectures microservices. Nous nous interrogerons également pourquoi et comment les microservices ont une chance de fonctionner là où la SOA a échoué.</p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1882,7 +1538,7 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -1899,19 +1555,6 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
                         </div>
                     </div>
 
-                    <div class="speaker ">
-                        <div class="img-wrapper right">
-                            <img alt="Séven Le Mesle" src="images/speaker/seven_le_mesle.png"/>
-                        </div>
-
-                        <div class="info">
-                            <span class="name">Séven Le Mesle</span>
-
-                            <p class="desc">
-                                  Bénéficiant d'une double formation réseau numérique et développement applicatif, Séven se passionne pour les pratiques DevOps et les solutions cloud. Fort de son expérience d'architecte applicatif et d'expert performance pour Xebia, il imagine et réalise des projets autant innovants qu'ambitieux pour des grands comptes (Publicis, SFR, Voyages-sncf.com, etc.). Son credo : "Aucun plan ne survit à son implémentation !" Séven favorise le travail par incrément, en mettant à l'épreuve les solutions en continu.
-                            </p>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -2077,7 +1720,7 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -2131,7 +1774,7 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
                 </p>
 
                 <div class="speakers">
-                    <h4><strong>Speakers</strong></h4>
+                    <h4><strong>Speaker</strong></h4>
 
 
                     <div class="speaker">
@@ -2144,6 +1787,21 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
 
                             <p class="desc">
                                 Java Craftsman et agiliste pratiquant. Jean-Pascal a arpenté les voies de l'intégration continue jusqu'à intégrer la mouvance DevOps. Il aime : Java, Docker, Mesos, et la qualité des livrables. Il n'aime pas : les phrases qui commence par "Normalement, ...".
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Jérome Doucet" src="images/speaker/jerome_doucet.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Jérôme Doucet</span>
+
+                            <p class="desc">
+                                Développeur passionné, Jérôme s'attache avant tout à la qualité du code et à l'amelioration continue. Il est par ailleurs intérressé par les applications distribuées et les techniques de développement événementiel et asynchrone.
                             </p>
                         </div>
                     </div>
@@ -2196,6 +1854,20 @@ Venez découvrir avec nous le marché de l’IOT, ses usages, sa situation actue
 
                             <p class="desc">
                                 Julien Buret est le CTO de Xebia France. Il dispose d'une vaste expérience dans l'écosystème Java EE et Big Data. Julien intervient principalement dans la mise en place de solutions Big Data auprès des grands comptes dans les télécoms, la finance, les jeux en ligne etc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Amine Benhenni" src="images/speaker/amine_benhenni.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Amine Benhenni</span>
+
+                            <p class="desc">
+
                             </p>
                         </div>
                     </div>
