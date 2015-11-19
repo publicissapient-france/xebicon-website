@@ -1484,11 +1484,14 @@ input {
 
 .after_link
 {
-  display: inline-block;
   text-align: center;
   margin: auto;
-  width: 100%;
+  width: 580px;
   margin-top: 10px;
+
+  @media (max-width: 800px){
+    width: auto;
+  }
 }
 
 .link_video {
@@ -1499,16 +1502,19 @@ input {
 
 .btn_white
 {
-  background-color: @turquoiseColor;
+  background-color: #06a99c;
   color: white;
   padding: 15px 10px;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 
   @media (max-width: 800px) {
     display: block;
     margin: 20px;
+    width: auto;
   }
 
   .fa {
