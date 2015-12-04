@@ -25,12 +25,17 @@
 
     <link href="styles/main.min.css" rel="stylesheet"/>
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.slide-text-left.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/jquery-css-transform.js"></script>
+    <script src="js/jquery.slide-text-left.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
 
 
 
@@ -84,6 +89,7 @@
           <ul>
             <a href="index.html" class="active"><li>La Conférence</li></a>
             <a href="programme.html"><li>Vidéos et Slides</li></a>
+              <a href="presse.html"><li>Presse</li></a>
             <a href="expertcafe.html"><li>L'Expert Café</li></a>
             <a href="infos.html"><li>Infos pratiques</li></a>
           </ul>
@@ -103,35 +109,19 @@
                 <a href="" class="btn_white" data-featherlight="#popup2016"><i class="fa fa-envelope-o"></i>Rendez-vous à la XebiCon'16</a>
             </div>
 
-
-
-
-
             <div class="lightbox" id="mail-xebicon-2016">
-
                     <form id="popup2016" onsubmit="window.xebicon16(event)" >
-
-
                         <p>Early Bird notification pour la XebiCon'16</p><br/><br/>
-
                         <label>Adresse mail :</label>
                         <input id="email" name="email" type="email" required autofocus/><br/><br/>
-
                         <input type="submit" class="button" id="download" value="A bientôt"/>
-
-
                     </form>
-
-
             </div>
-
-
         </div>
 
         <div id="congrats">
             <p>Merci.</p>
         </div>
-
     </section>
 
 
@@ -143,8 +133,6 @@
 
         <h2 class="title">
             <p><span class="slideText"></span></p>
-
-
         </h2>
     </section>
 
@@ -154,10 +142,37 @@
     <section class="teaser" id="video">
         <div class="inner-wrapper">
             <h2>Retour sur la XebiCon'15</h2>
-
             <div class="video" >
                 <iframe class="teaser_youtube" width="1024" height="576" src="https://www.youtube.com/embed/kX9Xf0a5QiY" frameborder="0" allowfullscreen></iframe>
             </div>
+
+
+            <section data-featherlight-gallery data-featherlight-filter="a">
+                <a class="img_xebicon" href="images/xebicon/exterieur_xebicon_big.png"><img src="images/xebicon/exterieur_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/sac_xebicon_big.png"><img src="images/xebicon/sac_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/keynote_auditirium_big.png"><img src="images/xebicon/keynote_auditirium_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/keynote_auditorium_xebicon_big.png"><img src="images/xebicon/keynote_auditorium_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/axa_auditorium_big.png"><img src="images/xebicon/axa_auditorium_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/programme_xebicon_big.png"><img src="images/xebicon/programme_xebicon_thumbnail.png"></a>
+
+                <a class="img_xebicon" href="images/xebicon/ingenico_xebicon_big.png"><img src="images/xebicon/ingenico_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/auditorium_xebicon_apache_big.png"><img src="images/xebicon/auditorium_xebicon_apache_thumbnail.png"></a>
+
+                <a class="img_xebicon" href="images/xebicon/expert_cafe_xebicon_big.png"><img src="images/xebicon/expert_cafe_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/cassandra_xebicon_big.png"><img src="images/xebicon/cassandra_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/salle_conference_1_big.png"><img src="images/xebicon/salle_conference_1_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/docapost_salle_big.png"><img src="images/xebicon/docapost_salle_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/buffet_xebicon_big.png"><img src="images/xebicon/buffet_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/buffet_midi_xebicon_big.png"><img src="images/xebicon/buffet_midi_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/application_xebicon_big.png"><img src="images/xebicon/application_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/xebicon_auditorium_big.png"><img src="images/xebicon/xebicon_auditorium_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/handson_xebicon_big.png"><img src="images/xebicon/handson_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/handson_salle_xebicon_big.png"><img src="images/xebicon/handson_salle_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/buildthefuture_xebicon_big.png"><img src="images/xebicon/buildthefuture_xebicon_thumbnail.png"></a>
+                <a class="img_xebicon" href="images/xebicon/thiga_xebicon_big.png"><img src="images/xebicon/thiga_xebicon_thumbnail.png"></a>
+
+
+            </section>
 
 
             <a href="programme.html">VIDÉOS ET SLIDES</a>
@@ -254,9 +269,19 @@
             </ul>
         </div>
     </section>
-
-
 </footer>
+
+
+
+<div class="modal fade" id="test_photo" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/speaker/alexandre_hebert.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

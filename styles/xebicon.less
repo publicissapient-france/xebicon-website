@@ -481,6 +481,37 @@ main {
   right: 0;
 }
 
+.presse {
+  background-image: url('../images/header/bg_presse.png');
+}
+
+.article_presse {
+  ul {
+    padding-bottom: 50px;
+
+    li {
+      padding: 20px 0px;
+      list-style-type: circle;
+      display: block;
+
+      .lien_presse {
+        padding: 0px;
+        background-color: transparent;
+        color: @orangeColor;
+
+        &:hover {
+          background-color: transparent;
+          color: @orangeColor;
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+
+
+}
+
 .triangle {
   border-right: 16px solid transparent;
   border-left: 16px solid transparent;
@@ -1404,6 +1435,14 @@ button.close {
 
 }
 
+.img_xebicon {
+  background-color: transparent !important;
+  padding: 0px !important;
+    img {
+      width: 177px;
+
+    }
+}
 
 .lightbox
 {
@@ -1418,8 +1457,21 @@ button.close {
   background: white;
   border: 2px solid @turquoiseColor;
   border-bottom: 2px solid @turquoiseColor !important;
-  padding: 25px !important;
+  padding: 0px !important;
 
+}
+
+#popup2016 {
+  padding: 25px;
+}
+
+
+.featherlight-next, .featherlight-previous {
+  background: transparent !important;
+
+  span {
+    font-size: 30px !important;
+  }
 }
 
 
