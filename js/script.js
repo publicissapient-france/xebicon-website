@@ -31,7 +31,7 @@ window.xebicon16 = function(e) {
         }
         $.ajax({
             type: "POST",
-            url: "http://form.xebia.fr/xc16-notification.php",
+            url: "http://form.xebia.fr/notification-form/notification-form.php",
             data: {
                 email: document.querySelectorAll('#email')[1].value
             }
