@@ -33,21 +33,6 @@
 
 
 
-    <script type="text/javascript">
-        WebFontConfig = {
-            google: { families: [  'Roboto:400,700:latin' ] }
-        };
-        (function () {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
-
     <!-- Hotjar Tracking Code for xebicon.fr -->
     <script>
         (function(h,o,t,j,a,r){
@@ -68,18 +53,18 @@
 <header>
     <section class="xebia">
         <a href="index.html" title="Site XebiCon France">
-            <img src="images/header/xebicon-logo.png" class="logo-xebia" alt="Logo XebiCon"/>
+            <img src="images/header/logo_xebicon.png" class="logo-xebia" alt="Logo XebiCon" title="Logo XebiCon Conference"/>
         </a>
 
         <label for="chk-menu">☰</label>
         <input type="checkbox" id="chk-menu">
         <nav>
             <ul>
-                <a href="index.html"><li>La Conférence</li></a>
-                <a href="programme.html"><li>Le Programme</li></a>
-                <a href="expertcafe.html"><li>L'Expert Café</li></a>
-                <a href="infos.html"><li>Infos pratiques</li></a>
-                <a href="inscription.html" class="inscription"><li>Inscription</li></a>
+                <a href="index.html"><li>XebiCon'16</li></a>
+                <a href="programme.html"><li>Vidéos et Slides</li></a>
+                <a href="presse.html"><li>Presse</li></a>
+                <a href="infos.html" ><li>Infos pratiques</li></a>
+                <a href="inscription.html" class="active"><li>Inscription</li></a>
             </ul>
         </nav>
     </section>
@@ -87,52 +72,37 @@
     <section class="xebicon infos billets">
         <div class="inner-wrapper">
             <h1 class="titre_autre" >Rendez-vous à la XebiCon France :
-                <br/>
+                <br/><br/>
 
-                <span class="">le futur du digital, le 4 novembre prochain </span>
+                <span class="">le futur du digital, le 9 novembre 2016 </span>
             </h1>
         </div>
+    </section>
+    <section class="tagline_page">
+        <h2>Rendez-vous <span class="bold">au pied de la Tour Eiffel</span> pour la seconde édition de la XebiCon</h2>
     </section>
 
 </header>
 <main>
     <section class="explications">
-        <div class="inner-wrapper">
-            <p class="first-paragraph">
-                Vous avez reçu une invitation pour la XebiCon'15, et vous souhaitez prendre votre place sans plus attendre ?<br/><br/>
+        <div class="inner-wrapper center">
 
-                Indiquez dans l'espace "code promotionnel" ci-dessous, le code qui est précisé sur votre invitation, puis cliquez sur "Appliquer".
-                Une nouvelle ligne d'inscription apparaitra sous le nom XebiCon '15 - Invitation.
-                Après avoir précisé le nombre d'invitation que vous souhaitez (1 ou 2), procédez à votre inscription en cliquant sur "commander".</p>
+
+            <a href="" class="btn_white" data-featherlight="#popup2016"><i class="fa fa-envelope-o"></i>Recevez toutes les informations sur la XebiCon'16</a>
+
+
+            <div class="lightbox" id="mail-xebicon-2016">
+            <form id="popup2016" onsubmit="window.xebicon16(event)" >
+                <p>Recevez toutes les informations sur la XebiCon'16</p><br/><br/>
+                <label>Adresse mail :</label>
+                <input id="email" name="email" type="email" required autofocus/><br/><br/>
+                <input type="submit" class="button" id="download" value="A bientôt"/>
+            </form>
+            </div>
         </div>
     </section>
     <section class="billeterie eventbrite" >
-<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.fr/tickets-external?eid=18132442624&ref=etckt" frameborder="0" height="247" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Développé par Eventbrite</a></div></div>
-    </section>
-
-    <section class="chiffres">
-        <div class="inner-wrapper">
-        <ul>
-            <li class="counter">350</li>
-            <li>personnes</li>
-        </ul>
-
-        <ul>
-            <li class="counter-bis">27</li>
-            <li>conférences</li>
-        </ul>
-
-        <ul>
-            <li class="counter-bis">10</li>
-            <li>témoignages</li>
-        </ul>
-
-        <ul>
-            <li>1</li>
-            <li>expert café</li>
-        </ul>
-        </div>
-
+<div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.fr/" frameborder="0" height="247" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Développé par Eventbrite</a></div></div>
     </section>
 
 
@@ -149,12 +119,6 @@
         </div>
     </section>
 
-
-    <section class="xebia_orga">
-        <div class="inner-wrapper">
-            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
-        </div>
-    </section>
 </main>
 
 <footer>
@@ -171,9 +135,15 @@
                 <li>156, Boulevard Haussmann</li>
                 <li>75008 Paris</li>
                 <br/><br/>
-                <li>Mail : <a href="mailto:marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Mail : <a href="mailto:xebicon@xebia.fr">xebicon@xebia.fr</a></li>
                 <li>Tél : <a href="tel:+33153899999">01.53.89.99.99</a></li>
             </ul>
+        </div>
+    </section>
+
+    <section class="xebia_orga">
+        <div class="inner-wrapper">
+            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
         </div>
     </section>
 

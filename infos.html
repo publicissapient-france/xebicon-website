@@ -28,6 +28,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 
 
@@ -66,27 +68,27 @@
 <header>
     <section class="xebia">
         <a href="index.html" title="Site XebiCon France">
-            <img src="images/header/xebicon-logo.png" class="logo-xebia" alt="Logo XebiCon"/>
+            <img src="images/header/logo_xebicon.png" class="logo-xebia" alt="Logo XebiCon" title="Logo XebiCon Conference"/>
         </a>
 
         <label for="chk-menu">☰</label>
         <input type="checkbox" id="chk-menu">
         <nav>
             <ul>
-                <a href="index.html"><li>La Conférence</li></a>
+                <a href="index.html"><li>XebiCon'16</li></a>
                 <a href="programme.html"><li>Vidéos et Slides</li></a>
                 <a href="presse.html"><li>Presse</li></a>
-                <a href="expertcafe.html"><li>L'Expert Café</li></a>
                 <a href="infos.html"  class="active"><li>Infos pratiques</li></a>
+                <a href="inscription.html"><li>Inscription</li></a>
             </ul>
         </nav>
     </section>
 
     <section class="xebicon infos eurosites">
         <div class="inner-wrapper">
-            <h1 class="titre_autre">Le 4 novembre 2015<br/>
-                de 8h30 à 19h<br/>
-                <span class="couleur_turquoise">à l'Eurosites George V</span>
+            <h1 class="titre_autre">Le 9 novembre 2016<br/>
+                <br/>
+                <span>au Cap 15, Quai de Grenelle</span>
             </h1>
 
 
@@ -95,32 +97,35 @@
     </section>
 
     <section class="tagline_page">
-        <h2>Un lieu unique <span class="bold">au c&#339;ur</span> de Paris</h2>
+        <h2>Rendez-vous <span class="bold">au pied de la Tour Eiffel</span> pour la seconde édition de la XebiCon</h2>
     </section>
 
 </header>
 <main>
+
+
+
     <div class="infos_map">
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20996.21247157241!2d2.3370738625488396!3d48.867237781948376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc81109aad8d9d6f!2sEurosites+George+V!5e0!3m2!1sfr!2sfr!4v1440084194984" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10500.877586253559!2d2.2884133!3d48.8540266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x859d6549ba6955f3!2sCAP+15!5e0!3m2!1sfr!2sfr!4v1450271260080" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen class="scrolloff"></iframe>
         <div class="infos_lieu">
             <ul>
-                <li>EUROSITES GEORGE V – 28, Avenue George V – 75008 Paris</li>
+                <li>CAP 15 – 13, Quai de Grenelle – 75015 Paris.</li>
             </ul>
 
             <ul>
                 <li>ACCÈS MÉTRO :</li>
-                <li>Station George V (ligne 1 ), station Alma Marceau (ligne 9).</li>
+                <li>Station : Bir Hakeim (ligne 6).</li>
             </ul>
 
             <ul>
-                <li>ACCÈS BUS :</li>
-                <li>Lignes 32, 42, 63, 72, 73, 80 et 92.</li>
+                <li>ACCÈS RER :</li>
+                <li>Station : Champ de Mars Tour Eiffel.</li>
             </ul>
 
             <ul>
                 <li>PARKING :</li>
-                <li>Vinci Champs Élysées et Alma George V.</li>
+                <li>Parking sous immeuble.</li>
             </ul>
         </div>
         </div>
@@ -129,10 +134,24 @@
 
     <section class="teaser">
         <div class="inner-wrapper">
+            <div class="center">
+                <a href="inscription.html" class="btn_white animated bounceInDown"><i class="fa fa-ticket"></i>Ticket "Super Early Bird"</a><br/>
+                <a href="" class="btn_white" data-featherlight="#popup2016"><i class="fa fa-envelope-o"></i>Recevez toutes les informations sur la XebiCon'16</a>
+            </div>
 
 
 
-            <a href="programme.html">VIDÉOS ET SLIDES</a> <br/><br/>
+            <div class="lightbox" id="mail-xebicon-2016">
+                <form id="popup2016" onsubmit="window.xebicon16(event)" >
+                    <p>Recevez toutes les informations sur la XebiCon'16</p><br/><br/>
+                    <label>Adresse mail :</label>
+                    <input id="email" name="email" type="email" required autofocus/><br/><br/>
+                    <input type="submit" class="button" id="download" value="A bientôt"/>
+                </form>
+            </div>
+
+
+            <a href="programme.html">Vidéos et slides</a> <br/><br/>
         </div>
     </section>
 
@@ -149,11 +168,7 @@
         </div>
     </section>
 
-    <section class="xebia_orga">
-        <div class="inner-wrapper">
-            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
-        </div>
-    </section>
+
 </main>
 
 <footer>
@@ -170,9 +185,15 @@
                 <li>156, Boulevard Haussmann</li>
                 <li>75008 Paris</li>
                 <br/><br/>
-                <li>Mail : <a href="mailto:marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Mail : <a href="mailto:xebicon@xebia.fr">xebicon@xebia.fr</a></li>
                 <li>Tél : <a href="tel:+33153899999">01.53.89.99.99</a></li>
             </ul>
+        </div>
+    </section>
+
+    <section class="xebia_orga">
+        <div class="inner-wrapper">
+            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
         </div>
     </section>
 

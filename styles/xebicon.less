@@ -104,7 +104,6 @@ body {
 }
 
 @textColor: #2e2e2e;
-@orangeColor: #f89641;
 @turquoiseColor: #06a99c;
 @greyColor: #333333;
 
@@ -113,7 +112,8 @@ body {
 @greyLine: #E4E4E4;
 
 @xebiaColorDeep: #45133F;
-@orangeColor: #f89641;
+@orangeColor: #f39200;
+@orangeColorDark: #e88400;
 @redColor: #aa2615;
 
 @greyBackgroundProgram: #F5F5F5;
@@ -184,7 +184,7 @@ header {
 
       ul {
 
-        padding-left: 350px;
+        padding-left: 450px;
 
         @media (max-width: 1080px) {
           padding-left: 0px;
@@ -197,6 +197,20 @@ header {
           padding: 15px 20px;
           transition: 0.3s all;
           font-size: 14px;
+
+          &:last-of-type{
+            background-color: @orangeColor;
+            color: white;
+
+            &:hover {
+              background-color: @orangeColorDark;
+            }
+
+            @media (max-width: 800px) {
+              background-color: transparent !important;
+              color:#2e2e2e !important;
+            }
+          }
 
 
 
@@ -215,6 +229,8 @@ header {
             @media (max-width: 800px) {
               display: block;
             }
+
+
           }
 
           @media (max-width: 480px) {
@@ -241,7 +257,7 @@ header {
     margin-top: 17px;
     float: left;
     margin-right: 40px;
-    width: 160px;
+    width: 100px;
 
     @media (max-width: 1080px) {
       float: none;
@@ -264,7 +280,7 @@ header {
 }
 
 .infos {
-  background-image: url(../images/header/bg_infos_eurosites.png) !important;
+  background-image: url(../images/header/xebicon-tickets-conference.png) !important;
 
   .titre_autre {
     font-size: 55px;
@@ -281,7 +297,7 @@ header {
 }
 
 .eurosites {
-  background-image: url(../images/header/bg_eurosites.png) !important;
+  background-image: url(../images/header/xebicon-conference-cap-15.png) !important;
 }
 
 main {
@@ -298,7 +314,7 @@ main {
         top: 0px;
         right: 0;
         width: 300px;
-        background-color: #efefef;
+        background-color: white;
         color: @textColor;
         padding: 30px;
         font-size: 20px;
@@ -326,7 +342,7 @@ main {
 
   background-color: #000;
   height: 400px;
-  background-image: url(../images/header/xebicon_background_after.png);
+  background-image: url(../images/header/xebicon-conference-cap-15.png);
 
   .inner-wrapper {
     width: 100%;
@@ -364,14 +380,19 @@ main {
     }
   }
 
+  @media (max-width: 1020px) {
+    height: 350px;
+  }
+
   @media (max-width: 800px) {
     padding-top: 50px;
+    height: 350px;
   }
 
   @media (max-width: 540px) {
-    background-image: url(../images/header/xebicon_background_after.png);
+    background-image: url(../images/header/xebicon-conference-cap-15.png);
     min-width: 320px;
-    height: 400px;
+    height: 350px;
     padding-top: 50px;
   }
 
@@ -442,6 +463,7 @@ main {
 .xebia_orga {
   text-align: center;
   padding-bottom: 45px;
+  background-color: white;
 
   img {
     position: relative;
@@ -549,7 +571,7 @@ main section {
 main {
   .presentation_luc {
 
-    background-color: #efefef;
+    background-color: white;
 
     .first-paragraph {
       line-height: 30px;
@@ -566,7 +588,7 @@ main {
   .chiffres {
 
     text-align: center;
-    background-color: white;
+    background-color: @orangeColor;
 
     ul {
       display: inline-block;
@@ -574,25 +596,31 @@ main {
 
       li {
 
-        width: 150px;
-
         &:first-of-type {
-          color: @orangeColor;
+          color: white;
           font-size: 100px;
         }
 
         &:last-of-type {
-          color: @turquoiseColor;
+          color: white;
           font-size: 17px;
           font-family: proxima;
         }
       }
     }
 
+    .titre_chiffre
+    {
+      text-align: left;
+      font-size: 20px;
+      padding-left: 20px;
+      color: white;
+    }
+
   }
 
   .teaser {
-    background-color: #efefef;
+    background-color: white;
     text-align: center;
     padding-bottom: 70px;
 
@@ -623,13 +651,13 @@ main {
     a {
       text-align: center;
       padding: 10px 50px;
-      background-color: @xebiaColor;
+      background-color: @orangeColor;
       text-decoration: none;
       color: white;
-      font-family: proxima-bold;
+      font-family: proxima;
       margin-bottom: 50px;
       transition: 0.3s all;
-      font-size: 24px;
+      font-size: 20px;
 
       @media (max-width: 480px) {
         padding: 10px 20px;
@@ -637,7 +665,7 @@ main {
       }
 
       &:hover {
-        background-color: @orangeColor;
+        background-color: @orangeColorDark;
       }
 
     }
@@ -721,13 +749,13 @@ main {
 }
 
 footer {
-  background-color: @orangeColor;
+  background-color: white;
 
   .twitter {
     padding: 40px;
     float: left;
     p {
-      color: white;
+      color: #2e2e2e;
       font-size: 24px;
       padding-bottom: 20px;
     }
@@ -754,13 +782,13 @@ footer {
 
   .adresse {
     padding: 40px;
-    color: white;
+    color: #2e2e2e;
     float: right;
     font-size: 20px;
 
     a {
       text-decoration: none;
-      color: white;
+      color:#2e2e2e;
 
       &:hover {
         text-decoration: underline;
@@ -1381,6 +1409,10 @@ button.close {
 
 .active {
   border-bottom: 1px solid orange;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .img_expertcafe {
@@ -1554,7 +1586,7 @@ input {
 
 .btn_white
 {
-  background-color: #06a99c;
+  background-color: @orangeColor;
   color: white;
   padding: 15px 10px;
   text-decoration: none;
@@ -1574,10 +1606,18 @@ input {
   }
 
   &:hover {
-    color: @turquoiseColor;
-    background-color: white;
-    transition: 0.7s all;
+    color: white;
+    background-color: @orangeColorDark;
+    transition: 0.5s all;
   }
+}
+
+#anim_btn
+{
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
 }
 
 .btn_video{
@@ -1863,4 +1903,19 @@ input {
       }
     }
   }
+}
+
+
+
+/*** PAGE XEBICON 16 ***/
+
+.pitch_xebicon16 {
+  p{
+    font-size: 20px;
+    padding: 20px 20px;
+  }
+}
+
+.date_save {
+  font-weight: bold;
 }

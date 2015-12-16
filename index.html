@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>XebiCon'15 France - Le 4 novembre 2015 -  La conférence dédiée au futur du digital à Paris</title>
+    <title>XebiCon France - Le 9 novembre 2016 -  La conférence dédiée au futur du digital à Paris</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Xebia IT Architects"/>
@@ -23,10 +23,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="icon" href="favicon.ico"/>
 
+    <link rel="stylesheet" href="styles/animate.css"/>
     <link href="styles/main.min.css" rel="stylesheet"/>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/lodash.js"></script>
     <script src="js/jquery-css-transform.js"></script>
     <script src="js/jquery.slide-text-left.js"></script>
@@ -35,24 +35,6 @@
     <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
     <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
-
-
-
-
-    <script type="text/javascript">
-        WebFontConfig = {
-            google: { families: [  'Roboto:400,700:latin' ] }
-        };
-        (function () {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
 
     <!-- Hotjar Tracking Code for xebicon.fr -->
     <script>
@@ -66,52 +48,47 @@
         })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
-    <script type="text/javascript">
-        $(function() {
-            $(".slideText").slideTextLeft(
-                    { words: ["Big Data, Objets et services connectés, Agilité, Mobilité, User expérience et ...", "Digital, Web, DevOps, Cloud, Management 3.0, Architectures et ...", ], delay: 5000 }
 
-            );
-        });
-    </script>
 
 </head>
 <body>
 <header>
     <section class="xebia">
         <a href="index.html"  title="Site XebiCon France">
-            <img src="images/header/xebicon-logo.png" class="logo-xebia" alt="Logo XebiCon"/>
+            <img src="images/header/logo_xebicon.png" class="logo-xebia" alt="Logo XebiCon" title="Logo XebiCon Conference"/>
         </a>
 
         <label for="chk-menu">☰</label>
         <input type="checkbox" id="chk-menu">
         <nav>
           <ul>
-            <a href="index.html" class="active"><li>La Conférence</li></a>
+            <a href="index.html" class="active"><li>XebiCon'16</li></a>
             <a href="programme.html"><li>Vidéos et Slides</li></a>
-              <a href="presse.html"><li>Presse</li></a>
-            <a href="expertcafe.html"><li>L'Expert Café</li></a>
+            <a href="presse.html"><li>Presse</li></a>
             <a href="infos.html"><li>Infos pratiques</li></a>
+            <a href="inscription.html"><li>Inscription</li></a>
           </ul>
         </nav>
     </section>
 
     <section class="xebicon">
         <div class="inner-wrapper">
-            <h1>BUILD <span class="light">THE</span>
-                <br/>FUTURE<br/>
+            <h1><span class="date_save">9 novembre 2015</span><br/>
+                <span class="light">SAVE THE</span> DATE
             </h1>
 
             <div class="after_link">
 
-                <a href="programme.html" class="btn_white"><i class="fa fa-play"></i>Retrouvez les vidéos et slides des présentations</a>
-                <a href="#video" class="btn_white"><i class="fa fa-video-camera"></i></i>Re(vivez) la XebiCon'15</a>
-                <a href="" class="btn_white" data-featherlight="#popup2016"><i class="fa fa-envelope-o"></i>Rendez-vous à la XebiCon'16</a>
+                <a id="anim_btn" href="inscription.html" class="btn_white animated tada"><i class="fa fa-ticket"></i>Ticket "Super Early Bird"</a>
+
+                <br/>
+
+                <a href="" class="btn_white" data-featherlight="#popup2016"><i class="fa fa-envelope-o"></i>Recevez toutes les informations sur la XebiCon'16</a>
             </div>
 
             <div class="lightbox" id="mail-xebicon-2016">
                     <form id="popup2016" onsubmit="window.xebicon16(event)" >
-                        <p>Early Bird notification pour la XebiCon'16</p><br/><br/>
+                        <p>Recevez toutes les informations sur la XebiCon'16</p><br/><br/>
                         <label>Adresse mail :</label>
                         <input id="email" name="email" type="email" required autofocus/><br/><br/>
                         <input type="submit" class="button" id="download" value="A bientôt"/>
@@ -126,18 +103,63 @@
 
 
     <section class="tagline_page">
-        <h2>La conférence dédiée au<span class="bold"> futur du digital</span> à Paris</h2>
+        <h2>Rendez-vous <span class="bold">au pied de la Tour Eiffel</span> pour la seconde édition de la XebiCon</h2>
     </section>
 
-    <section class="tagline_page buzzword">
-
-        <h2 class="title">
-            <p><span class="slideText"></span></p>
-        </h2>
-    </section>
 
 </header>
 <main>
+
+    <section class="presentation_luc" id="journee">
+        <div class="inner-wrapper">
+            <p class="first-paragraph" style="text-align: left;">
+                Build the Future. <br/>
+
+                Vous avez aimé l'Open XKE, vous adorerez la XebiCon ! <br/> <br/>
+
+                <span class="bold">27 conférences, 10 témoignages clients, 1 expert café.</span> <br/> <br/>
+
+                Cet évènement, organisé par les Xebians et les sociétés de l'Alliance, est destiné à partager nos expériences acquises sur le terrain et lors de nos journées de partage de la connaissance, les XKE (Xebia Knowledge Exchange) que nous organisons mensuellement. <br/><br/>
+
+
+                Vous y découvrirez le futur du digital : <span class="bold">Objets et Services connectés, Big Data, Mobilité, User eXperience, Agilité, Web, DevOps, Cloud, Management 3.0, Architectures</span>, pour ne citer que quelques thèmes abordés lors de cette journée.
+
+                Ponctué de retours d'expérience de clients, de conférences techniques et d'échanges, le programme qui vous est proposé est riche en contenu.  Vous pourrez également adresser vos questions à nos Xebians dans un format One to One lors des Expert Cafés.
+
+                <br/><br/>Dans l'attente de vous y rencontrer, <br/> <br/>
+
+                Luc Legardeur, Président
+
+            </p>
+        </div>
+    </section>
+
+    <section class="chiffres">
+        <div class="inner-wrapper">
+            <p class="titre_chiffre">La XebiCon'15 c'était : </p><br/>
+            <ul>
+                <li class="counter">650</li>
+                <li>votes sur l'application</li>
+            </ul>
+
+            <ul>
+                <li class="counter">420</li>
+                <li>personnes</li>
+            </ul>
+
+            <ul>
+                <li class="counter-bis">27</li>
+                <li>conférences</li>
+            </ul>
+
+            <ul>
+                <li class="counter-bis">10</li>
+                <li>témoignages clients</li>
+            </ul>
+
+        </div>
+
+    </section>
 
     <section class="teaser" id="video">
         <div class="inner-wrapper">
@@ -175,59 +197,9 @@
             </section>
 
 
-            <a href="programme.html">VIDÉOS ET SLIDES</a>
+            <a href="programme.html">Vidéos et slides</a>
         </div>
     </section>
-
-    <section class="presentation_luc" id="journee">
-        <div class="inner-wrapper">
-            <p class="first-paragraph" style="text-align: left;">
-                Build the Future. <br/>
-
-                Vous avez aimé l'Open XKE, vous adorerez la XebiCon ! <br/> <br/>
-
-                <span class="bold">27 conférences, 10 témoignages clients, 1 expert café.</span> <br/> <br/>
-
-                Cet évènement, organisé par les Xebians et les sociétés de l'Alliance, est destiné à partager nos expériences acquises sur le terrain et lors de nos journées de partage de la connaissance, les XKE (Xebia Knowledge Exchange) que nous organisons mensuellement. <br/><br/>
-
-
-                Vous y découvrirez le futur du digital : <span class="bold">Objets et Services connectés, Big Data, Mobilité, User eXperience, Agilité, Web, DevOps, Cloud, Management 3.0, Architectures</span>, pour ne citer que quelques thèmes abordés lors de cette journée.
-
-                Ponctué de retours d'expérience de clients, de conférences techniques et d'échanges, le programme qui vous est proposé est riche en contenu.  Vous pourrez également adresser vos questions à nos Xebians dans un format One to One lors des Expert Cafés.
-
-                <br/><br/>Dans l'attente de vous y rencontrer, <br/> <br/>
-
-                Luc Legardeur, Président
-
-            </p>
-        </div>
-    </section>
-
-    <section class="chiffres">
-        <div class="inner-wrapper">
-        <ul>
-            <li class="counter">350</li>
-            <li>personnes</li>
-        </ul>
-
-        <ul>
-            <li class="counter-bis">27</li>
-            <li>conférences</li>
-        </ul>
-
-        <ul>
-            <li class="counter-bis">10</li>
-            <li>témoignages clients</li>
-        </ul>
-
-        <ul>
-            <li>1</li>
-            <li>expert café</li>
-        </ul>
-        </div>
-
-    </section>
-
 
 
     <section class="application">
@@ -243,11 +215,7 @@
         </div>
     </section>
 
-    <section class="xebia_orga">
-        <div class="inner-wrapper">
-            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
-        </div>
-    </section>
+
 </main>
 
 <footer>
@@ -264,24 +232,20 @@
                 <li>156, Boulevard Haussmann</li>
                 <li>75&nbsp;008 Paris</li>
                 <br/><br/>
-                <li>Mail : <a href="mailto:marketing@xebia.fr">marketing@xebia.fr</a></li>
+                <li>Mail : <a href="mailto:xebicon@xebia.fr">xebicon@xebia.fr</a></li>
                 <li>Tél : <a href="tel:+33153899999">01.53.89.99.99</a></li>
             </ul>
+        </div>
+    </section>
+
+    <section class="xebia_orga">
+        <div class="inner-wrapper">
+            <p>Cet événement est organisé par <a href="http://xebia.fr" target="_blank"><img src="images/logo-xebia.svg" /></a>
         </div>
     </section>
 </footer>
 
 
-
-<div class="modal fade" id="test_photo" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <img src="images/speaker/alexandre_hebert.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

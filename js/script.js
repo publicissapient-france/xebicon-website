@@ -1,12 +1,3 @@
-var time  = 1500;
-$('.counter').counterUp({
-    time: time
-});
-
-
-$('.counter-bis').counterUp({
-    time: time
-});
 
 $(function(){
     $('.fadelinks > :gt(0)').hide();
