@@ -3,25 +3,25 @@ Site XebiCon
 
 Website XebiCon
 
-//Pour faire des modifications
+### Pour faire des modifications
 
-grunt pour lancer le site
+* grunt pour lancer le site
 
-git add . pour ajouter vos modifications
+*git add . pour ajouter vos modifications
 
-git commit -m "votre message"
+*git commit -m "votre message"
 
-git push
+*git push
 
 
 
-//Pour déployer
+### Pour déployer
 
-git checkout gh-pages
+*git checkout gh-pages
 
-git merge master
+*git merge master
 
-git push
+*git push
 
 
 ----
