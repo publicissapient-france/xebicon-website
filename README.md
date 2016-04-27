@@ -7,21 +7,23 @@ Website XebiCon
 
 * grunt pour lancer le site
 
-*git add . pour ajouter vos modifications
+* ctrl+c pour stopper
 
-*git commit -m "votre message"
+* git add . pour ajouter vos modifications
 
-*git push
+* git commit -m "votre message"
+
+* git push
 
 
 
 ### Pour déployer
 
-*git checkout gh-pages
+* git checkout gh-pages
 
-*git merge master
+* git merge master
 
-*git push
+* git push
 
 
 ----
